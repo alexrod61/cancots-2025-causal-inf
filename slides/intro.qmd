@@ -99,7 +99,7 @@ mindmap
 ## <span style="color: chocolate;">5. Challenges ahead</span>
 
 ::: incremental
-- Is there any room within the course to include <span style="color: purple;">Bayesian thinking</span>?
+- Is there room within the course to include <span style="color: purple;">Bayesian thinking</span>?
 - How smooth would it be to introduce the <span style="color: purple;">fundamentals of causality</span> via <span style="color: purple;">DAGs and Bayesian networks</span>? [@lu2022]
 :::
 
