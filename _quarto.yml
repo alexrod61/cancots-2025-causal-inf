@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "CanCOTS 2025"
+  repo-url: https://github.com/alexrod61/cancots-2025-causal-inf
+  repo-actions: [source]
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Slides"
+        contents:
+          - slides/intro.qmd
+          
+bibliography: slides/references.bib
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
