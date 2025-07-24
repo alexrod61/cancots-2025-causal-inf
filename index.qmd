@@ -3,6 +3,12 @@ title: "Incorporating Causal Inference in Statistics Courses"
 toc: false
 ---
 
+::: {.callout-tip}
+## Details of CanCOTS 2025 including this Working Group
+
+This is an example of a callout with a title.
+:::
+
 A homepage indicating why and how this deliverable was worked on during CanCOTS. 
 
 > Our final deliverable is an overall undergraduate course curriculum on causal inference (including a **limited** lesson plan, learning objectives, and an overall structure of the course) based on a general roadmap of eight stages: (1) research question, (2) causal model representing knowledge, (3) counterfactuals and causal parameter definition, (4) statistical model definition, (5) model fitting, (6) result interpretation, (7) data analysis report. 
