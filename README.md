@@ -8,7 +8,7 @@
 
 **Place:** HEC Montréal, Québec, Canada.
 
-**Collaborators:** [G. Alexi Rodríguez-Arelis](https://alexrod.netlify.app/) (UBC) and [Philippe Boileau](https://pboileau.ca/) (McGill University)
+**Collaborators:** [G. Alexi Rodríguez-Arelis](https://alexrod.netlify.app/) (UBC) and [Philippe Boileau](https://pboileau.ca/) (McGill University).
 
 This repository contains the final deliverable from one of the working groups of the first edition of the Canadian Conference on Teaching Statistics (CanCOTS), held in the summer of 2025 at HEC Montréal. CanCOTS is primarily a participant-driven working meeting that follows the format of a curated unconference. In this style of unconference, various working groups focus on priority areas of interest related to educational topics. All groups are expected to produce concrete deliverables addressing these priority areas, which may include exercise banks, curriculum guidelines, sample learning activities, and assessment items. Each working group is led by a leader responsible for overseeing collaborative efforts and shaping the final deliverable.
 
