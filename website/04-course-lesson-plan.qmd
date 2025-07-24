@@ -1,0 +1,73 @@
+# Limited Course Lesson Plan {#sec-course-lesson-plan}
+
+Beginning **Week 12**, students will work on a team-based final project related to conducting their own causal analysis on a provided dataset by following the causal roadmap.
+
+## Week 1: Know your research question! (STEP 1 in the roadmap)
+
+- What is causal inference?
+- Distinguishing between causal and association research questions.
+- High-level overview of the causal roadmap.
+- Providing real-life examples of research studies.
+
+## Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)
+
+- Introduction to directed acyclic graphs (DAGs).
+- Begin getting familiar with the DAG concepts so students can start building their own DAGs.
+- We will use real-life examples (e.g., research studies) to start exercising the DAG making.
+- Differences between experimental, quasi-experimental, and observational studies
+
+## Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)
+
+- This week, we can start using programming to code up simulations for the structural causal model, counterfactuals, and causal parameters.
+- We follow these steps:
+  1. Define the DAG.
+  2. Define a structural causal model based on the DAG.
+  3. Define counterfactuals based on the structural causal model.
+  4. Define causal parameters based on the counterfactuals.
+  5. Relate the causal parameters to the primary research question.
+
+## Week 4: Identifiability conditions
+
+- Ensuring the causal parameter coincides with the statistical parameter, i.e., an identifiability assumption: no unmeasured confounding (coming from the DAG, consult with experts), positivity (probability that every study unit could be in the control or treatment).
+- We plan to talk about d-separation and back-door criterion.
+- We also plan to discuss different vocabulary in different fields (epidemiology, experimental design, econometrics). For example, SUTVA, etc. It would be useful to have a discussion of what sets of assumptions are equivalent.
+
+## Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)
+
+- Focus on ATE, average treatment effect.
+- Introduction to G-estimation: parametric and non-parametric.
+
+## Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)
+
+- Introduction to inverse probability weights (IPWs): parametric and non-parametric.
+
+## Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)
+
+- Introduction to causal mediation analysis.
+- Parametric and non-parametric.
+
+## Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)
+
+## Week 9: Storytelling (STEP 8 in the roadmap)
+
+## Week 10: Appraisal of causal analysis using the roadmap
+
+- Review an existing causal analysis (i.e., a published research paper) using the causal roadmap covered in class.
+- This is a team-based work.
+
+## Week 11: Presentation of appraisals
+
+Team presentations.
+
+## Week 12: Analysis of worked examples while contrasting them with the causal roadmap
+
+- This is a team-based work (using the previous appraisal teams).
+- General overview of the final project (first lecture).
+- Introduction to the datasets (first lecture).
+- Perform a case study, using a dataset not available to students to pick from, using the causal roadmap (second lecture).
+
+## Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)
+
+- We will use the last two lectures for in-class group work on the final project (i.e., whose deliverable is a written report).
+- Note that there is no final exam in this course.
+

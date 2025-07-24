@@ -3,7 +3,6 @@ title: "Incorporating Causal Inference in Statistics Courses"
 format: 
   revealjs:
     css: styles.css
-    footer: Canadian Conference on Teaching Statistics (CanCOTS) 2025
     slide-number: true
     slide-level: 4
     transition: none

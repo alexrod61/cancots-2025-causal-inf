@@ -1,0 +1,5 @@
+# Introductory Slides {#sec-intro}
+
+A motivating first presentation on the topic and theme. It is planned to occur during the morning of Wednesday, June 11th, 2025. It includes an argument explaining why the topic is important, an initial list of potential outputs (with the understanding that this list will be expanded upon at the meeting, prioritized, and not all outputs will be feasible), and at least one paper or resource to inform/motivate/inspire the work.
+
+<iframe src="slides/slides.html" width="100%" height="600px" style="border: none;"></iframe>

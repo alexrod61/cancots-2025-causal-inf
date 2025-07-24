@@ -1,1 +1,13 @@
-{{< include README.md >}}
+---
+title: "Incorporating Causal Inference in Statistics Courses"
+toc: false
+---
+
+A homepage indicating why and how this deliverable was worked on during CanCOTS. 
+
+> Our final deliverable is an overall undergraduate course curriculum on causal inference (including a **limited** lesson plan, learning objectives, and an overall structure of the course) based on a general roadmap of eight stages: (1) research question, (2) causal model representing knowledge, (3) counterfactuals and causal parameter definition, (4) statistical model definition, (5) model fitting, (6) result interpretation, (7) data analysis report. 
+
+- **[Introductory Slides:](website/01-intro-slides.qmd#sec-intro)** These slides were preliminary before shaping them into our final deliverable.
+- **[Course Outline:](website/02-course-outline.qmd#sec-course-outline)** A general course outline including course description and rationale, general learning goals, intended student audience, course format, assessment criteria and grading.
+- **[Course Roadmap:](website/03-course-roadmap.qmd#sec-course-roadmap)** The roadmap including the above eight stages with brief explanations.
+- **[Limited Course Lesson Plan:](website/04-course-lesson-plan.qmd#sec-course-lesson-plan)** A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.
