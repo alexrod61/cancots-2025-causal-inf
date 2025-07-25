@@ -1,6 +1,6 @@
 # Course Outline {#sec-course-outline}
 
-## High-Level Course Goals
+# High-Level Course Goals
 
 We used Bloom’s taxonomy (cognitive skills are within brackets):
 
@@ -9,17 +9,22 @@ We used Bloom’s taxonomy (cognitive skills are within brackets):
 - Analyze a causal research question using the causal roadmap (ANALYSIS).
 - Evaluate publicly available causal study conclusions based on the causal roadmap (EVALUATION).
 
-## Prerequisites
+# Prerequisites
 
-### Mandatory
+## Mandatory
 
 - Second-year level statistical inference course: Basic notions of hypothesis testing and confidence interval, along with basic frequentist tests (z-test, t-test, Chi-squared test). Something ideal to have as a prerequisite: notions on simulation-based techniques such as bootstrapping and permutation tests.
 - Third-year level regression course: Basic ordinary least-squares (OLS) and binary logistic regression.
 - Third-year (or second-year) level probability course: Basic notions of probability (independence and conditional probability) along with random variables (measures of central tendency and dispersion) and fundamental distributions (discrete and continuous).
 
-### Co-requisite
+## Co-requisite
+
 Fourth-year level course in experimental design: Basic notions on experimental design (e.g., RCT).
 
-## Duration
+# Duration
 
 The course is planned to be taught over the course of thirteen weeks (2 sessions per week with 1.5 hours as duration).
+
+# Course Format {#sec-course-format}
+
+# Course Assessment Structure {#sec-course-assessment}

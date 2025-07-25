@@ -1,6 +1,35 @@
 # Limited Course Lesson Plan {#sec-course-lesson-plan}
 
-Beginning **Week 12**, students will work on a team-based final project related to conducting their own causal analysis on a provided dataset by following the causal roadmap.
+![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-to-learn-3674104/).](img/sessions.png){fig-align="center" width=80%}
+
+
+This section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is **limited** in scope due to the following reasons:
+
+- The lesson plan encompasses **comprehensive learning goals** for each lecture throughout the entire term, with **specific action verbs** aligned with the revised **Bloom's taxonomy** [@bloom1956] as defined by @anderson001. This revised taxonomy organizes the six levels of the cognitive domain (related to learning) as follows:
+
+  1. **Remember:** Recall information from long-term memory, including statistical concepts learned in previous courses.
+  2. **Understand:** Comprehend the causal inference concepts covered in the classroom.
+  3. **Apply:** Implement these causal inference concepts in various practical scenarios.
+  4. **Analyze:** Identify parallels and use critical reasoning to establish patterns and connections. For example, this could involve comparing outputs from different strategies applied in the causal models taught in the course.
+  5. **Evaluate:** Assess practical ideas based on established criteria and standards. This level may involve evaluating previously published causal studies.
+  6. **Create:** Develop new causal studies based on all the knowledge acquired throughout this course.
+
+- Each week consists of two lecture sessions, each lasting one hour and twenty minutes.
+- The lesson plan connects each week to one of the eight stages outlined in the course roadmap. For reference, please revisit [the corresponding section of the deliverable](03-course-roadmap.qmd#sec-course-roadmap). This structure is consistent with the previously described [course format](02-course-outline.qmd#sec-course-format).
+- In each lecture, we will aim to align the learning goals with specific scholarly content, such as textbooks or academic papers.
+- The lesson plan **does not** include detailed instructional components for each lecture, such as time allocation, learning strategies, or in-class activities.
+- While we provide the course assessment structure (i.e., weights for assignments), this lesson plan **does not** elaborate on specific formative and summative assessments.
+
+::: {.callout-important}
+## A note on weeks 10, 11, 12, and 13!
+
+The final four weeks of the course will not be used to introduce students to additional modeling techniques in causal inference (**as outlined in stages 4 and 5 of the roadmap**) or to discuss general guidelines for interpreting, reporting, and storytelling in causal studies (**as detailed in stages 6, 7, and 8 of the roadmap**). Instead, students are expected to focus on the following major deliverables:
+
+- **Weeks 10 and 11** will be dedicated to a team-based **appraisal presentation** of an already published causal study, utilizing the roadmap covered throughout the course. There will not be a written report; only an oral presentation is required. 
+- **Weeks 12 and 13** will focus on a team-based final project where students will conduct **their final causal study** using a provided dataset and following the causal roadmap. Instead of a final oral presentation, a written report will be submitted to replace the in-class final exam.
+:::
+
+# Lecture Breakdown
 
 ## Week 1: Know your research question! (STEP 1 in the roadmap)
 
@@ -64,7 +93,7 @@ Team presentations.
 - This is a team-based work (using the previous appraisal teams).
 - General overview of the final project (first lecture).
 - Introduction to the datasets (first lecture).
-- Perform a case study, using a dataset not available to students to pick from, using the causal roadmap (second lecture).
+- Perform a case study, using a dataset not available to students to pick from (it will be the same dataset for all teams), using the causal roadmap (second lecture).
 
 ## Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)
 

@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -97,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../references.html"> 
-<span class="menu-text">References</span></a>
+<span class="menu-text">Overall References</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/alexrod61/cancots-2025-causal-inf"> <i class="bi bi-github" role="img">
@@ -161,21 +181,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-course-lesson-plan" id="toc-sec-course-lesson-plan" class="nav-link active" data-scroll-target="#sec-course-lesson-plan"><span class="header-section-number">1</span> Limited Course Lesson Plan</a>
+  <li><a href="#sec-course-lesson-plan" id="toc-sec-course-lesson-plan" class="nav-link active" data-scroll-target="#sec-course-lesson-plan"><span class="header-section-number">1</span> Limited Course Lesson Plan</a></li>
+  <li><a href="#lecture-breakdown" id="toc-lecture-breakdown" class="nav-link" data-scroll-target="#lecture-breakdown"><span class="header-section-number">2</span> Lecture Breakdown</a>
   <ul>
-  <li><a href="#week-1-know-your-research-question-step-1-in-the-roadmap" id="toc-week-1-know-your-research-question-step-1-in-the-roadmap" class="nav-link" data-scroll-target="#week-1-know-your-research-question-step-1-in-the-roadmap"><span class="header-section-number">1.1</span> Week 1: Know your research question! (STEP 1 in the roadmap)</a></li>
-  <li><a href="#week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap" id="toc-week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap" class="nav-link" data-scroll-target="#week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap"><span class="header-section-number">1.2</span> Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)</a></li>
-  <li><a href="#week-3-introduction-to-counterfactuals-step-3-in-the-roadmap" id="toc-week-3-introduction-to-counterfactuals-step-3-in-the-roadmap" class="nav-link" data-scroll-target="#week-3-introduction-to-counterfactuals-step-3-in-the-roadmap"><span class="header-section-number">1.3</span> Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)</a></li>
-  <li><a href="#week-4-identifiability-conditions" id="toc-week-4-identifiability-conditions" class="nav-link" data-scroll-target="#week-4-identifiability-conditions"><span class="header-section-number">1.4</span> Week 4: Identifiability conditions</a></li>
-  <li><a href="#week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap" id="toc-week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.5</span> Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)</a></li>
-  <li><a href="#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" id="toc-week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.6</span> Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)</a></li>
-  <li><a href="#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" id="toc-week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.7</span> Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)</a></li>
-  <li><a href="#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" id="toc-week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" class="nav-link" data-scroll-target="#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap"><span class="header-section-number">1.8</span> Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)</a></li>
-  <li><a href="#week-9-storytelling-step-8-in-the-roadmap" id="toc-week-9-storytelling-step-8-in-the-roadmap" class="nav-link" data-scroll-target="#week-9-storytelling-step-8-in-the-roadmap"><span class="header-section-number">1.9</span> Week 9: Storytelling (STEP 8 in the roadmap)</a></li>
-  <li><a href="#week-10-appraisal-of-causal-analysis-using-the-roadmap" id="toc-week-10-appraisal-of-causal-analysis-using-the-roadmap" class="nav-link" data-scroll-target="#week-10-appraisal-of-causal-analysis-using-the-roadmap"><span class="header-section-number">1.10</span> Week 10: Appraisal of causal analysis using the roadmap</a></li>
-  <li><a href="#week-11-presentation-of-appraisals" id="toc-week-11-presentation-of-appraisals" class="nav-link" data-scroll-target="#week-11-presentation-of-appraisals"><span class="header-section-number">1.11</span> Week 11: Presentation of appraisals</a></li>
-  <li><a href="#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" id="toc-week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" class="nav-link" data-scroll-target="#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap"><span class="header-section-number">1.12</span> Week 12: Analysis of worked examples while contrasting them with the causal roadmap</a></li>
-  <li><a href="#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" id="toc-week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" class="nav-link" data-scroll-target="#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii"><span class="header-section-number">1.13</span> Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)</a></li>
+  <li><a href="#week-1-know-your-research-question-step-1-in-the-roadmap" id="toc-week-1-know-your-research-question-step-1-in-the-roadmap" class="nav-link" data-scroll-target="#week-1-know-your-research-question-step-1-in-the-roadmap"><span class="header-section-number">2.1</span> Week 1: Know your research question! (STEP 1 in the roadmap)</a></li>
+  <li><a href="#week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap" id="toc-week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap" class="nav-link" data-scroll-target="#week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap"><span class="header-section-number">2.2</span> Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)</a></li>
+  <li><a href="#week-3-introduction-to-counterfactuals-step-3-in-the-roadmap" id="toc-week-3-introduction-to-counterfactuals-step-3-in-the-roadmap" class="nav-link" data-scroll-target="#week-3-introduction-to-counterfactuals-step-3-in-the-roadmap"><span class="header-section-number">2.3</span> Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)</a></li>
+  <li><a href="#week-4-identifiability-conditions" id="toc-week-4-identifiability-conditions" class="nav-link" data-scroll-target="#week-4-identifiability-conditions"><span class="header-section-number">2.4</span> Week 4: Identifiability conditions</a></li>
+  <li><a href="#week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap" id="toc-week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap"><span class="header-section-number">2.5</span> Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)</a></li>
+  <li><a href="#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" id="toc-week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap"><span class="header-section-number">2.6</span> Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)</a></li>
+  <li><a href="#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" id="toc-week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap"><span class="header-section-number">2.7</span> Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)</a></li>
+  <li><a href="#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" id="toc-week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" class="nav-link" data-scroll-target="#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap"><span class="header-section-number">2.8</span> Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)</a></li>
+  <li><a href="#week-9-storytelling-step-8-in-the-roadmap" id="toc-week-9-storytelling-step-8-in-the-roadmap" class="nav-link" data-scroll-target="#week-9-storytelling-step-8-in-the-roadmap"><span class="header-section-number">2.9</span> Week 9: Storytelling (STEP 8 in the roadmap)</a></li>
+  <li><a href="#week-10-appraisal-of-causal-analysis-using-the-roadmap" id="toc-week-10-appraisal-of-causal-analysis-using-the-roadmap" class="nav-link" data-scroll-target="#week-10-appraisal-of-causal-analysis-using-the-roadmap"><span class="header-section-number">2.10</span> Week 10: Appraisal of causal analysis using the roadmap</a></li>
+  <li><a href="#week-11-presentation-of-appraisals" id="toc-week-11-presentation-of-appraisals" class="nav-link" data-scroll-target="#week-11-presentation-of-appraisals"><span class="header-section-number">2.11</span> Week 11: Presentation of appraisals</a></li>
+  <li><a href="#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" id="toc-week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" class="nav-link" data-scroll-target="#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap"><span class="header-section-number">2.12</span> Week 12: Analysis of worked examples while contrasting them with the causal roadmap</a></li>
+  <li><a href="#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" id="toc-week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" class="nav-link" data-scroll-target="#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii"><span class="header-section-number">2.13</span> Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -188,9 +209,51 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="sec-course-lesson-plan" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Limited Course Lesson Plan</h1>
-<p>Beginning <strong>Week 12</strong>, students will work on a team-based final project related to conducting their own causal analysis on a provided dataset by following the causal roadmap.</p>
-<section id="week-1-know-your-research-question-step-1-in-the-roadmap" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="week-1-know-your-research-question-step-1-in-the-roadmap"><span class="header-section-number">1.1</span> Week 1: Know your research question! (STEP 1 in the roadmap)</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/sessions.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/"><em>manfredsteger</em></a> via <a href="https://pixabay.com/vectors/pixel-cells-pixel-to-learn-3674104/"><em>Pixabay</em></a>.</figcaption>
+</figure>
+</div>
+<p>This section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is <strong>limited</strong> in scope due to the following reasons:</p>
+<ul>
+<li><p>The lesson plan encompasses <strong>comprehensive learning goals</strong> for each lecture throughout the entire term, with <strong>specific action verbs</strong> aligned with the revised <strong>Bloom’s taxonomy</strong> <span class="citation" data-cites="bloom1956">(<a href="#ref-bloom1956" role="doc-biblioref">Bloom et al. 1956</a>)</span> as defined by <span class="citation" data-cites="anderson001">Anderson and Krathwohl (<a href="#ref-anderson001" role="doc-biblioref">2001</a>)</span>. This revised taxonomy organizes the six levels of the cognitive domain (related to learning) as follows:</p>
+<ol type="1">
+<li><strong>Remember:</strong> Recall information from long-term memory, including statistical concepts learned in previous courses.</li>
+<li><strong>Understand:</strong> Comprehend the causal inference concepts covered in the classroom.</li>
+<li><strong>Apply:</strong> Implement these causal inference concepts in various practical scenarios.</li>
+<li><strong>Analyze:</strong> Identify parallels and use critical reasoning to establish patterns and connections. For example, this could involve comparing outputs from different strategies applied in the causal models taught in the course.</li>
+<li><strong>Evaluate:</strong> Assess practical ideas based on established criteria and standards. This level may involve evaluating previously published causal studies.</li>
+<li><strong>Create:</strong> Develop new causal studies based on all the knowledge acquired throughout this course.</li>
+</ol></li>
+<li><p>Each week consists of two lecture sessions, each lasting one hour and twenty minutes.</p></li>
+<li><p>The lesson plan connects each week to one of the eight stages outlined in the course roadmap. For reference, please revisit <a href="../website/03-course-roadmap.html#sec-course-roadmap">the corresponding section of the deliverable</a>. This structure is consistent with the previously described <a href="../website/02-course-outline.html#sec-course-format">course format</a>.</p></li>
+<li><p>In each lecture, we will aim to align the learning goals with specific scholarly content, such as textbooks or academic papers.</p></li>
+<li><p>The lesson plan <strong>does not</strong> include detailed instructional components for each lecture, such as time allocation, learning strategies, or in-class activities.</p></li>
+<li><p>While we provide the course assessment structure (i.e., weights for assignments), this lesson plan <strong>does not</strong> elaborate on specific formative and summative assessments.</p></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A note on weeks 10, 11, 12, and 13!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The final four weeks of the course will not be used to introduce students to additional modeling techniques in causal inference (<strong>as outlined in stages 4 and 5 of the roadmap</strong>) or to discuss general guidelines for interpreting, reporting, and storytelling in causal studies (<strong>as detailed in stages 6, 7, and 8 of the roadmap</strong>). Instead, students are expected to focus on the following major deliverables:</p>
+<ul>
+<li><strong>Weeks 10 and 11</strong> will be dedicated to a team-based <strong>appraisal presentation</strong> of an already published causal study, utilizing the roadmap covered throughout the course. There will not be a written report; only an oral presentation is required.</li>
+<li><strong>Weeks 12 and 13</strong> will focus on a team-based final project where students will conduct <strong>their final causal study</strong> using a provided dataset and following the causal roadmap. Instead of a final oral presentation, a written report will be submitted to replace the in-class final exam.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="lecture-breakdown" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Lecture Breakdown</h1>
+<section id="week-1-know-your-research-question-step-1-in-the-roadmap" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="week-1-know-your-research-question-step-1-in-the-roadmap"><span class="header-section-number">2.1</span> Week 1: Know your research question! (STEP 1 in the roadmap)</h2>
 <ul>
 <li>What is causal inference?</li>
 <li>Distinguishing between causal and association research questions.</li>
@@ -198,8 +261,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Providing real-life examples of research studies.</li>
 </ul>
 </section>
-<section id="week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap"><span class="header-section-number">1.2</span> Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)</h2>
+<section id="week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap"><span class="header-section-number">2.2</span> Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)</h2>
 <ul>
 <li>Introduction to directed acyclic graphs (DAGs).</li>
 <li>Begin getting familiar with the DAG concepts so students can start building their own DAGs.</li>
@@ -207,8 +270,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Differences between experimental, quasi-experimental, and observational studies</li>
 </ul>
 </section>
-<section id="week-3-introduction-to-counterfactuals-step-3-in-the-roadmap" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="week-3-introduction-to-counterfactuals-step-3-in-the-roadmap"><span class="header-section-number">1.3</span> Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)</h2>
+<section id="week-3-introduction-to-counterfactuals-step-3-in-the-roadmap" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="week-3-introduction-to-counterfactuals-step-3-in-the-roadmap"><span class="header-section-number">2.3</span> Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)</h2>
 <ul>
 <li>This week, we can start using programming to code up simulations for the structural causal model, counterfactuals, and causal parameters.</li>
 <li>We follow these steps:
@@ -221,72 +284,80 @@ ul.task-list li input[type="checkbox"] {
 </ol></li>
 </ul>
 </section>
-<section id="week-4-identifiability-conditions" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="week-4-identifiability-conditions"><span class="header-section-number">1.4</span> Week 4: Identifiability conditions</h2>
+<section id="week-4-identifiability-conditions" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="week-4-identifiability-conditions"><span class="header-section-number">2.4</span> Week 4: Identifiability conditions</h2>
 <ul>
 <li>Ensuring the causal parameter coincides with the statistical parameter, i.e., an identifiability assumption: no unmeasured confounding (coming from the DAG, consult with experts), positivity (probability that every study unit could be in the control or treatment).</li>
 <li>We plan to talk about d-separation and back-door criterion.</li>
 <li>We also plan to discuss different vocabulary in different fields (epidemiology, experimental design, econometrics). For example, SUTVA, etc. It would be useful to have a discussion of what sets of assumptions are equivalent.</li>
 </ul>
 </section>
-<section id="week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.5</span> Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)</h2>
+<section id="week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap"><span class="header-section-number">2.5</span> Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)</h2>
 <ul>
 <li>Focus on ATE, average treatment effect.</li>
 <li>Introduction to G-estimation: parametric and non-parametric.</li>
 </ul>
 </section>
-<section id="week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.6</span> Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)</h2>
+<section id="week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap"><span class="header-section-number">2.6</span> Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)</h2>
 <ul>
 <li>Introduction to inverse probability weights (IPWs): parametric and non-parametric.</li>
 </ul>
 </section>
-<section id="week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.7</span> Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)</h2>
+<section id="week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap"><span class="header-section-number">2.7</span> Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)</h2>
 <ul>
 <li>Introduction to causal mediation analysis.</li>
 <li>Parametric and non-parametric.</li>
 </ul>
 </section>
-<section id="week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap"><span class="header-section-number">1.8</span> Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)</h2>
+<section id="week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap"><span class="header-section-number">2.8</span> Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)</h2>
 </section>
-<section id="week-9-storytelling-step-8-in-the-roadmap" class="level2" data-number="1.9">
-<h2 data-number="1.9" class="anchored" data-anchor-id="week-9-storytelling-step-8-in-the-roadmap"><span class="header-section-number">1.9</span> Week 9: Storytelling (STEP 8 in the roadmap)</h2>
+<section id="week-9-storytelling-step-8-in-the-roadmap" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="week-9-storytelling-step-8-in-the-roadmap"><span class="header-section-number">2.9</span> Week 9: Storytelling (STEP 8 in the roadmap)</h2>
 </section>
-<section id="week-10-appraisal-of-causal-analysis-using-the-roadmap" class="level2" data-number="1.10">
-<h2 data-number="1.10" class="anchored" data-anchor-id="week-10-appraisal-of-causal-analysis-using-the-roadmap"><span class="header-section-number">1.10</span> Week 10: Appraisal of causal analysis using the roadmap</h2>
+<section id="week-10-appraisal-of-causal-analysis-using-the-roadmap" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="week-10-appraisal-of-causal-analysis-using-the-roadmap"><span class="header-section-number">2.10</span> Week 10: Appraisal of causal analysis using the roadmap</h2>
 <ul>
 <li>Review an existing causal analysis (i.e., a published research paper) using the causal roadmap covered in class.</li>
 <li>This is a team-based work.</li>
 </ul>
 </section>
-<section id="week-11-presentation-of-appraisals" class="level2" data-number="1.11">
-<h2 data-number="1.11" class="anchored" data-anchor-id="week-11-presentation-of-appraisals"><span class="header-section-number">1.11</span> Week 11: Presentation of appraisals</h2>
+<section id="week-11-presentation-of-appraisals" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="week-11-presentation-of-appraisals"><span class="header-section-number">2.11</span> Week 11: Presentation of appraisals</h2>
 <p>Team presentations.</p>
 </section>
-<section id="week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" class="level2" data-number="1.12">
-<h2 data-number="1.12" class="anchored" data-anchor-id="week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap"><span class="header-section-number">1.12</span> Week 12: Analysis of worked examples while contrasting them with the causal roadmap</h2>
+<section id="week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap"><span class="header-section-number">2.12</span> Week 12: Analysis of worked examples while contrasting them with the causal roadmap</h2>
 <ul>
 <li>This is a team-based work (using the previous appraisal teams).</li>
 <li>General overview of the final project (first lecture).</li>
 <li>Introduction to the datasets (first lecture).</li>
-<li>Perform a case study, using a dataset not available to students to pick from, using the causal roadmap (second lecture).</li>
+<li>Perform a case study, using a dataset not available to students to pick from (it will be the same dataset for all teams), using the causal roadmap (second lecture).</li>
 </ul>
 </section>
-<section id="week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" class="level2" data-number="1.13">
-<h2 data-number="1.13" class="anchored" data-anchor-id="week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii"><span class="header-section-number">1.13</span> Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)</h2>
+<section id="week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii"><span class="header-section-number">2.13</span> Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)</h2>
 <ul>
 <li>We will use the last two lectures for in-class group work on the final project (i.e., whose deliverable is a written report).</li>
 <li>Note that there is no final exam in this course.</li>
 </ul>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-anderson001" class="csl-entry" role="listitem">
+Anderson, Lorin W., and David R. Krathwohl, eds. 2001. <em><span class="nocase">A Taxonomy for Learning, Teaching, and Assessing. A Revision of Bloom’s Taxonomy of Educational Objectives</span></em>. 2nd ed. New York: Allyn &amp; Bacon.
+</div>
+<div id="ref-bloom1956" class="csl-entry" role="listitem">
+Bloom, B. S., M. B. Engelhart, E. J. Furst, W. H. Hill, and D. R. Krathwohl. 1956. <em>Taxonomy of Educational Objectives. The Classification of Educational Goals. Handbook 1: Cognitive Domain</em>. New York: Longmans Green.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

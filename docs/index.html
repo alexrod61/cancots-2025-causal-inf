@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="custom.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed fullcontent">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./references.html"> 
-<span class="menu-text">References</span></a>
+<span class="menu-text">Overall References</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/alexrod61/cancots-2025-causal-inf"> <i class="bi bi-github" role="img">
@@ -156,7 +176,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-about-website" id="toc-sec-about-website" class="nav-link active" data-scroll-target="#sec-about-website"><span class="header-section-number">1</span> About This Website</a></li>
+  <li><a href="#sec-rationale-deliverable" id="toc-sec-rationale-deliverable" class="nav-link" data-scroll-target="#sec-rationale-deliverable"><span class="header-section-number">2</span> Rationale of Final Deliverable</a></li>
+  <li><a href="#sec-website-overview" id="toc-sec-website-overview" class="nav-link" data-scroll-target="#sec-website-overview"><span class="header-section-number">3</span> Website Overview</a></li>
+  <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="header-section-number">4</span> License</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -185,27 +216,76 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Details of CanCOTS 2025 including this Working Group
+Details of CanCOTS 2025 including this working group
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is an example of a callout with a title.</p>
+<ul>
+<li><strong>Event:</strong> <a href="https://cancots.netlify.app/en/">Canadian Conference on Teaching Statistics (CanCOTS) 2025</a>.</li>
+<li><strong>Held by:</strong> <a href="https://ssc.ca/en/about/sections-regions/statistical-education">Statistical Education section</a> of the <a href="https://ssc.ca/en">Statistical Society of Canada (SSC)</a>.</li>
+<li><strong>Dates:</strong> Wednesday and Thusday, June 11 and 12, 2025.</li>
+<li><strong>Place:</strong> HEC Montréal, Québec, Canada.</li>
+<li><strong>Working Group’s Topic:</strong> Incorporating Causal Inference in Statistics Courses</li>
+<li><strong>Collaborators:</strong> <a href="https://alexrod.netlify.app/">G. Alexi Rodríguez-Arelis</a> (UBC) and <a href="https://pboileau.ca/">Philippe Boileau</a> (McGill University).</li>
+</ul>
 </div>
 </div>
-<p>A homepage indicating why and how this deliverable was worked on during CanCOTS.</p>
+<section id="sec-about-website" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> About This Website</h1>
+<p>This Quarto website contains the <strong>final deliverable</strong> from one of the working groups of the first edition of the Canadian Conference on Teaching Statistics (CanCOTS), held in the summer of 2025 at HEC Montréal. CanCOTS is primarily a participant-driven working meeting that follows the format of a <strong>curated unconference</strong>. In this style of unconference, various working groups focus on priority areas of interest related to educational topics in statistics. All groups are expected to produce <strong>concrete deliverables</strong> addressing these priority areas, which may include exercise banks, curriculum guidelines, sample learning activities, and assessment items. Each working group has a leader who is responsible for overseeing collaborative efforts and shaping the final deliverable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/idea.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/"><em>manfredsteger</em></a> via <a href="https://pixabay.com/vectors/idea-visualization-line-art-3976295/"><em>Pixabay</em></a>.</figcaption>
+</figure>
+</div>
+<p>CanCOTS 2025 began with an initial roundtable discussion that brought all participants together. During this session, each group leader presented their educational topic along with a proposal for the final deliverable. Following these presentations, participants split into smaller working groups based on their interests. During the working group meetings, participants—including the group leaders—discussed and brainstormed ideas to develop the final deliverable. Additionally, a <strong>comprehensive list of potential resources</strong> was compiled to ensure that the deliverable contains fair and scholarly content.</p>
+<p>CanCOTS 2025 featured six different working groups, each focusing on a specific area of interest. One of these groups prioritized <strong>incorporating causal inference into statistics courses</strong>. As a result, the final deliverable for this working group was <strong>a curriculum guideline for developing a fourth-year undergraduate course in causal inference</strong>. At the start of the unconference, the specifics of the final deliverable were outlined as follows:</p>
 <blockquote class="blockquote">
-<p>Our final deliverable is an overall undergraduate course curriculum on causal inference (including a <strong>limited</strong> lesson plan, learning objectives, and an overall structure of the course) based on a general roadmap of eight stages: (1) research question, (2) causal model representing knowledge, (3) counterfactuals and causal parameter definition, (4) statistical model definition, (5) model fitting, (6) result interpretation, (7) data analysis report.</p>
+<p>An overall course curriculum on causal inference (including lesson plan, learning objectives, and an overall structure of course content) with two fundamental pillars: experimentation and quasi-experimentation. A stretch goal of this working group would be incorporating data science-flavored topics such as A/B testing.</p>
 </blockquote>
+<p>Nevertheless, during the group meetings, the specifics of the final deliverable were revised to go beyond experimentation and quasi-experimentation to include observational studies. Additionally, the brainstorming sessions focused more on statistical perspectives rather than a data science approach. As a result, the final deliverable included in this repository has the following specifics:</p>
+<blockquote class="blockquote">
+<p>Our final deliverable is an overall fourth-year undergraduate course curriculum on causal inference (including a <strong>limited</strong> lesson plan, learning objectives, and an overall structure of the course) based on a general causal inference roadmap of eight stages: (1) <em>research question</em>, (2) <em>causal model representing knowledge</em>, (3) <em>counterfactuals and causal parameter definition</em>, (4) <em>statistical model definition</em>, (5) <em>model fitting</em>, (6) <em>result interpretation</em>, (7) <em>data analysis report</em>.</p>
+</blockquote>
+<p>The above causal inference was inspired on one used in the course <em>Introduction to Causal Inference</em> by <span class="citation" data-cites="petersen2014">Petersen and Balzer (<a href="#ref-petersen2014" role="doc-biblioref">2014</a>)</span>.</p>
+</section>
+<section id="sec-rationale-deliverable" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Rationale of Final Deliverable</h1>
+<blockquote class="blockquote">
+<p>Correlation does not imply causation.</p>
+</blockquote>
+<p><span class="citation" data-cites="lubbke2020">Lübke et al. (<a href="#ref-lubbke2020" role="doc-biblioref">2020</a>)</span> have indicated that the above mantra can be overcome with the aid of the learning of concepts in causal inference. Yet, as educators in statistics, we have not fully addressed the teaching of these concepts during introductory courses <span class="citation" data-cites="cummiskey2020">(<a href="#ref-cummiskey2020" role="doc-biblioref">Cummiskey et al. 2020</a>)</span>. Therefore, if we start thin</p>
+</section>
+<section id="sec-website-overview" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Website Overview</h1>
 <ul>
 <li><strong><a href="./website/01-intro-slides.html#sec-intro">Introductory Slides:</a></strong> These slides were preliminary before shaping them into our final deliverable.</li>
 <li><strong><a href="./website/02-course-outline.html#sec-course-outline">Course Outline:</a></strong> A general course outline including course description and rationale, general learning goals, intended student audience, course format, assessment criteria and grading.</li>
 <li><strong><a href="./website/03-course-roadmap.html#sec-course-roadmap">Course Roadmap:</a></strong> The roadmap including the above eight stages with brief explanations.</li>
 <li><strong><a href="./website/04-course-lesson-plan.html#sec-course-lesson-plan">Limited Course Lesson Plan:</a></strong> A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.</li>
 </ul>
+</section>
+<section id="sec-license" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> License</h1>
+<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" width="150" src="img/by-nc-sa.png"></a></p>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-cummiskey2020" class="csl-entry" role="listitem">
+Cummiskey, Kevin, Bryan Adams, James Pleuss, Dusty Turner, Nicholas Clark, and Krista Watts and. 2020. <span>“Causal Inference in Introductory Statistics Courses.”</span> <em>Journal of Statistics Education</em> 28 (1): 2–8. <a href="https://doi.org/10.1080/10691898.2020.1713936">https://doi.org/10.1080/10691898.2020.1713936</a>.
+</div>
+<div id="ref-lubbke2020" class="csl-entry" role="listitem">
+Lübke, Karsten, Matthias Gehrke, Jörg Horst, and Gero Szepannek and. 2020. <span>“Why We Should Teach Causal Inference: Examples in Linear Regression with Simulated Data.”</span> <em>Journal of Statistics Education</em> 28 (2): 133–39. <a href="https://doi.org/10.1080/10691898.2020.1752859">https://doi.org/10.1080/10691898.2020.1752859</a>.
+</div>
+<div id="ref-petersen2014" class="csl-entry" role="listitem">
+Petersen, Maya, and Laura Balzer. 2014. <span>“Introduction to Causal Inference.”</span> <a href="https://ctml.berkeley.edu/introduction-causal-inference" class="uri">https://ctml.berkeley.edu/introduction-causal-inference</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -36,7 +36,7 @@ include-in-header:
 > "The goal of causal inference is to estimate the effect in a population of intervening on one variable, the treatment, on another variable, the outcome." [@cummiskey2020]
 
 ::: incremental
-- In <span style="color: purple;">introductory courses</span>, we must go beyond the usual warning <span style="color: purple;">"*correlation, does not imply causation*"
+- In <span style="color: purple;">introductory courses</span>, we must go beyond the usual warning <span style="color: purple;">"*correlation does not imply causation*"
 - What is the <span style="color: purple;">underlying process</span> that is generating the data?
 :::
 
