@@ -53,28 +53,28 @@
     "href": "website/slides/slides.html#challenges-ahead-2",
     "title": "Incorporating Causal Inference in Statistics Courses",
     "section": "5. Challenges ahead",
-    "text": "5. Challenges ahead\n\n\nUsing different textbooks to develop course material such as:\n\n“Causal Inference: What If” by Hernan (2024), a review on causal inference with (i.e., parametric) or without (i.e., non-parametric) models\n“A First Course in Causal Inference” by Ding (2024), a review on randomized and observational studies\n“Causal Inference: The Mixtape” by Cunningham (2021), which provides insights on regression discontinuity for quasi-experimentation"
+    "text": "5. Challenges ahead\n\n\nUsing different textbooks to develop course material such as:\n\n“Causal Inference: What If” by Hernán (2024), a review on causal inference with (i.e., parametric) or without (i.e., non-parametric) models\n“A First Course in Causal Inference” by Ding (2024), a review on randomized and observational studies\n“Causal Inference: The Mixtape” by Cunningham (2021), which provides insights on regression discontinuity for quasi-experimentation"
   },
   {
     "objectID": "website/slides/slides.html#reference-material",
     "href": "website/slides/slides.html#reference-material",
     "title": "Incorporating Causal Inference in Statistics Courses",
     "section": "6. Reference material",
-    "text": "6. Reference material\n\n\nCarver, R., M. Everson, J. Gabrosek, N. Horton, R. Lock, M. Mocko, A. Rossman, et al. 2016. Guidelines for Assessment and Instruction in Statistics Education: College Report 2016. American Statistical Association.\n\n\nCummiskey, Kevin, Bryan Adams, James Pleuss, Dusty Turner, Nicholas Clark, and Krista Watts and. 2020. “Causal Inference in Introductory Statistics Courses.” Journal of Statistics Education 28 (1): 2–8. https://doi.org/10.1080/10691898.2020.1713936.\n\n\nCunningham, Scott. 2021. Causal Inference: The Mixtape. Yale University Press. http://www.jstor.org/stable/j.ctv1c29t27.\n\n\nDing, P. 2024. A First Course in Causal Inference. Chapman; Hall/CRC. https://doi.org/10.1201/9781003484080.\n\n\nHernan, Miguel A. 2024. Causal Inference: What If. Edited by James M. Robins. Boca Raton.\n\n\nLu, Yonggang, Qiujie Zheng, and Daniel Quinn and. 2023. “Introducing Causal Inference Using Bayesian Networks and Do-Calculus.” Journal of Statistics and Data Science Education 31 (1): 3–17. https://doi.org/10.1080/26939169.2022.2128118.\n\n\nLübke, Karsten, Matthias Gehrke, Jörg Horst, and Gero Szepannek and. 2020. “Why We Should Teach Causal Inference: Examples in Linear Regression with Simulated Data.” Journal of Statistics Education 28 (2): 133–39. https://doi.org/10.1080/10691898.2020.1752859."
+    "text": "6. Reference material\n\n\nCarver, R., M. Everson, J. Gabrosek, N. Horton, R. Lock, M. Mocko, A. Rossman, et al. 2016. Guidelines for Assessment and Instruction in Statistics Education: College Report 2016. American Statistical Association.\n\n\nCummiskey, Kevin, Bryan Adams, James Pleuss, Dusty Turner, Nicholas Clark, and Krista Watts and. 2020. “Causal Inference in Introductory Statistics Courses.” Journal of Statistics Education 28 (1): 2–8. https://doi.org/10.1080/10691898.2020.1713936.\n\n\nCunningham, Scott. 2021. Causal Inference: The Mixtape. Yale University Press. https://mixtape.scunning.com/.\n\n\nDing, P. 2024. A First Course in Causal Inference. Chapman; Hall/CRC. https://doi.org/10.1201/9781003484080.\n\n\nHernán, Miguel A. 2024. Causal Inference: What If. Edited by James M. Robins. Boca Raton.\n\n\nLu, Yonggang, Qiujie Zheng, and Daniel Quinn and. 2023. “Introducing Causal Inference Using Bayesian Networks and Do-Calculus.” Journal of Statistics and Data Science Education 31 (1): 3–17. https://doi.org/10.1080/26939169.2022.2128118.\n\n\nLübke, Karsten, Matthias Gehrke, Jörg Horst, and Gero Szepannek and. 2020. “Why We Should Teach Causal Inference: Examples in Linear Regression with Simulated Data.” Journal of Statistics Education 28 (2): 133–39. https://doi.org/10.1080/10691898.2020.1752859."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Incorporating Causal Inference in Statistics Courses",
     "section": "",
-    "text": "Details of CanCOTS 2025 including this working group\n\n\n\n\nEvent: Canadian Conference on Teaching Statistics (CanCOTS) 2025.\nHeld by: Statistical Education section of the Statistical Society of Canada (SSC).\nDates: Wednesday and Thusday, June 11 and 12, 2025.\nPlace: HEC Montréal, Québec, Canada.\nWorking Group’s Topic: Incorporating Causal Inference in Statistics Courses\nCollaborators: G. Alexi Rodríguez-Arelis (UBC) and Philippe Boileau (McGill University).\n\n\n\n\n1 About This Website\nThis Quarto website contains the final deliverable from one of the working groups of the first edition of the Canadian Conference on Teaching Statistics (CanCOTS), held in the summer of 2025 at HEC Montréal. CanCOTS is primarily a participant-driven working meeting that follows the format of a curated unconference. In this style of unconference, various working groups focus on priority areas of interest related to educational topics in statistics. All groups are expected to produce concrete deliverables addressing these priority areas, which may include exercise banks, curriculum guidelines, sample learning activities, and assessment items. Each working group has a leader who is responsible for overseeing collaborative efforts and shaping the final deliverable.\n\n\n\nImage by manfredsteger via Pixabay.\n\n\nCanCOTS 2025 began with an initial roundtable discussion that brought all participants together. During this session, each group leader presented their educational topic along with a proposal for the final deliverable. Following these presentations, participants split into smaller working groups based on their interests. During the working group meetings, participants—including the group leaders—discussed and brainstormed ideas to develop the final deliverable. Additionally, a comprehensive list of potential resources was compiled to ensure that the deliverable contains fair and scholarly content.\nCanCOTS 2025 featured six different working groups, each focusing on a specific area of interest. One of these groups prioritized incorporating causal inference into statistics courses. As a result, the final deliverable for this working group was a curriculum guideline for developing a fourth-year undergraduate course in causal inference. At the start of the unconference, the specifics of the final deliverable were outlined as follows:\n\nAn overall course curriculum on causal inference (including lesson plan, learning objectives, and an overall structure of course content) with two fundamental pillars: experimentation and quasi-experimentation. A stretch goal of this working group would be incorporating data science-flavored topics such as A/B testing.\n\nNevertheless, during the group meetings, the specifics of the final deliverable were revised to go beyond experimentation and quasi-experimentation to include observational studies. Additionally, the brainstorming sessions focused more on statistical perspectives rather than a data science approach. As a result, the final deliverable included in this repository has the following specifics:\n\nOur final deliverable is an overall fourth-year undergraduate course curriculum on causal inference (including a limited lesson plan, learning objectives, and an overall structure of the course) based on a general causal inference roadmap of eight stages: (1) research question, (2) causal model representing knowledge, (3) counterfactuals and causal parameter definition, (4) statistical model definition, (5) model fitting, (6) result interpretation, (7) data analysis report.\n\nThe above causal inference was inspired on one used in the course Introduction to Causal Inference by Petersen and Balzer (2014).\n\n\n2 Rationale of Final Deliverable\n\nCorrelation does not imply causation.\n\nLübke et al. (2020) have indicated that the above mantra can be overcome with the aid of the learning of concepts in causal inference. Yet, as educators in statistics, we have not fully addressed the teaching of these concepts during introductory courses (Cummiskey et al. 2020). Therefore, if we start thin\n\n\n3 Website Overview\n\nIntroductory Slides: These slides were preliminary before shaping them into our final deliverable.\nCourse Outline: A general course outline including course description and rationale, general learning goals, intended student audience, course format, assessment criteria and grading.\nCourse Roadmap: The roadmap including the above eight stages with brief explanations.\nLimited Course Lesson Plan: A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.\n\n\n\n4 License\nThis work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\n\n\n\n\n\n\nReferences\n\nCummiskey, Kevin, Bryan Adams, James Pleuss, Dusty Turner, Nicholas Clark, and Krista Watts and. 2020. “Causal Inference in Introductory Statistics Courses.” Journal of Statistics Education 28 (1): 2–8. https://doi.org/10.1080/10691898.2020.1713936.\n\n\nLübke, Karsten, Matthias Gehrke, Jörg Horst, and Gero Szepannek and. 2020. “Why We Should Teach Causal Inference: Examples in Linear Regression with Simulated Data.” Journal of Statistics Education 28 (2): 133–39. https://doi.org/10.1080/10691898.2020.1752859.\n\n\nPetersen, Maya, and Laura Balzer. 2014. “Introduction to Causal Inference.” https://ctml.berkeley.edu/introduction-causal-inference."
+    "text": "Details of CanCOTS 2025 including this working group\n\n\n\n\nEvent: Canadian Conference on Teaching Statistics (CanCOTS) 2025.\nHeld by: Statistical Education section of the Statistical Society of Canada (SSC).\nDates: Wednesday and Thusday, June 11 and 12, 2025.\nPlace: HEC Montréal, Québec, Canada.\nWorking Group’s Topic: Incorporating Causal Inference in Statistics Courses\nCollaborators: G. Alexi Rodríguez-Arelis (UBC) and Philippe Boileau (McGill University).\n\n\n\n\n1 About This Website\nThis Quarto website contains the final deliverable from one of the working groups of the first edition of the Canadian Conference on Teaching Statistics (CanCOTS), held in the summer of 2025 at HEC Montréal. CanCOTS is primarily a participant-driven working meeting that follows the format of a curated unconference. In this style of unconference, various working groups focus on priority areas of interest related to educational topics in statistics. All groups are expected to produce concrete deliverables addressing these priority areas, which may include exercise banks, curriculum guidelines, sample learning activities, and assessment items. Each working group has a leader who is responsible for overseeing collaborative efforts and shaping the final deliverable.\n\n\n\nImage by manfredsteger via Pixabay.\n\n\nCanCOTS 2025 began with an initial roundtable discussion that brought all participants together. During this session, each group leader presented their educational topic along with a proposal for the final deliverable. Following these presentations, participants split into smaller working groups based on their interests. During the working group meetings, participants—including the group leaders—discussed and brainstormed ideas to develop the final deliverable. Additionally, a comprehensive list of potential resources was compiled to ensure that the deliverable contains fair and scholarly content.\nCanCOTS 2025 featured six different working groups, each focusing on a specific area of interest. One of these groups prioritized incorporating causal inference into statistics courses. As a result, the final deliverable for this working group was a curriculum guideline for developing a fourth-year undergraduate course in causal inference. At the start of the unconference, the specifics of the final deliverable were outlined as follows:\n\nAn overall course curriculum on causal inference (including lesson plan, learning objectives, and an overall structure of course content) with two fundamental pillars: experimentation and quasi-experimentation. A stretch goal of this working group would be incorporating data science-flavored topics such as A/B testing.\n\nNevertheless, during the group meetings, the specifics of the final deliverable were revised to go beyond experimentation and quasi-experimentation to include observational studies. Additionally, the brainstorming sessions focused more on statistical perspectives rather than a data science approach. As a result, the final deliverable included in this repository has the following specifics:\n\nOur final deliverable is an overall fourth-year undergraduate course curriculum on causal inference (including a limited lesson plan, learning objectives, and an overall structure of the course) based on a general causal inference roadmap of eight stages: (1) research question, (2) causal model representing knowledge, (3) counterfactuals and causal parameter definition, (4) statistical model definition, (5) model fitting, (6) result interpretation, (7) data analysis report.\n\nThe above causal inference was inspired on one used in the course Introduction to Causal Inference by Petersen and Balzer (2014).\n\n\n2 Website Overview\n\nIntroductory Slides: These slides were preliminary before shaping them into our final deliverable.\nCourse Outline: A general course outline including course rationale, course description, general learning goals, intended student audience, course format, assessment criteria and grading.\nCourse Roadmap: The roadmap including the above eight stages with brief explanations.\nLimited Course Lesson Plan: A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.\n\n\n\n3 License\nThis work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\n\n\n\n\n\n\nReferences\n\nPetersen, Maya, and Laura Balzer. 2014. “Introduction to Causal Inference.” https://ctml.berkeley.edu/introduction-causal-inference."
   },
   {
     "objectID": "website/03-course-roadmap.html",
     "href": "website/03-course-roadmap.html",
     "title": "1 Course Roadmap",
     "section": "",
-    "text": "1 Course Roadmap",
+    "text": "1 Course Roadmap\nDAGS\nDAGs offer an intuitive yet rigorous way to represent causal assumptions, identify potential confounders, and guide study design.",
     "crumbs": [
       "Home",
       "Course Roadmap"
@@ -95,8 +95,8 @@
     "objectID": "website/02-course-outline.html#mandatory",
     "href": "website/02-course-outline.html#mandatory",
     "title": "1 Course Outline",
-    "section": "3.1 Mandatory",
-    "text": "3.1 Mandatory\n\nSecond-year level statistical inference course: Basic notions of hypothesis testing and confidence interval, along with basic frequentist tests (z-test, t-test, Chi-squared test). Something ideal to have as a prerequisite: notions on simulation-based techniques such as bootstrapping and permutation tests.\nThird-year level regression course: Basic ordinary least-squares (OLS) and binary logistic regression.\nThird-year (or second-year) level probability course: Basic notions of probability (independence and conditional probability) along with random variables (measures of central tendency and dispersion) and fundamental distributions (discrete and continuous).",
+    "section": "5.1 Mandatory",
+    "text": "5.1 Mandatory\n\nSecond-year level statistical inference course: Basic notions of hypothesis testing and confidence interval, along with basic frequentist tests (z-test, t-test, Chi-squared test). Something ideal to have as a prerequisite: notions on simulation-based techniques such as bootstrapping and permutation tests.\nThird-year level regression course: Basic ordinary least-squares (OLS) and binary logistic regression.\nThird-year (or second-year) level probability course: Basic notions of probability (independence and conditional probability) along with random variables (measures of central tendency and dispersion) and fundamental distributions (discrete and continuous).",
     "crumbs": [
       "Home",
       "Course Outline"
@@ -106,8 +106,8 @@
     "objectID": "website/02-course-outline.html#co-requisite",
     "href": "website/02-course-outline.html#co-requisite",
     "title": "1 Course Outline",
-    "section": "3.2 Co-requisite",
-    "text": "3.2 Co-requisite\nFourth-year level course in experimental design: Basic notions on experimental design (e.g., RCT).",
+    "section": "5.2 Co-requisite",
+    "text": "5.2 Co-requisite\nFourth-year level course in experimental design: Basic notions on experimental design (e.g., RCT).",
     "crumbs": [
       "Home",
       "Course Outline"
@@ -116,155 +116,155 @@
   {
     "objectID": "website/04-course-lesson-plan.html",
     "href": "website/04-course-lesson-plan.html",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "",
-    "text": "Image by manfredsteger via Pixabay.\n\n\nThis section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is limited in scope due to the following reasons:\n\nThe lesson plan encompasses comprehensive learning goals for each lecture throughout the entire term, with specific action verbs aligned with the revised Bloom’s taxonomy (Bloom et al. 1956) as defined by Anderson and Krathwohl (2001). This revised taxonomy organizes the six levels of the cognitive domain (related to learning) as follows:\n\nRemember: Recall information from long-term memory, including statistical concepts learned in previous courses.\nUnderstand: Comprehend the causal inference concepts covered in the classroom.\nApply: Implement these causal inference concepts in various practical scenarios.\nAnalyze: Identify parallels and use critical reasoning to establish patterns and connections. For example, this could involve comparing outputs from different strategies applied in the causal models taught in the course.\nEvaluate: Assess practical ideas based on established criteria and standards. This level may involve evaluating previously published causal studies.\nCreate: Develop new causal studies based on all the knowledge acquired throughout this course.\n\nEach week consists of two lecture sessions, each lasting one hour and twenty minutes.\nThe lesson plan connects each week to one of the eight stages outlined in the course roadmap. For reference, please revisit the corresponding section of the deliverable. This structure is consistent with the previously described course format.\nIn each lecture, we will aim to align the learning goals with specific scholarly content, such as textbooks or academic papers.\nThe lesson plan does not include detailed instructional components for each lecture, such as time allocation, learning strategies, or in-class activities.\nWhile we provide the course assessment structure (i.e., weights for assignments), this lesson plan does not elaborate on specific formative and summative assessments.\n\n\n\n\n\n\n\nA note on weeks 10, 11, 12, and 13!\n\n\n\nThe final four weeks of the course will not be used to introduce students to additional modeling techniques in causal inference (as outlined in stages 4 and 5 of the roadmap) or to discuss general guidelines for interpreting, reporting, and storytelling in causal studies (as detailed in stages 6, 7, and 8 of the roadmap). Instead, students are expected to focus on the following major deliverables:\n\nWeeks 10 and 11 will be dedicated to a team-based appraisal presentation of an already published causal study, utilizing the roadmap covered throughout the course. There will not be a written report; only an oral presentation is required.\nWeeks 12 and 13 will focus on a team-based final project where students will conduct their final causal study using a provided dataset and following the causal roadmap. Instead of a final oral presentation, a written report will be submitted to replace the in-class final exam.",
+    "text": "Image by manfredsteger via Pixabay.\n\n\nThis section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is limited in scope due to the following reasons:\n\nThe lesson plan encompasses comprehensive learning goals for each lecture throughout the entire term, with specific action verbs aligned with the revised Bloom’s taxonomy (Bloom et al. 1956) as defined by Anderson and Krathwohl (2001). This revised taxonomy organizes the six levels of the cognitive domain (related to learning) as follows:\n\nRemember: Recall information from long-term memory, including statistical concepts learned in previous courses.\nUnderstand: Comprehend the causal inference concepts covered in the classroom.\nApply: Implement these causal inference concepts in various practical scenarios.\nAnalyze: Identify parallels and use critical reasoning to establish patterns and connections. For example, this could involve comparing outputs from different strategies applied in the causal models taught in the course.\nEvaluate: Assess practical ideas based on established criteria and standards. This level may involve evaluating previously published causal studies.\nCreate: Develop new causal studies based on all the knowledge acquired throughout this course.\n\nEach week consists of two lecture sessions, each lasting one hour and twenty minutes.\nThe lesson plan connects each week to one or two of the eight stages outlined in the course roadmap. For reference, you can revisit the corresponding section of the deliverable. This structure is consistent with the previously described course format.\nIn each lecture, we will aim to align the learning goals with specific scholarly content, such as textbooks or academic papers.\nThe lesson plan does not include detailed instructional components for each lecture, such as time allocation, learning strategies, or in-class activities.\nWhile we provide the course assessment structure (i.e., weights for assignments), this lesson plan does not elaborate on specific formative and summative assessments.\n\n\n\n\n\n\n\nA note on weeks 10, 11, 12, and 13!\n\n\n\nThe final four weeks of the course will not be used to introduce students to additional modeling techniques in causal inference (as outlined in stages 4 and 5 of the roadmap) or to discuss general guidelines for interpreting, reporting, and storytelling in causal studies (as detailed in stages 6, 7, and 8 of the roadmap). Instead, students are expected to focus on the following major deliverables:\n\nWeeks 10 and 11 will be dedicated to a team-based appraisal presentation of an already published causal study, utilizing the roadmap covered throughout the course. There will not be a written report; only an oral presentation is required.\nWeeks 12 and 13 will focus on a team-based final project where students will conduct their final causal study using a provided dataset and following the causal roadmap. Instead of a final oral presentation, a written report will be submitted to replace the in-class final exam.\n\nTherefore, for the above week, there will not be mapped scholarly materials.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
-    "objectID": "website/04-course-lesson-plan.html#week-1-know-your-research-question-step-1-in-the-roadmap",
-    "href": "website/04-course-lesson-plan.html#week-1-know-your-research-question-step-1-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
-    "section": "2.1 Week 1: Know your research question! (STEP 1 in the roadmap)",
-    "text": "2.1 Week 1: Know your research question! (STEP 1 in the roadmap)\n\nWhat is causal inference?\nDistinguishing between causal and association research questions.\nHigh-level overview of the causal roadmap.\nProviding real-life examples of research studies.",
+    "objectID": "website/04-course-lesson-plan.html#know-your-research-question-stage-1-in-the-roadmap",
+    "href": "website/04-course-lesson-plan.html#know-your-research-question-stage-1-in-the-roadmap",
+    "title": "1 Course Lesson Plan",
+    "section": "2.1 Know your research question! (stage 1 in the roadmap)",
+    "text": "2.1 Know your research question! (stage 1 in the roadmap)\nDuring week 1, the instructor is expected to introduce students to a foundational mindset in causal inference, which will be linked to the course’s inferential roadmap. The primary goal for this week is to help students develop the skill to distinguish between statistical inquiries involving association or causation in scientific research. Additionally, students will be introduced to the causal roadmap, which consists of eight stages: (1) research question, (2) causal model representing knowledge, (3) counterfactuals and causal parameter definition, (4) statistical model definition, (5) model fitting, (6) result interpretation, (7) data analysis report. This roadmap will serve as the main pillar of the course’s learning strategy.\n\n\n\nImage by Manfred Stege via Pixabay.\n\n\nFurthermore, students will explore real-world examples to understand that causal inference is not merely an isolated statistical technique for modelling data (such as solely fitting ordinary-least squares or binary logistic regression to a dataset). Instead, it represents a comprehensive thought process about counterfactual outcomes (i.e., potential values of \\(Y\\)) and potential treatment interventions (i.e., potential values of \\(X\\)). By the end of this week, students should be able to comprehend the philosophical and practical differences between asking:\n\nIs \\(X\\) associated with \\(Y\\)?\n\nand\n\nDoes \\(X\\) cause \\(Y\\)?\n\n\n\n\n\n\n\nImportant\n\n\n\nRecognizing the statistical difference between the above two statements is crucial across all scientific disciplines in the practice of causal inference. You can check Cummiskey et al. (2020) and Lübke et al. (2020) for further elaboration on this matter.\n\n\n\n2.1.1 Lecture 1\nBy the end of this lecture, students should be able to:\n\nDescribe what causal inference is along with its usefulness in scientific research (remember level).\nExplain how causation and association differ via practical examples (understand level).\nClassify different types of research questions in terms causation and association (understand level).\nIdentify the components of a causal questions, e.g., treatment, outcome, and population.\n\nThe above goals can be mapped to the following materials:\n\nChapter 2 (Research Questions) from Huntington-Klein (2021) and Chapter 1 (A definition of causal effect) from Hernán (2024) and Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1a - Why Bother with Causal Inference?) from Petersen and Balzer (2014).\nChapter 1 (Correlation, Association, and the Yule-Simpson Paradox) from Ding (2024) and Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1b - Causal vs. Statistical inference) from Petersen and Balzer (2014).\nChapter 1 (Introduction - Do Not Confuse Correlation with Causality) from Cunningham (2021) and Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1c: The Causal Roadmap Steps 0-3) from Petersen and Balzer (2014).\nChapters 2 (Randomized Experiments) and 3 (Observational Studies) from Hernán (2024) and Chapter 2 (Potential Outcomes) from Ding (2024).\n\n\n\n2.1.2 Lecture 2\nBy the end of this lecture, students should be able to:\n\nExplain the steps of the causal inference roadmap (understand level).\nExamine real-life study descriptions to identify whether they pose a causal or association question (analyze level).\nFormulate well-structured causal questions based on a given observational or experimental context. (create level).\nAssess the validity and clarity of causal questions in peer-reviewed studies (evaluate level).\n\nThe above goals can be mapped to the following materials:\n\nRoadmap Overview & Roadmap Step 0 - Research Question (Lecture 1c - The Causal Roadmap) from Petersen and Balzer (2014). Recall that the roadmap for this course is inspired by this reference. Hence, this material can be used as a baseline to introduce our roadmap.\nFor this learning goal, the instructor could provide a summary of the following four published papers (two of which pose causal questions, whereas the other two pose association questions):\n\n\nCausal questions:\n\n“Does Compulsory School Attendance Affect Schooling and Earnings?” from Angrist and Krueger (1991).\n“Using Geographic Variation in College Proximity to Estimate the Return to Schooling” from Card (1995).\n\nAssociation questions:\n\n“Association of Animal and Plant Protein Intake With All-Cause and Cause-Specific Mortality” from Song et al. (2016).\n“Association between Sleep Duration and Mortality among Adults with Type 2 Diabetes: A Prospective Cohort Study” from Wang et al. (2020).\n\n\n\nRoadmap Overview & Roadmap Step 0 - Research Question (Lecture 1c - The Causal Roadmap) from Petersen and Balzer (2014).\nMorgan and Winship (2007) provide a fair list of referenced examples in Chapter 1 (Introduction), specifically in sections 1.3.1 (Broad Examples from Sociology, Economics, and Political Science) and 1.3.2 (Narrow and Specific Examples).",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
-    "objectID": "website/04-course-lesson-plan.html#week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap",
-    "href": "website/04-course-lesson-plan.html#week-2-using-graphical-models-to-depict-causality-step-2-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
-    "section": "2.2 Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)",
-    "text": "2.2 Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)\n\nIntroduction to directed acyclic graphs (DAGs).\nBegin getting familiar with the DAG concepts so students can start building their own DAGs.\nWe will use real-life examples (e.g., research studies) to start exercising the DAG making.\nDifferences between experimental, quasi-experimental, and observational studies",
+    "objectID": "website/04-course-lesson-plan.html#using-graphical-models-to-depict-causality-stage-2-in-the-roadmap",
+    "href": "website/04-course-lesson-plan.html#using-graphical-models-to-depict-causality-stage-2-in-the-roadmap",
+    "title": "1 Course Lesson Plan",
+    "section": "2.2 Using graphical models to depict causality (stage 2 in the roadmap)",
+    "text": "2.2 Using graphical models to depict causality (stage 2 in the roadmap)\nDuring Week 2, students will have their first exposure to directed acyclic graphs (DAGs). According to the course roadmap, DAGs are graphical models that represent knowledge about causal inquiries, which we are expected to develop in collaboration with subject-matter experts. We will view DAGs as essential tools for visualizing and reasoning about causal relationships.\n\n\n\nImage by Manfred Stege via Pixabay.\n\n\nThe week will begin with a formal introduction to DAG syntax and terminology. After that, students will engage in hands-on practice constructing DAGs based on real-world scenarios from various scientific fields. Additionally, we will differentiate between experimental, quasi-experimental, and observational studies to demonstrate how DAGs can help identify assumptions in different study designs. By the end of the week, students should understand why DAGs offer valuable insights into causal logic, which will be beneficial for the subsequent stages of the course roadmap.\n\n2.2.1 Lecture 3\nBy the end of this lecture, students should be able to:\n\nExplain key components of DAGs, including nodes, directed edges, and acyclic structure (understand level).\nIllustrate how DAGs represent causal assumptions and the concept of d-separation (understand level).\nCompare DAGs derived from experimental, quasi-experimental, and observational designs to assess differences in identifiability (analyze level).\nConstruct simple DAGs to represent real-life study scenarios (analyze level).\n\nThe above goals can be mapped to the following materials:\n\nChapter 6 (Graphical Representation of Causal Effects) from Hernán (2024) and Chapter 6 (Causal Diagrams) from Huntington-Klein (2021).\nChapter 6 (Graphical Representation of Causal Effects) from Hernán (2024).\nThe following academic papers can be used to develop material to address this goal:\n\n\n“How to develop causal directed acyclic graphs for observational health research: a scoping review” by Poppe et al. (2025).\n“Reducing bias in experimental ecology through directed acyclic graphs” by Arif and Massey (2023)\n“Utilizing Causal Diagrams across Quasi-Experimental Approaches” by Arif and MacNeil (2022).\n\n\nChapter 7 (Drawing Causal Diagrams) from Huntington-Klein (2021).\n\n\n\n2.2.2 Lecture 4\nBy the end of this lecture, students should be able to:\n\nCreate DAGs to represent hypothetical causal mechanisms based on subject-matter expertise (create level).\nIdentify common structures in DAGs such as confounding, mediating, backdoor criterion, and colliding paths (analyze level),\nEvaluate the adequacy of DAGs constructed by peers or drawn from published studies, focusing on clarity and underlying assumptions (evaluate level).\nDifferentiate between experimental, quasi-experimental, and observational study designs using DAGs to illustrate assumptions and limitations (understand level).\n\nThe above goals can be mapped to the following materials:\n\nTo address this goal, the students could have hands-on practice with the cases depicted by Morgan and Winship (2007) provide a fair list of referenced examples in Chapter 1 (Introduction), specifically in sections 1.3.1 (Broad Examples from Sociology, Economics, and Political Science).\nChapter 8 (Causal Paths and Closing Back Doors) from Huntington-Klein (2021), Chapter 7 (Confounding) from (hernan202?), and Chapter 1 (Causal Graphs, Identification, and Models of Causal Exposure) from Morgan and Winship (2007).\nTo address this goal, students are expected to assess the DAGs delivered in goal (1) while applying the concepts addressed in goal (2).\nThe developed material from lecture 3, to address the respective goal (3), can be used to fulfil this goal.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-3-introduction-to-counterfactuals-step-3-in-the-roadmap",
     "href": "website/04-course-lesson-plan.html#week-3-introduction-to-counterfactuals-step-3-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.3 Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)",
     "text": "2.3 Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)\n\nThis week, we can start using programming to code up simulations for the structural causal model, counterfactuals, and causal parameters.\nWe follow these steps:\n\nDefine the DAG.\nDefine a structural causal model based on the DAG.\nDefine counterfactuals based on the structural causal model.\nDefine causal parameters based on the counterfactuals.\nRelate the causal parameters to the primary research question.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-4-identifiability-conditions",
     "href": "website/04-course-lesson-plan.html#week-4-identifiability-conditions",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.4 Week 4: Identifiability conditions",
     "text": "2.4 Week 4: Identifiability conditions\n\nEnsuring the causal parameter coincides with the statistical parameter, i.e., an identifiability assumption: no unmeasured confounding (coming from the DAG, consult with experts), positivity (probability that every study unit could be in the control or treatment).\nWe plan to talk about d-separation and back-door criterion.\nWe also plan to discuss different vocabulary in different fields (epidemiology, experimental design, econometrics). For example, SUTVA, etc. It would be useful to have a discussion of what sets of assumptions are equivalent.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap",
     "href": "website/04-course-lesson-plan.html#week-5-g-estimation-for-causal-parameter-steps-4-and-5-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.5 Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)",
     "text": "2.5 Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)\n\nFocus on ATE, average treatment effect.\nIntroduction to G-estimation: parametric and non-parametric.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap",
     "href": "website/04-course-lesson-plan.html#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.6 Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)",
     "text": "2.6 Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)\n\nIntroduction to inverse probability weights (IPWs): parametric and non-parametric.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap",
     "href": "website/04-course-lesson-plan.html#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.7 Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)",
     "text": "2.7 Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)\n\nIntroduction to causal mediation analysis.\nParametric and non-parametric.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap",
     "href": "website/04-course-lesson-plan.html#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.8 Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)",
     "text": "2.8 Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-9-storytelling-step-8-in-the-roadmap",
     "href": "website/04-course-lesson-plan.html#week-9-storytelling-step-8-in-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.9 Week 9: Storytelling (STEP 8 in the roadmap)",
     "text": "2.9 Week 9: Storytelling (STEP 8 in the roadmap)",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-10-appraisal-of-causal-analysis-using-the-roadmap",
     "href": "website/04-course-lesson-plan.html#week-10-appraisal-of-causal-analysis-using-the-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.10 Week 10: Appraisal of causal analysis using the roadmap",
     "text": "2.10 Week 10: Appraisal of causal analysis using the roadmap\n\nReview an existing causal analysis (i.e., a published research paper) using the causal roadmap covered in class.\nThis is a team-based work.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-11-presentation-of-appraisals",
     "href": "website/04-course-lesson-plan.html#week-11-presentation-of-appraisals",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.11 Week 11: Presentation of appraisals",
     "text": "2.11 Week 11: Presentation of appraisals\nTeam presentations.",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap",
     "href": "website/04-course-lesson-plan.html#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.12 Week 12: Analysis of worked examples while contrasting them with the causal roadmap",
     "text": "2.12 Week 12: Analysis of worked examples while contrasting them with the causal roadmap\n\nThis is a team-based work (using the previous appraisal teams).\nGeneral overview of the final project (first lecture).\nIntroduction to the datasets (first lecture).\nPerform a case study, using a dataset not available to students to pick from (it will be the same dataset for all teams), using the causal roadmap (second lecture).",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
     "objectID": "website/04-course-lesson-plan.html#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii",
     "href": "website/04-course-lesson-plan.html#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii",
-    "title": "1 Limited Course Lesson Plan",
+    "title": "1 Course Lesson Plan",
     "section": "2.13 Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)",
-    "text": "2.13 Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)\n\nWe will use the last two lectures for in-class group work on the final project (i.e., whose deliverable is a written report).\nNote that there is no final exam in this course.",
+    "text": "2.13 Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)\n\nWe will use the last two lectures for in-class group work on the final project (i.e., whose deliverable is a written report).\nNote that there is no final exam in this course.\n\n“Estimating Causal Effects from Epidemiological Data” from Hernán and Robins (2006).",
     "crumbs": [
       "Home",
-      "Limited Course Lesson Plan"
+      "Course Lesson Plan"
     ]
   },
   {
@@ -272,6 +272,6 @@
     "href": "references.html",
     "title": "Overall References",
     "section": "",
-    "text": "Anderson, Lorin W., and David R. Krathwohl, eds. 2001. A Taxonomy for Learning, Teaching, and Assessing. A Revision of Bloom’s Taxonomy of Educational Objectives. 2nd ed. New York: Allyn & Bacon.\n\n\nBloom, B. S., M. B. Engelhart, E. J. Furst, W. H. Hill, and D. R. Krathwohl. 1956. Taxonomy of Educational Objectives. The Classification of Educational Goals. Handbook 1: Cognitive Domain. New York: Longmans Green.\n\n\nCarver, R., M. Everson, J. Gabrosek, N. Horton, R. Lock, M. Mocko, A. Rossman, et al. 2016. Guidelines for Assessment and Instruction in Statistics Education: College Report 2016. American Statistical Association.\n\n\nCummiskey, Kevin, Bryan Adams, James Pleuss, Dusty Turner, Nicholas Clark, and Krista Watts and. 2020. “Causal Inference in Introductory Statistics Courses.” Journal of Statistics Education 28 (1): 2–8. https://doi.org/10.1080/10691898.2020.1713936.\n\n\nCunningham, Scott. 2021. Causal Inference: The Mixtape. Yale University Press. http://www.jstor.org/stable/j.ctv1c29t27.\n\n\nDing, P. 2024. A First Course in Causal Inference. Chapman; Hall/CRC. https://doi.org/10.1201/9781003484080.\n\n\nHernan, Miguel A. 2024. Causal Inference: What If. Edited by James M. Robins. Boca Raton.\n\n\nLu, Yonggang, Qiujie Zheng, and Daniel Quinn and. 2023. “Introducing Causal Inference Using Bayesian Networks and Do-Calculus.” Journal of Statistics and Data Science Education 31 (1): 3–17. https://doi.org/10.1080/26939169.2022.2128118.\n\n\nLübke, Karsten, Matthias Gehrke, Jörg Horst, and Gero Szepannek and. 2020. “Why We Should Teach Causal Inference: Examples in Linear Regression with Simulated Data.” Journal of Statistics Education 28 (2): 133–39. https://doi.org/10.1080/10691898.2020.1752859.\n\n\nPetersen, Maya, and Laura Balzer. 2014. “Introduction to Causal Inference.” https://ctml.berkeley.edu/introduction-causal-inference."
+    "text": "Anderson, Lorin W., and David R. Krathwohl, eds. 2001. A Taxonomy for Learning, Teaching, and Assessing. A Revision of Bloom’s Taxonomy of Educational Objectives. 2nd ed. New York: Allyn & Bacon.\n\n\nAngrist, Joshua D., and Alan B. Krueger. 1991. “Does Compulsory School Attendance Affect Schooling and Earnings?” The Quarterly Journal of Economics 106 (4): 979–1014. https://doi.org/10.2307/2937954.\n\n\nArif, Suchinta, and M. Aaron MacNeil. 2022. “Utilizing Causal Diagrams Across Quasi-Experimental Approaches.” Ecosphere 13 (4): e4009. https://doi.org/https://doi.org/10.1002/ecs2.4009.\n\n\nArif, Suchinta, and Melanie Duc Bo Massey. 2023. “Reducing Bias in Experimental Ecology Through Directed Acyclic Graphs.” Ecology and Evolution 13 (3): e9947. https://doi.org/https://doi.org/10.1002/ece3.9947.\n\n\nBloom, B. S., M. B. Engelhart, E. J. Furst, W. H. Hill, and D. R. Krathwohl. 1956. Taxonomy of Educational Objectives. The Classification of Educational Goals. Handbook 1: Cognitive Domain. New York: Longmans Green.\n\n\nCard, David. 1995. “Using Geographic Variation in College Proximity to Estimate the Return to Schooling.” Aspects of Labor Market Behaviour: Essays in Honour of John Vanderkamp, 201–23.\n\n\nCarver, R., M. Everson, J. Gabrosek, N. Horton, R. Lock, M. Mocko, A. Rossman, et al. 2016. Guidelines for Assessment and Instruction in Statistics Education: College Report 2016. American Statistical Association.\n\n\nCummiskey, Kevin, Bryan Adams, James Pleuss, Dusty Turner, Nicholas Clark, and Krista Watts and. 2020. “Causal Inference in Introductory Statistics Courses.” Journal of Statistics Education 28 (1): 2–8. https://doi.org/10.1080/10691898.2020.1713936.\n\n\nCunningham, Scott. 2021. Causal Inference: The Mixtape. Yale University Press. https://mixtape.scunning.com/.\n\n\nDing, P. 2024. A First Course in Causal Inference. Chapman; Hall/CRC. https://doi.org/10.1201/9781003484080.\n\n\nHernán, Miguel A. 2024. Causal Inference: What If. Edited by James M. Robins. Boca Raton.\n\n\nHernán, Miguel A., and James M. Robins. 2006. “Estimating Causal Effects from Epidemiological Data.” Journal of Epidemiology and Community Health 60 (7): 578–86. https://doi.org/10.1136/jech.2004.029496.\n\n\nHuntington-Klein, N. 2021. The Effect: An Introduction to Research Design and Causality. CRC Press. https://theeffectbook.net/index.html.\n\n\nLu, Yonggang, Qiujie Zheng, and Daniel Quinn and. 2023. “Introducing Causal Inference Using Bayesian Networks and Do-Calculus.” Journal of Statistics and Data Science Education 31 (1): 3–17. https://doi.org/10.1080/26939169.2022.2128118.\n\n\nLübke, Karsten, Matthias Gehrke, Jörg Horst, and Gero Szepannek and. 2020. “Why We Should Teach Causal Inference: Examples in Linear Regression with Simulated Data.” Journal of Statistics Education 28 (2): 133–39. https://doi.org/10.1080/10691898.2020.1752859.\n\n\nMorgan, Stephen L., and Christopher Winship. 2007. Counterfactuals and Causal Inference: Methods and Principles for Social Research. 1st ed. New York: Cambridge University Press.\n\n\nPetersen, Maya, and Laura Balzer. 2014. “Introduction to Causal Inference.” https://ctml.berkeley.edu/introduction-causal-inference.\n\n\nPoppe, Louise, Johan Steen, Wen Wei Loh, Geert Crombez, Fien De Block, Noortje Jacobs, Peter W. G. Tennant, Jelle Van Cauwenberg, and Annick L. De Paepe. 2025. “How to Develop Causal Directed Acyclic Graphs for Observational Health Research: A Scoping Review.” Health Psychology Review 19 (1): 45–65. https://doi.org/10.1080/17437199.2024.2402809.\n\n\nSong, Mingyang, Teresa T. Fung, Frank B. Hu, Walter C. Willett, Valter D. Longo, Andrew T. Chan, and Edward L. Giovannucci. 2016. “Association of Animal and Plant Protein Intake with All-Cause and Cause-Specific Mortality.” JAMA Internal Medicine 176 (10): 1453.\n\n\nWang, Yafeng, Wentao Huang, Adrienne O’Neil, Yutao Lan, Dagfinn Aune, Wei Wang, Chuanhua Yu, and Xiong Chen. 2020. “Association Between Sleep Duration and Mortality Risk Among Adults with Type 2 Diabetes: A Prospective Cohort Study.” Diabetologia 63 (11): 2292–2304."
   }
 ]

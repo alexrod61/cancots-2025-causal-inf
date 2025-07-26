@@ -32,16 +32,10 @@ Nevertheless, during the group meetings, the specifics of the final deliverable 
 
 The above causal inference was inspired on one used in the course *Introduction to Causal Inference* by @petersen2014.
 
-# Rationale of Final Deliverable {#sec-rationale-deliverable}
-
-> Correlation does not imply causation.
-
-@lubbke2020 have indicated that the above mantra can be overcome with the aid of the learning of concepts in causal inference. Yet, as educators in statistics, we have not fully addressed the teaching of these concepts during introductory courses [@cummiskey2020]. Therefore, if we start thin
-
 # Website Overview {#sec-website-overview}
 
 - **[Introductory Slides:](website/01-intro-slides.qmd#sec-intro)** These slides were preliminary before shaping them into our final deliverable.
-- **[Course Outline:](website/02-course-outline.qmd#sec-course-outline)** A general course outline including course description and rationale, general learning goals, intended student audience, course format, assessment criteria and grading.
+- **[Course Outline:](website/02-course-outline.qmd#sec-course-outline)** A general course outline including course rationale, course description, general learning goals, intended student audience, course format, assessment criteria and grading.
 - **[Course Roadmap:](website/03-course-roadmap.qmd#sec-course-roadmap)** The roadmap including the above eight stages with brief explanations.
 - **[Limited Course Lesson Plan:](website/04-course-lesson-plan.qmd#sec-course-lesson-plan)** A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.
 

@@ -1,5 +1,13 @@
 # Course Outline {#sec-course-outline}
 
+# Course Rationale
+
+> Correlation does not imply causation.
+
+@lubbke2020 have indicated that the above mantra can be overcome with the aid of the learning of concepts in causal inference. Yet, as educators in statistics, we have not fully addressed the teaching of these concepts during introductory courses [@cummiskey2020]. Therefore, if we start thin
+
+# Course Description
+
 # High-Level Course Goals
 
 We used Bloom’s taxonomy (cognitive skills are within brackets):

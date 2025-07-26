@@ -1,2 +1,6 @@
 # Course Roadmap {#sec-course-roadmap}
 
+
+DAGS
+
+DAGs offer an intuitive yet rigorous way to represent causal assumptions, identify potential confounders, and guide study design.

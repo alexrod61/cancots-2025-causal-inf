@@ -1,7 +1,6 @@
-# Limited Course Lesson Plan {#sec-course-lesson-plan}
+# Course Lesson Plan {#sec-course-lesson-plan}
 
 ![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-to-learn-3674104/).](img/sessions.png){fig-align="center" width=80%}
-
 
 This section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is **limited** in scope due to the following reasons:
 
@@ -15,10 +14,10 @@ This section of the final deliverable presents a concise thirteen-week lesson pl
   6. **Create:** Develop new causal studies based on all the knowledge acquired throughout this course.
 
 - Each week consists of two lecture sessions, each lasting one hour and twenty minutes.
-- The lesson plan connects each week to one of the eight stages outlined in the course roadmap. For reference, please revisit [the corresponding section of the deliverable](03-course-roadmap.qmd#sec-course-roadmap). This structure is consistent with the previously described [course format](02-course-outline.qmd#sec-course-format).
+- The lesson plan connects each week to one or two of the eight stages outlined in the course roadmap. For reference, you can revisit [the corresponding section of the deliverable](03-course-roadmap.qmd#sec-course-roadmap). This structure is consistent with the previously described [course format](02-course-outline.qmd#sec-course-format).
 - In each lecture, we will aim to align the learning goals with specific scholarly content, such as textbooks or academic papers.
 - The lesson plan **does not** include detailed instructional components for each lecture, such as time allocation, learning strategies, or in-class activities.
-- While we provide the course assessment structure (i.e., weights for assignments), this lesson plan **does not** elaborate on specific formative and summative assessments.
+- While we provide the [course assessment structure](02-course-outline.qmd#sec-course-assessment) (i.e., weights for assignments), this lesson plan **does not** elaborate on specific formative and summative assessments.
 
 ::: {.callout-important}
 ## A note on weeks 10, 11, 12, and 13!
@@ -27,23 +26,112 @@ The final four weeks of the course will not be used to introduce students to add
 
 - **Weeks 10 and 11** will be dedicated to a team-based **appraisal presentation** of an already published causal study, utilizing the roadmap covered throughout the course. There will not be a written report; only an oral presentation is required. 
 - **Weeks 12 and 13** will focus on a team-based final project where students will conduct **their final causal study** using a provided dataset and following the causal roadmap. Instead of a final oral presentation, a written report will be submitted to replace the in-class final exam.
+
+Therefore, for the above week, there will not be mapped scholarly materials.
 :::
 
 # Lecture Breakdown
 
-## Week 1: Know your research question! (STEP 1 in the roadmap)
+Below is a weekly breakdown of the learning goals per lecture. Additionally, we provide a brief summary of each learning week and outline the expectations at the end of the respective two lectures.
 
-- What is causal inference?
-- Distinguishing between causal and association research questions.
-- High-level overview of the causal roadmap.
-- Providing real-life examples of research studies.
+## Know your research question! (stage 1 in the roadmap)
 
-## Week 2: Using graphical models to depict causality (STEP 2 in the roadmap)
+During **week 1**, the instructor is expected to introduce students to a foundational mindset in causal inference, which will be linked to the [**course's inferential roadmap**](03-course-roadmap.qmd#sec-course-roadmap). The primary goal for this week is to help students develop the skill to distinguish between statistical inquiries involving association or causation in scientific research. Additionally, students will be introduced to the causal roadmap, which consists of eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. This roadmap will serve as the main pillar of the course's learning strategy.
 
-- Introduction to directed acyclic graphs (DAGs).
-- Begin getting familiar with the DAG concepts so students can start building their own DAGs.
-- We will use real-life examples (e.g., research studies) to start exercising the DAG making.
-- Differences between experimental, quasi-experimental, and observational studies
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-emotion-bored-6230197/).](img/question.png){width=30%}
+
+Furthermore, students will explore real-world examples to understand that causal inference is not merely an isolated statistical technique for modelling data (such as solely fitting ordinary-least squares or binary logistic regression to a dataset). Instead, it represents a comprehensive thought process about **counterfactual outcomes** (i.e., potential values of $Y$) and **potential treatment interventions** (i.e., potential values of $X$). By the end of this week, students should be able to comprehend the philosophical and practical differences between asking:
+
+> Is $X$ associated with $Y$?
+
+and
+
+> Does $X$ cause $Y$?
+
+::: {.callout-important}
+Recognizing the statistical difference between the above two statements is crucial across all scientific disciplines in the practice of causal inference. You can check @cummiskey2020 and @lubbke2020 for further elaboration on this matter. 
+:::
+
+### Lecture 1
+
+By the end of this lecture, students should be able to:
+
+1. **Describe** what causal inference is along with its usefulness in scientific research (**remember** level).
+2. **Explain** how causation and association differ via practical examples (**understand** level).
+3. **Classify** different types of research questions in terms causation and association (**understand** level).
+4. **Identify** the components of a causal questions, e.g., treatment, outcome, and population.
+
+The above goals can be mapped to the following materials:
+
+1. [Chapter 2 (Research Questions)](https://theeffectbook.net/ch-ResearchQuestions.html) from @huntington2021 and [Chapter 1 (A definition of causal effect)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024 and [Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1a - Why Bother with Causal Inference?)](https://drive.google.com/file/d/1FIGchk88ulZNnTQJfGAa5bXdS0TH4fgo/view) from @petersen2014.
+2. [Chapter 1 (Correlation, Association, and the Yule-Simpson Paradox)](https://arxiv.org/pdf/2305.18793) from @ding2024 and [Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1b - Causal vs. Statistical inference)](https://drive.google.com/file/d/1FIGchk88ulZNnTQJfGAa5bXdS0TH4fgo/view) from @petersen2014.
+3. [Chapter 1 (Introduction - Do Not Confuse Correlation with Causality)](https://mixtape.scunning.com/01-introduction#do-not-confuse-correlation-with-causality) from @cunningham2021 and [Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1c: The Causal Roadmap Steps 0-3)](https://drive.google.com/file/d/1FIGchk88ulZNnTQJfGAa5bXdS0TH4fgo/view) from @petersen2014.
+4. [Chapters 2 (Randomized Experiments) and 3 (Observational Studies)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024 and [Chapter 2 (Potential Outcomes)](https://arxiv.org/pdf/2305.18793) from @ding2024.
+
+### Lecture 2
+
+By the end of this lecture, students should be able to:
+
+1. **Explain** the steps of the causal inference roadmap (**understand** level).
+2. **Examine** real-life study descriptions to identify whether they pose a causal or association question (**analyze** level).
+3. **Formulate** well-structured causal questions based on a given observational or experimental context. (**create** level).
+4. **Assess** the validity and clarity of causal questions in peer-reviewed studies (**evaluate** level).
+
+The above goals can be mapped to the following materials:
+
+1.  [Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1c - The Causal Roadmap)](https://drive.google.com/file/d/1FIGchk88ulZNnTQJfGAa5bXdS0TH4fgo/view) from @petersen2014. Recall that the roadmap for this course is inspired by this reference. Hence, this material can be used as a baseline to introduce our roadmap.
+2. For this learning goal, the instructor could provide a summary of the following four published papers (two of which pose causal questions, whereas the other two pose association questions):
+  - **Causal questions:**
+    + "*Does Compulsory School Attendance Affect Schooling and Earnings?*" from @angrist1991.
+    + "*Using Geographic Variation in College Proximity to Estimate the Return to Schooling*" from @card1995.
+  - **Association questions:**
+    + "*Association of Animal and Plant Protein Intake With All-Cause and Cause-Specific Mortality*" from @song2016.
+    + "*Association between Sleep Duration and Mortality among Adults with Type 2 Diabetes: A Prospective Cohort Study*" from @wang2020.
+3. [Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1c - The Causal Roadmap)](https://drive.google.com/file/d/1FIGchk88ulZNnTQJfGAa5bXdS0TH4fgo/view) from @petersen2014.
+4. @morgan2007 provide a fair list of referenced examples in **Chapter 1 (Introduction)**, specifically in **sections 1.3.1 (Broad Examples from Sociology, Economics, and Political Science)** and **1.3.2 (Narrow and Specific Examples)**.
+
+## Using graphical models to depict causality (stage 2 in the roadmap)
+
+During **Week 2**, students will have their first exposure to directed acyclic graphs (DAGs). According to the course roadmap, DAGs are graphical models that represent knowledge about causal inquiries, which we are expected to develop in collaboration with subject-matter experts. We will view DAGs as essential tools for visualizing and reasoning about causal relationships.
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-teaching-to-learn-wiki-3976301/).](img/board.png){width="450"}
+
+The week will begin with a formal introduction to **DAG syntax and terminology**. After that, students will engage in hands-on practice constructing DAGs based on real-world scenarios from various scientific fields. Additionally, we will differentiate between **experimental**, **quasi-experimental**, and **observational studies** to demonstrate how DAGs can help identify assumptions in different study designs. By the end of the week, students should understand why DAGs offer valuable insights into causal logic, which will be beneficial for the subsequent stages of the course roadmap.
+
+### Lecture 3
+
+By the end of this lecture, students should be able to:
+
+1. Explain key components of DAGs, including nodes, directed edges, and acyclic structure (**understand** level).
+2. Illustrate how DAGs represent causal assumptions and the concept of d-separation (**understand** level).
+3. Compare DAGs derived from experimental, quasi-experimental, and observational designs to assess differences in identifiability (**analyze** level).
+4. Construct simple DAGs to represent real-life study scenarios (**analyze** level).
+
+The above goals can be mapped to the following materials:
+
+1. [Chapter 6 (Graphical Representation of Causal Effects)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024 and [Chapter 6 (Causal Diagrams)](https://theeffectbook.net/ch-CausalDiagrams.html) from @huntington2021.
+2. [Chapter 6 (Graphical Representation of Causal Effects)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024.
+3. The following academic papers can be used to develop material to address this goal:
+  - "*How to develop causal directed acyclic graphs for observational health research: a scoping review*" by @poppe2025.
+  - "*Reducing bias in experimental ecology through directed acyclic graphs*" by @arif2023
+  - "*Utilizing Causal Diagrams across Quasi-Experimental Approaches*" by @arif2022.
+4. [Chapter 7 (Drawing Causal Diagrams)](https://theeffectbook.net/ch-DrawingCausalDiagrams.html) from @huntington2021. 
+
+### Lecture 4
+
+By the end of this lecture, students should be able to:
+
+1. Create DAGs to represent hypothetical causal mechanisms based on subject-matter expertise (**create level**).
+2. Identify common structures in DAGs such as confounding, mediating, backdoor criterion, and colliding paths (**analyze** level),
+3. Evaluate the adequacy of DAGs constructed by peers or drawn from published studies, focusing on clarity and underlying assumptions (**evaluate** level).
+4. Differentiate between experimental, quasi-experimental, and observational study designs using DAGs to illustrate assumptions and limitations (**understand** level).
+
+The above goals can be mapped to the following materials:
+
+1. To address this goal, the students could have hands-on practice with the cases depicted  by @morgan2007 provide a fair list of referenced examples in **Chapter 1 (Introduction)**, specifically in **sections 1.3.1 (Broad Examples from Sociology, Economics, and Political Science)**.
+2. [Chapter 8 (Causal Paths and Closing Back Doors)](https://theeffectbook.net/ch-CausalPaths.html) from @huntington2021, [Chapter 7 (Confounding)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan202, and **Chapter 1 (Causal Graphs, Identification, and Models of Causal Exposure)** from @morgan2007.
+3. To address this goal, students are expected to assess the DAGs delivered in goal (1) while applying the concepts addressed in goal (2).
+4. The developed material from **lecture 3**, to address the respective **goal (3)**, can be used to fulfil this goal.
 
 ## Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)
 
@@ -100,3 +188,4 @@ Team presentations.
 - We will use the last two lectures for in-class group work on the final project (i.e., whose deliverable is a written report).
 - Note that there is no final exam in this course.
 
+"*Estimating Causal Effects from Epidemiological Data*" from @hernan2006.
