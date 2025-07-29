@@ -2,7 +2,7 @@
 title: "Course Roadmap"
 ---
 
-# Course Roadmap {#sec-course-roadmap}
+# The Roadmap {#sec-course-roadmap}
 
 DAGS
 

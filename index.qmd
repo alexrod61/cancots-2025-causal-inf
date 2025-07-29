@@ -34,10 +34,10 @@ The above causal inference was inspired on one used in the course *Introduction 
 
 # Website Overview {#sec-website-overview}
 
-- **[Introductory Slides:](website/01-intro-slides.qmd#sec-intro)** These slides were preliminary before shaping them into our final deliverable.
-- **[Course Outline:](website/02-course-outline.qmd#sec-course-outline)** A general course outline including course rationale, course description, general learning goals, intended student audience, course format, assessment criteria and grading.
-- **[Course Roadmap:](website/03-course-roadmap.qmd#sec-course-roadmap)** The roadmap including the above eight stages with brief explanations.
-- **[Limited Course Lesson Plan:](website/04-course-lesson-plan.qmd#sec-course-lesson-plan)** A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.
+- **[Introductory Slides:](website/01-intro-slides.qmd)** These slides were preliminary before shaping them into our final deliverable.
+- **[Course Outline:](website/02-course-outline.qmd)** A general course outline including course rationale, course description, general learning goals, intended student audience, course format, assessment criteria and grading.
+- **[Course Roadmap:](website/03-course-roadmap.qmd)** The roadmap including the above eight stages with brief explanations.
+- **[Limited Course Lesson Plan:](website/04-course-lesson-plan.qmd)** A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.
 
 # License {#sec-license}
 

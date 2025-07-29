@@ -2,8 +2,6 @@
 title: "Course Outline"
 ---
 
-# Course Outline {#sec-course-outline}
-
 # Course Rationale
 
 > Correlation does not imply causation.

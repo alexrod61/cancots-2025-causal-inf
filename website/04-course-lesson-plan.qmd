@@ -2,8 +2,6 @@
 title: "Course Lesson Plan"
 ---
 
-# Course Lesson Plan {#sec-course-lesson-plan}
-
 ![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-to-learn-3674104/).](img/sessions.png){fig-align="center" width=80%}
 
 This section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is **limited** in scope due to the following reasons:
