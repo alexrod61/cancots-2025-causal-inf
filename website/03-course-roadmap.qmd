@@ -1,5 +1,8 @@
-# Course Roadmap {#sec-course-roadmap}
+---
+title: "Course Roadmap"
+---
 
+# Course Roadmap {#sec-course-roadmap}
 
 DAGS
 

@@ -1,3 +1,7 @@
+---
+title: "Course Outline"
+---
+
 # Course Outline {#sec-course-outline}
 
 # Course Rationale
@@ -17,17 +21,21 @@ We used Bloom’s taxonomy (cognitive skills are within brackets):
 - Analyze a causal research question using the causal roadmap (ANALYSIS).
 - Evaluate publicly available causal study conclusions based on the causal roadmap (EVALUATION).
 
-# Prerequisites
+# Pre-requisite and Co-requisite Courses
+
+This fourth-year course requires a **strong foundation** in statistics, probability, and data modelling, built through earlier undergraduate coursework. Therefore, students should already be familiar with introductory statistical inference, regression modelling, and probability theory. Additionally, having a parallel understanding of **experimental design** is beneficial for interpreting and evaluating causal claims, especially in randomized contexts. The prerequisite and co-requisite courses ensure that students have the conceptual and technical fluency necessary to understand and apply causal inference frameworks effectively.
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-network-3704044/).](img/network){width="400"}
 
 ## Mandatory
 
-- Second-year level statistical inference course: Basic notions of hypothesis testing and confidence interval, along with basic frequentist tests (z-test, t-test, Chi-squared test). Something ideal to have as a prerequisite: notions on simulation-based techniques such as bootstrapping and permutation tests.
-- Third-year level regression course: Basic ordinary least-squares (OLS) and binary logistic regression.
-- Third-year (or second-year) level probability course: Basic notions of probability (independence and conditional probability) along with random variables (measures of central tendency and dispersion) and fundamental distributions (discrete and continuous).
+- **Second-Year Statistical Inference:** This course must provide students with a solid foundation in **classical statistical tools** such as hypothesis testing and confidence intervals. Familiarity with $z$-tests, $t$-tests, and Chi-squared tests would enable students to understand how causal claims are assessed statistically. Exposure to **simulation-based methods** (such as bootstrapping and permutation tests) will be beneficial, as these resampling techniques help estimate uncertainty when analytic solutions are complex or unavailable.
+- **Second or Third-Year Probability Theory:** This course would provide a good grasp of probability concepts, including independence, conditional probability, and the properties of random variables. Previous exposure to key probability distributions (e.g., Bernoulli, Binomial, Normal, Exponential) and summary statistics (e.g., means and variances) would support both graphical and potential-outcome-based approaches to causal inference. This background would enable students to reason formally about uncertainty and probabilistic dependencies in causal structures.
+- **Third-Year Regression Analysis:** A solid understanding of **ordinary least-squares (OLS)** and **binary logistic regression** would be essential. These skills would allow students to model relationships between variables, which is vital for adjusting confounders or estimating treatment effects. These techniques serve as the analytical foundation for many causal inference methods, including potential outcomes frameworks. A reasonable understanding of modelling assumptions, estimation procedures, and model diagnostics in regression analysis will be expected.
 
 ## Co-requisite
 
-Fourth-year level course in experimental design: Basic notions on experimental design (e.g., RCT).
+- **Fourth-year Experimental Design:** A parallel course in experimental design would offer essential theoretical insights into the gold standard of causal inference: the **randomized controlled trial (RCT)**. Students would gain an understanding of the principles of randomization, blocking, and replication. This co-requisite course also connects to the causal inference discussions on the limitations of RCTs and the challenges involved in applying experimental logic to observational data.
 
 # Duration
 

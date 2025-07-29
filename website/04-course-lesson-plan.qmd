@@ -1,3 +1,7 @@
+---
+title: "Course Lesson Plan"
+---
+
 # Course Lesson Plan {#sec-course-lesson-plan}
 
 ![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-to-learn-3674104/).](img/sessions.png){fig-align="center" width=80%}
@@ -34,7 +38,7 @@ Therefore, for the above week, there will not be mapped scholarly materials.
 
 Below is a weekly breakdown of the learning goals per lecture. Additionally, we provide a brief summary of each learning week and outline the expectations at the end of the respective two lectures.
 
-## Know your research question! (stage 1 in the roadmap)
+## Know your Research Question! (stage 1 in the roadmap)
 
 During **week 1**, the instructor is expected to introduce students to a foundational mindset in causal inference, which will be linked to the [**course's inferential roadmap**](03-course-roadmap.qmd#sec-course-roadmap). The primary goal for this week is to help students develop the skill to distinguish between statistical inquiries involving association or causation in scientific research. Additionally, students will be introduced to the causal roadmap, which consists of eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. This roadmap will serve as the main pillar of the course's learning strategy.
 
@@ -90,7 +94,7 @@ The above goals can be mapped to the following materials:
 3. [Roadmap Overview & Roadmap Step 0 - Research Question (Lecture 1c - The Causal Roadmap)](https://drive.google.com/file/d/1FIGchk88ulZNnTQJfGAa5bXdS0TH4fgo/view) from @petersen2014.
 4. @morgan2007 provide a fair list of referenced examples in **Chapter 1 (Introduction)**, specifically in **sections 1.3.1 (Broad Examples from Sociology, Economics, and Political Science)** and **1.3.2 (Narrow and Specific Examples)**.
 
-## Using graphical models to depict causality (stage 2 in the roadmap)
+## Using Graphical Models to Depict Causality (stage 2 in the roadmap)
 
 During **Week 2**, students will have their first exposure to directed acyclic graphs (DAGs). According to the course roadmap, DAGs are graphical models that represent knowledge about causal inquiries, which we are expected to develop in collaboration with subject-matter experts. We will view DAGs as essential tools for visualizing and reasoning about causal relationships.
 
@@ -98,7 +102,7 @@ During **Week 2**, students will have their first exposure to directed acyclic g
 
 The week will begin with a formal introduction to **DAG syntax and terminology**. After that, students will engage in hands-on practice constructing DAGs based on real-world scenarios from various scientific fields. Additionally, we will differentiate between **experimental**, **quasi-experimental**, and **observational studies** to demonstrate how DAGs can help identify assumptions in different study designs. By the end of the week, students should understand why DAGs offer valuable insights into causal logic, which will be beneficial for the subsequent stages of the course roadmap.
 
-### Lecture 3
+### Lecture 3 {#sec-lecture-3}
 
 By the end of this lecture, students should be able to:
 
@@ -117,7 +121,7 @@ The above goals can be mapped to the following materials:
   - "*Utilizing Causal Diagrams across Quasi-Experimental Approaches*" by @arif2022.
 4. [Chapter 7 (Drawing Causal Diagrams)](https://theeffectbook.net/ch-DrawingCausalDiagrams.html) from @huntington2021. 
 
-### Lecture 4
+### Lecture 4 {#sec-lecture-4}
 
 By the end of this lecture, students should be able to:
 
@@ -129,19 +133,59 @@ By the end of this lecture, students should be able to:
 The above goals can be mapped to the following materials:
 
 1. To address this goal, the students could have hands-on practice with the cases depicted  by @morgan2007 provide a fair list of referenced examples in **Chapter 1 (Introduction)**, specifically in **sections 1.3.1 (Broad Examples from Sociology, Economics, and Political Science)**.
-2. [Chapter 8 (Causal Paths and Closing Back Doors)](https://theeffectbook.net/ch-CausalPaths.html) from @huntington2021, [Chapter 7 (Confounding)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan202, and **Chapter 1 (Causal Graphs, Identification, and Models of Causal Exposure)** from @morgan2007.
+2. [Chapter 8 (Causal Paths and Closing Back Doors)](https://theeffectbook.net/ch-CausalPaths.html) from @huntington2021, [Chapter 7 (Confounding)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024, and **Chapter 1 (Causal Graphs, Identification, and Models of Causal Exposure)** from @morgan2007.
 3. To address this goal, students are expected to assess the DAGs delivered in goal (1) while applying the concepts addressed in goal (2).
-4. The developed material from **lecture 3**, to address the respective **goal (3)**, can be used to fulfil this goal.
+4. The developed material from [**lecture 3**](#sec-lecture-3), to address the respective **goal (3)**, can be used to fulfil this goal.
 
-## Week 3: Introduction to counterfactuals (STEP 3 in the roadmap)
+## Introduction to Counterfactuals (stage 2 in the roadmap)
 
-- This week, we can start using programming to code up simulations for the structural causal model, counterfactuals, and causal parameters.
-- We follow these steps:
-  1. Define the DAG.
-  2. Define a structural causal model based on the DAG.
-  3. Define counterfactuals based on the structural causal model.
-  4. Define causal parameters based on the counterfactuals.
-  5. Relate the causal parameters to the primary research question.
+**Week 3** focuses on both the theoretical and practical aspects of **counterfactuals**. As outlined in the [course roadmap](03-course-roadmap.qmd#sec-course-roadmap), counterfactuals play a crucial role in the entire causal inference process. They are an essential component of the **structural causal model (SCM)**, which is a mathematical framework for illustrating the causal relationships between variables within a given system. This SCM framework will also provide students with computational tools to connect DAGs, discussed in week 2, with counterfactual reasoning.
+
+The workflow for this week begins with defining the DAG in the context of a causal inference inquiry within a specific system. Students will then derive a SCM composed of equations that represent the data-generating process for each variable. These equations explicitly illustrate the mechanisms that produce counterfactual outcomes, such as:
+
+> What would happen to an outcome $Y$ if treatment $X$ were set to a different value?
+
+This type of inquiry is essential for formulating and interpreting what we refer to as **causal parameters**, such as the **average treatment effect (ATE)**.
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-protocol-exchange-3947913/).](img/counterfactual.png){width="450"}
+
+By the end of the week, students are expected to learn how to use code-based simulations in `R` [@r2024] or `Python` [@python] to apply the logic associated with DAGs, SCMs, and counterfactuals through simple scenarios. They will simulate interventions, explore counterfactuals, and compute causal parameters to address research questions effectively. This process specifically involves examining how potential outcomes arise from different interventions, which allows us to connect our findings back to the DAG and ultimately enables us to produce valid causal claims. It is essential to emphasize to students that our simulated causal parameters must align with the **research question(s)** established in stage 1 of the roadmap.
+
+### Lecture 5 {#sec-lecture-5}
+
+By the end of this lecture, students should be able to:
+
+1. Explain the structure and components of a SCM derived from a DAG (**understand** level).
+2. Explain the conceptual link between structural equations and counterfactual outcomes (**understand** level).
+3. Implement simple SCMs using code to simulate counterfactual scenarios (**apply** level).
+4. Classify the types of causal questions that we can answer from a given SCM and DAG (**understand** level).
+
+The above goals can be mapped to the following materials:
+
+1. [Chapters 3 (Observational studies) and 5 (Interaction)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024. These chapters offer a comprehensive theoretical content. For in-class material, [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 2a - Intro to Structural Causal Models)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point.
+2. **Chapter 2 (The Counterfactual Model)** from @morgan2007; this chapter offers a comprehensive theoretical content. For in-class material, [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 2b - How SCMs encode causal assumptionss)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point.
+3. [Chapter 4  (Potential Outcomes Causal Model)](https://mixtape.scunning.com/04-potential_outcomes), from @cunningham2021, provides simple coding examples via `R` and `Python` that the instructor could use in their in-class material.
+4.  For in-class material, [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 2c - SCMs & Directed Acyclic Graphs)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point. Moreover, students can continue with the DAGs constructed to address **goal (4)** from [**lecture 4**](#sec-lecture-4) to deliver the corresponding SCMs for the corresponding experimental, quasi-experimental, and observational designs.
+
+### Lecture 6
+
+By the end of this lecture, students should be able to:
+
+1. Interpret counterfactual quantities such as $Y^a$, the potential outcome under treatment level $a$ (**understand** level).
+2. Implement causal parameters (e.g.; ATE or average treatment effect on the treated, ATT) from simulated SCMs using counterfactual logic (**apply** level).
+3. Identify causal parameters with specific scientific research questions (**apply** level).
+4. Design small simulation exercises to test assumptions underlying counterfactual inference (**create** level).
+
+The above goals can be mapped to the following materials:
+
+1. [Chapters 3 (Observational studies) and 5 (Interaction)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024. These chapters offer a comprehensive theoretical content.
+2. There are two potential sources of material we can use to fulfill this goal:
+
+  - The first one is less technical and it is [Chapter 10 - Treatment Effects](https://theeffectbook.net/ch-TreatmentEffects.html) from @huntington2021. If the instructor chooses to use more technical content during class time, this might be an ideal pre-lecture material.
+  - The second one is [Chapter 4  (Potential Outcomes Causal Model)](https://mixtape.scunning.com/04-potential_outcomes), from @cunningham2021. This material is more technical.
+  
+3. Students are expected to fulfill this learning goal by using the SCMs delivered in [**lecture 5**](#sec-lecture-5) for its corresponding **goal (4)**.
+4. Students are expected to continue working with the SCMs from the above goal (3). Now, it is time to code the SCMs delivered from the corresponding experimental, quasi-experimental, and observational designs.
 
 ## Week 4: Identifiability conditions
 
