@@ -24,7 +24,7 @@ This section of the final deliverable presents a concise thirteen-week lesson pl
 ::: {.callout-important}
 ## A note on weeks 10, 11, 12, and 13!
 
-The final four weeks of the course will not be used to introduce students to additional modeling techniques in causal inference (**as outlined in stages 4 and 5 of the roadmap**) or to discuss general guidelines for interpreting, reporting, and storytelling in causal studies (**as detailed in stages 6, 7, and 8 of the roadmap**). Instead, students are expected to focus on the following major deliverables:
+The final four weeks of the course will not be used to introduce students to additional modelling techniques in causal inference (**as outlined in stages 4 and 5 of the roadmap**) or to discuss general guidelines for interpreting, reporting, and storytelling in causal studies (**as detailed in stages 6, 7, and 8 of the roadmap**). Instead, students are expected to focus on the following major deliverables:
 
 - **Weeks 10 and 11** will be dedicated to a team-based **appraisal presentation** of an already published causal study, utilizing the roadmap covered throughout the course. There will not be a written report; only an oral presentation is required. 
 - **Weeks 12 and 13** will focus on a team-based final project where students will conduct **their final causal study** using a provided dataset and following the causal roadmap. Instead of a final oral presentation, a written report will be submitted to replace the in-class final exam.
@@ -135,7 +135,7 @@ The above goals can be mapped to the following materials:
 3. To address this goal, students are expected to assess the DAGs delivered in goal (1) while applying the concepts addressed in goal (2).
 4. The developed material from [**lecture 3**](#sec-lecture-3), to address the respective **goal (3)**, can be used to fulfil this goal.
 
-## Introduction to Counterfactuals (stage 2 in the roadmap)
+## Introduction to Counterfactuals (stage 3 in the roadmap)
 
 **Week 3** focuses on both the theoretical and practical aspects of **counterfactuals**. As outlined in the [course roadmap](03-course-roadmap.qmd#sec-course-roadmap), counterfactuals play a crucial role in the entire causal inference process. They are an essential component of the **structural causal model (SCM)**, which is a mathematical framework for illustrating the causal relationships between variables within a given system. This SCM framework will also provide students with computational tools to connect DAGs, discussed in week 2, with counterfactual reasoning.
 
@@ -160,10 +160,10 @@ By the end of this lecture, students should be able to:
 
 The above goals can be mapped to the following materials:
 
-1. [Chapters 3 (Observational studies) and 5 (Interaction)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024. These chapters offer a comprehensive theoretical content. For in-class material, [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 2a - Intro to Structural Causal Models)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point.
-2. **Chapter 2 (The Counterfactual Model)** from @morgan2007; this chapter offers a comprehensive theoretical content. For in-class material, [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 2b - How SCMs encode causal assumptionss)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point.
+1. [Chapters 3 (Observational studies) and 5 (Interaction)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024. These chapters offer a comprehensive theoretical content. For in-class material, [Roadmap Step 1 - Causal Model (Lecture 2a - Intro to Structural Causal Models)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point.
+2. **Chapter 2 (The Counterfactual Model)** from @morgan2007; this chapter offers a comprehensive theoretical content. For in-class material, [Roadmap Step 1 - Causal Model (Lecture 2b - How SCMs encode causal assumptionss)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point.
 3. [Chapter 4  (Potential Outcomes Causal Model)](https://mixtape.scunning.com/04-potential_outcomes), from @cunningham2021, provides simple coding examples via `R` and `Python` that the instructor could use in their in-class material.
-4.  For in-class material, [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 2c - SCMs & Directed Acyclic Graphs)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point. Moreover, students can continue with the DAGs constructed to address **goal (4)** from [**lecture 4**](#sec-lecture-4) to deliver the corresponding SCMs for the corresponding experimental, quasi-experimental, and observational designs.
+4.  For in-class material, [Roadmap Step 1 - Causal Model (Lecture 2c - SCMs & Directed Acyclic Graphs)](https://drive.google.com/file/d/117tfMFkQ6OS30cA13cJVus21kfywSh1U/view), from @petersen2014, is a fair starting point. Moreover, students can continue with the DAGs constructed to address **goal (4)** from [**lecture 4**](#sec-lecture-4) to deliver the corresponding SCMs for the corresponding experimental, quasi-experimental, and observational designs.
 
 ### Lecture 6
 
@@ -185,13 +185,59 @@ The above goals can be mapped to the following materials:
 3. Students are expected to fulfill this learning goal by using the SCMs delivered in [**lecture 5**](#sec-lecture-5) for its corresponding **goal (4)**.
 4. Students are expected to continue working with the SCMs from the above goal (3). Now, it is time to code the SCMs delivered from the corresponding experimental, quasi-experimental, and observational designs.
 
-## Week 4: Identifiability conditions
+## Defining the Statistical Model: Observed Data and Identifiability Conditions (stage 4 in the roadmap)
 
-- Ensuring the causal parameter coincides with the statistical parameter, i.e., an identifiability assumption: no unmeasured confounding (coming from the DAG, consult with experts), positivity (probability that every study unit could be in the control or treatment).
-- We plan to talk about d-separation and back-door criterion.
-- We also plan to discuss different vocabulary in different fields (epidemiology, experimental design, econometrics). For example, SUTVA, etc. It would be useful to have a discussion of what sets of assumptions are equivalent.
+During **week 4**, the instructor is expected to connect the causal model represented by DAGs and SCMs with the corresponding statistical model, with a focus on the identifiability of causal parameters. We start by recalling DAGs as formal representations of causal assumptions. From these DAGs, we construct SCMs, specifying structural equations and endogenous variables that determine counterfactual outcomes. Once the SCM is defined, we analyze how these counterfactuals relate to observed data, emphasizing that only a subset of potential outcomes can be observed.
 
-## Week 5: G-estimation for causal parameter (STEPS 4 and 5 in the roadmap)
+A key focus this week is on the spectrum of assumptions in statistical modelling. **Parametric** models specify a complete probability distribution (for example, ordinary least-squares regression with normally distributed errors), while **semi-parametric** models relax some of these specifications (like Cox models). **Non-parametric** models impose minimal assumptions on the functional form, relying solely on the assumptions encoded in the DAG.
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/laptop-games-jigsaw-puzzle-puzzle-7426707/).](img/puzzle.png){width="300"}
+
+In the second half of the week, we define identifiability as the condition under which a causal parameter (such as the ATE) can be expressed as a function of the observed data distribution. Students will learn to utilize **d-separation** and the **back-door criterion** as tools to determine when identifiability holds, given the assumptions of no unmeasured confounding and positivity.
+
+We will evaluate how each type of statistical model (parametric, semi-parametric, and non-parametric) impacts identifiability. The week will conclude with a comparative discussion across disciplines—such as epidemiology, economics, and statistics—of the various terminologies and conceptual frameworks used to express identifiability conditions. For example, students will explore the relationship between the **stable Unit treatment value assumption (SUTVA)**, **ignorability** in econometrics, and **conditional exchangeability** in epidemiology. This reflection will help students understand how each domain approaches the identifiability problem through its unique perspective.
+
+### Lecture 7 {#sec-lecture-7}
+
+By the end of this lecture, students should be able to:
+
+1. Define how DAGs and SCMs formalize causal assumptions and determine potential outcomes (**remember** level).
+2. Construct a SCM from a DAG using structural equations and endogenous variables (**apply** level).
+3. Examine the relationship between SCMs and observed data, identifying which counterfactuals are observed versus unobserved  (**analyze** level).
+4. Distinguish between parametric, semi-parametric, and non-parametric statistical models, and their implications for inference (**analyze** level).
+
+The above goals can be mapped to the following materials:
+
+1. [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 3a - Defining Counterfactuals)](https://drive.google.com/file/d/1kxjh_l7O5crzSysylBYcVSomLHzXOjWa/view) from @petersen2014.
+2. [Roadmap Step 2 - Counterfactuals & Causal Effects (Lecture 3b - Deriving Counterfactuals from the Causal Model) and Lecture 3c (Using Counterfactuals to Define Causal Effects)](https://drive.google.com/file/d/1kxjh_l7O5crzSysylBYcVSomLHzXOjWa/view) from @petersen2014.
+3. [Roadmap Step 3 - Observed Data (Lecture 5a - Specify the observed data
+& their link to the causal model and Lecture 5b - Causal models &
+(in)dependence in the observed data)](https://drive.google.com/file/d/1nmnzttX3HHWQeVFWs-3R9u9OqkMP043R/view) from @petersen2014.
+4. [Roadmap Step 3 - Observed Data (Lecture 5c - Defining the Statistical Model)](https://drive.google.com/file/d/1nmnzttX3HHWQeVFWs-3R9u9OqkMP043R/view) from @petersen2014.
+
+### Lecture 8 {#sec-lecture-8}
+
+By the end of this lecture, students should be able to:
+
+1. Determine whether a causal parameter is identifiable using d-separation and the back-door criterion (**evaluate** level).
+2. Assess whether key identifiability conditions—no unmeasured confounding and positivity—hold in study designs (**evaluate** level).
+3. Compare how different statistical modelling assumptions (parametric, semi, non-parametric) affect identifiability (**understand** level).
+4. Build a visual map that translates vocabulary across disciplines: SUTVA, ignorability, independence, and exchangeability (**create** level).
+
+::: {.callout-tip}
+## A smooth introduction to identifiability
+
+[Chapter 5 - Identification](https://theeffectbook.net/ch-TreatmentEffects.html), from @huntington2021, offers a smooth introduction to identifiability. It could be used as a pre-reading.
+:::
+
+The above goals can be mapped to the following materials:
+
+1. [Chapter 3 (Observational Studies)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024. Also, [Roadmap Step 4 - Identifiability & Step 5 - Estimation Problem (Lecture 6a - Overview & Intuition for Identifiability and Lecture 6c - The Backdoor Criterion)](https://drive.google.com/file/d/1hUjrsbNqQSvi4OVnkHjv9MDNf8Ur3aX_/view) from @petersen2014.
+2. [Roadmap Step 4 - Identifiability & Step 5 - Estimation Problem (Lecture 6d - The Positivity Assumption)](https://drive.google.com/file/d/1hUjrsbNqQSvi4OVnkHjv9MDNf8Ur3aX_/view) from @petersen2014.
+3. [Chapter 11 (Why Model?)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024
+4. [Section 4.1.5](https://mixtape.scunning.com/04-potential_outcomes#4-1-5-sutva), from @cunningham2021, provides a detailed elaboration on SUTVA. On the other hand, @kamath2023 provide a [chapter](https://appliedcausalinference.github.io/aci_book/02-potential-outcomes-framework.html) elaborating on the rest of the terms.
+
+## G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)
 
 - Focus on ATE, average treatment effect.
 - Introduction to G-estimation: parametric and non-parametric.
