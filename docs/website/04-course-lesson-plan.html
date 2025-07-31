@@ -232,8 +232,16 @@ window.Quarto = {
   <li><a href="#sec-lecture-7" id="toc-sec-lecture-7" class="nav-link" data-scroll-target="#sec-lecture-7"><span class="header-section-number">1.4.1</span> Lecture 7</a></li>
   <li><a href="#sec-lecture-8" id="toc-sec-lecture-8" class="nav-link" data-scroll-target="#sec-lecture-8"><span class="header-section-number">1.4.2</span> Lecture 8</a></li>
   </ul></li>
-  <li><a href="#g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap" id="toc-g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.5</span> G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)</a></li>
-  <li><a href="#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" id="toc-week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.6</span> Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)</a></li>
+  <li><a href="#inverse-probability-weights-stages-4-and-5-in-the-roadmap" id="toc-inverse-probability-weights-stages-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#inverse-probability-weights-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.5</span> Inverse Probability Weights (stages 4 and 5 in the roadmap)</a>
+  <ul class="collapse">
+  <li><a href="#sec-lecture-9" id="toc-sec-lecture-9" class="nav-link" data-scroll-target="#sec-lecture-9"><span class="header-section-number">1.5.1</span> Lecture 9</a></li>
+  <li><a href="#sec-lecture-10" id="toc-sec-lecture-10" class="nav-link" data-scroll-target="#sec-lecture-10"><span class="header-section-number">1.5.2</span> Lecture 10</a></li>
+  </ul></li>
+  <li><a href="#g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap" id="toc-g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.6</span> G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)</a>
+  <ul class="collapse">
+  <li><a href="#sec-lecture-11" id="toc-sec-lecture-11" class="nav-link" data-scroll-target="#sec-lecture-11"><span class="header-section-number">1.6.1</span> Lecture 11</a></li>
+  <li><a href="#sec-lecture-12" id="toc-sec-lecture-12" class="nav-link" data-scroll-target="#sec-lecture-12"><span class="header-section-number">1.6.2</span> Lecture 12</a></li>
+  </ul></li>
   <li><a href="#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" id="toc-week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" class="nav-link" data-scroll-target="#week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.7</span> Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)</a></li>
   <li><a href="#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" id="toc-week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap" class="nav-link" data-scroll-target="#week-8-interpretation-and-report-steps-6-and-7-in-the-roadmap"><span class="header-section-number">1.8</span> Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)</a></li>
   <li><a href="#week-9-storytelling-step-8-in-the-roadmap" id="toc-week-9-storytelling-step-8-in-the-roadmap" class="nav-link" data-scroll-target="#week-9-storytelling-step-8-in-the-roadmap"><span class="header-section-number">1.9</span> Week 9: Storytelling (STEP 8 in the roadmap)</a></li>
@@ -558,18 +566,53 @@ A smooth introduction to identifiability
 </ol>
 </section>
 </section>
-<section id="g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.5</span> G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)</h2>
+<section id="inverse-probability-weights-stages-4-and-5-in-the-roadmap" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="inverse-probability-weights-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.5</span> Inverse Probability Weights (stages 4 and 5 in the roadmap)</h2>
+<p><strong>Week 5</strong> introduces inverse probability weighting (IPW) as the first method in the course to estimate causal effects from observational data. Building on the identifiability assumptions covered in week 4, we now turn to statistical estimation of causal parameters using <strong>weights</strong> derived from the treatment assignment mechanism. Students will be guided through both the conceptual rationale and mathematical foundations of IPW. Specifically, we will explore how IPW constructs a <strong>pseudo-population in which treatment is independent of confounders</strong>, thereby recovering the causal estimand from observed data. We emphasize the critical conditions under which this estimator is valid, especially the <strong>no unmeasured confounding</strong> and <strong>positivity</strong> assumptions.</p>
+<p>The week is organized into two sessions: the first develops theoretical insights on the IPW framework, and the second focuses on practical implementation using <code>R</code>. Students are expected to learn how to estimate weights, assess their quality, and implement diagnostic tools to detect violations of key assumptions such as positivity. We will use real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical roadmap to concrete <strong>software tools</strong>, such as the <code>ipw</code> <span class="citation" data-cites="ipw">(<a href="#ref-ipw" role="doc-biblioref">van der Wal and Geskus 2011</a>)</span> and <code>WeightIt</code> <span class="citation" data-cites="weightit">(<a href="#ref-weightit" role="doc-biblioref">Greifer 2025</a>)</span> <code>R</code> packages.</p>
+<section id="sec-lecture-9" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="sec-lecture-9"><span class="header-section-number">1.5.1</span> Lecture 9</h3>
+<p>By the end of this lecture, students should be able to:</p>
+<ol type="1">
+<li>Define IPWs and describe their purpose in causal effect estimation (<strong>remember</strong> level).</li>
+<li>Explain how IPW adjusts for measured confounding by reweighting observations to achieve exchangeability (<strong>understand level</strong>).</li>
+<li>Examine the assumptions required for valid IPW estimation, including positivity and no unmeasured confounding, and discuss what happens when these assumptions are violated (<strong>analyze</strong> level).</li>
+</ol>
+<p>The above goals can be mapped to the following materials:</p>
+<ol type="1">
+<li><a href="https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf">Chapter 2 (Randomized Experiments)</a>, from <span class="citation" data-cites="hernan2024">Hernán (<a href="#ref-hernan2024" role="doc-biblioref">2024</a>)</span>, where <strong>Section 2.4</strong> specifically introduces IPW in a non-parametric way. Then, <a href="https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf">Chapter 12 (IP Weighting and Marginal Estructural Models)</a> elaborates on IPW in a parametric way. Also, <a href="https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view">Roadmap Step 6B - Estimation with IPW (Lecture 9b - Intro to the IPW Estimator)</a>, from <span class="citation" data-cites="petersen2014">Petersen and Balzer (<a href="#ref-petersen2014" role="doc-biblioref">2014</a>)</span>, offers a fair starting point for in-class material.</li>
+<li><a href="https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf">Chapter 12 (IP Weighting and Marginal Estructural Models)</a> provides a complete technical elaboration. Moreover, <a href="https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view">Roadmap Step 6B - Estimation with IPW (Lecture 9b - Intuition and Implementation of IPW)</a>, from <span class="citation" data-cites="petersen2014">Petersen and Balzer (<a href="#ref-petersen2014" role="doc-biblioref">2014</a>)</span>, offers a fair starting point for in-class material.</li>
+<li><a href="https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf">Chapter 12 (IP Weighting and Marginal Estructural Models)</a> provides a complete technical elaboration. Furthermore, <a href="https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view">Roadmap Step 6B - Estimation with IPW (Lecture 9c - Impact of Positivity Violations on Estimator Performance)</a>, from <span class="citation" data-cites="petersen2014">Petersen and Balzer (<a href="#ref-petersen2014" role="doc-biblioref">2014</a>)</span>, offers a fair starting point for in-class material.</li>
+</ol>
+</section>
+<section id="sec-lecture-10" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="sec-lecture-10"><span class="header-section-number">1.5.2</span> Lecture 10</h3>
+<p>By the end of this lecture, students should be able to:</p>
+<ol type="1">
+<li>Utilize IPW to estimate average treatment effects using regression models in <code>R</code> (<strong>apply</strong> level).</li>
+<li>Create a simulated dataset with known treatment effects and counterfactuals to evaluate the performance of IPW under controlled conditions (<strong>create</strong> level).</li>
+<li>Assess the quality of estimated IP weights by visualizing their distribution, identifying extreme weights, and interpreting ATE sensitivity to such weights.</li>
+</ol>
+<p>The above goals can be mapped to the following materials:</p>
+<ol type="1">
+<li><span class="citation" data-cites="ipw">van der Wal and Geskus (<a href="#ref-ipw" role="doc-biblioref">2011</a>)</span> provide an overview of the <code>ipw</code> package with general theoretical background on IPW along with examples via real data. <span class="citation" data-cites="heiss2020">Heiss (<a href="#ref-heiss2020" role="doc-biblioref">2020</a>)</span> provides an example via real data to illustrate both the use of <code>ipw</code> and <code>WeightIt</code></li>
+<li><span class="citation" data-cites="ipw">van der Wal and Geskus (<a href="#ref-ipw" role="doc-biblioref">2011</a>)</span> provide an simulated example via the package <code>ipw</code>.</li>
+<li><a href="https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view">Roadmap Step 6B - Estimation with IPW (Lecture 9c - Impact of Positivity Violations on Estimator Performance)</a>, from <span class="citation" data-cites="petersen2014">Petersen and Balzer (<a href="#ref-petersen2014" role="doc-biblioref">2014</a>)</span>, offers a fair starting point for in-class material. Moreover, they provide a <a href="https://drive.google.com/file/d/1uirofzK0MUZ_JVWHbXpINvTmdVnxpxnd/view">full lab exercise</a> on IPW.</li>
+</ol>
+</section>
+</section>
+<section id="g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.6</span> G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)</h2>
 <ul>
 <li>Focus on ATE, average treatment effect.</li>
 <li>Introduction to G-estimation: parametric and non-parametric.</li>
 </ul>
+<section id="sec-lecture-11" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="sec-lecture-11"><span class="header-section-number">1.6.1</span> Lecture 11</h3>
 </section>
-<section id="week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="week-6-inverse-probability-weights-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.6</span> Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)</h2>
-<ul>
-<li>Introduction to inverse probability weights (IPWs): parametric and non-parametric.</li>
-</ul>
+<section id="sec-lecture-12" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="sec-lecture-12"><span class="header-section-number">1.6.2</span> Lecture 12</h3>
+</section>
 </section>
 <section id="week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap"><span class="header-section-number">1.7</span> Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)</h2>
@@ -645,6 +688,12 @@ Cunningham, Scott. 2021. <em>Causal Inference: The Mixtape</em>. Yale University
 <div id="ref-ding2024" class="csl-entry" role="listitem">
 Ding, P. 2024. <em>A First Course in Causal Inference</em>. Chapman; Hall/CRC. <a href="https://doi.org/10.1201/9781003484080">https://doi.org/10.1201/9781003484080</a>.
 </div>
+<div id="ref-weightit" class="csl-entry" role="listitem">
+Greifer, Noah. 2025. <em>WeightIt: Weighting for Covariate Balance in Observational Studies</em>. <a href="https://CRAN.R-project.org/package=WeightIt">https://CRAN.R-project.org/package=WeightIt</a>.
+</div>
+<div id="ref-heiss2020" class="csl-entry" role="listitem">
+Heiss, Andrew. 2020. <span>“Generating Inverse Probability Weights for Both Binary and Continuous Treatments.”</span> December 1, 2020. <a href="https://doi.org/10.59350/1svkc-rkv91">https://doi.org/10.59350/1svkc-rkv91</a>.
+</div>
 <div id="ref-hernan2024" class="csl-entry" role="listitem">
 Hernán, Miguel A. 2024. <em>Causal Inference: What If</em>. Edited by James M. Robins. Boca Raton.
 </div>
@@ -674,6 +723,9 @@ R Core Team. 2024. <span>“R: A Language and Environment for Statistical Comput
 </div>
 <div id="ref-song2016" class="csl-entry" role="listitem">
 Song, Mingyang, Teresa T. Fung, Frank B. Hu, Walter C. Willett, Valter D. Longo, Andrew T. Chan, and Edward L. Giovannucci. 2016. <span>“Association of Animal and Plant Protein Intake with All-Cause and Cause-Specific Mortality.”</span> <em>JAMA Internal Medicine</em> 176 (10): 1453.
+</div>
+<div id="ref-ipw" class="csl-entry" role="listitem">
+van der Wal, Willem M., and Ronald B. Geskus. 2011. <span>“<span class="nocase">ipw</span>: An <span>R</span> Package for Inverse Probability Weighting.”</span> <em>Journal of Statistical Software</em> 43 (13): 1–23. <a href="https://doi.org/10.18637/jss.v043.i13">https://doi.org/10.18637/jss.v043.i13</a>.
 </div>
 <div id="ref-python" class="csl-entry" role="listitem">
 Van Rossum, Guido, and Fred L. Drake. 2009. <em>Python 3 Reference Manual</em>. Scotts Valley, CA: CreateSpace.

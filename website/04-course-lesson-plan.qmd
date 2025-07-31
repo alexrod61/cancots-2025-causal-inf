@@ -237,14 +237,50 @@ The above goals can be mapped to the following materials:
 3. [Chapter 11 (Why Model?)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024
 4. [Section 4.1.5](https://mixtape.scunning.com/04-potential_outcomes#4-1-5-sutva), from @cunningham2021, provides a detailed elaboration on SUTVA. On the other hand, @kamath2023 provide a [chapter](https://appliedcausalinference.github.io/aci_book/02-potential-outcomes-framework.html) elaborating on the rest of the terms.
 
+## Inverse Probability Weights (stages 4 and 5 in the roadmap)
+
+**Week 5** introduces inverse probability weighting (IPW) as the first method in the course to estimate causal effects from observational data. Building on the identifiability assumptions covered in week 4, we now turn to statistical estimation of causal parameters using **weights** derived from the treatment assignment mechanism. Students will be guided through both the conceptual rationale and mathematical foundations of IPW. Specifically, we will explore how IPW constructs a **pseudo-population in which treatment is independent of confounders**, thereby recovering the causal estimand from observed data. We emphasize the critical conditions under which this estimator is valid, especially the **no unmeasured confounding** and **positivity** assumptions.
+
+The week is organized into two sessions: the first develops theoretical insights on the IPW framework, and the second focuses on practical implementation using `R`. Students are expected to learn how to estimate weights, assess their quality, and implement diagnostic tools to detect violations of key assumptions such as positivity. We will use real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical roadmap to concrete **software tools**, such as the `ipw` [@ipw] and `WeightIt` [@weightit] `R` packages.
+
+### Lecture 9 {#sec-lecture-9}
+
+By the end of this lecture, students should be able to:
+
+1. Define IPWs and describe their purpose in causal effect estimation (**remember** level).
+2. Explain how IPW adjusts for measured confounding by reweighting observations to achieve exchangeability (**understand level**).
+3. Examine the assumptions required for valid IPW estimation, including positivity and no unmeasured confounding, and discuss what happens when these assumptions are violated (**analyze** level).
+
+The above goals can be mapped to the following materials:
+
+1. [Chapter 2 (Randomized Experiments)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf), from @hernan2024, where **Section 2.4** specifically introduces IPW in a non-parametric way. Then, [Chapter 12 (IP Weighting and Marginal Estructural Models)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) elaborates on IPW in a parametric way. Also, [Roadmap Step 6B - Estimation with IPW (Lecture 9b - Intro to the IPW Estimator)](https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view), from @petersen2014, offers a fair starting point for in-class material.
+2. [Chapter 12 (IP Weighting and Marginal Estructural Models)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) provides a complete technical elaboration. Moreover, [Roadmap Step 6B - Estimation with IPW (Lecture 9b - Intuition and Implementation of IPW)](https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view), from @petersen2014, offers a fair starting point for in-class material.
+3. [Chapter 12 (IP Weighting and Marginal Estructural Models)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) provides a complete technical elaboration. Furthermore, [Roadmap Step 6B - Estimation with IPW (Lecture 9c - Impact of Positivity Violations on Estimator Performance)](https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view), from @petersen2014, offers a fair starting point for in-class material.
+
+### Lecture 10 {#sec-lecture-10}
+
+By the end of this lecture, students should be able to:
+
+1. Utilize IPW to estimate average treatment effects using regression models in `R` (**apply** level).
+2. Create a simulated dataset with known treatment effects and counterfactuals to evaluate the performance of IPW under controlled conditions (**create** level).
+3. Assess the quality of estimated IP weights by visualizing their distribution, identifying extreme weights, and interpreting ATE sensitivity to such weights.
+
+The above goals can be mapped to the following materials:
+
+1. @ipw provide an overview of the `ipw` package with general theoretical background on IPW along with examples via real data. @heiss2020 provides an example via real data to illustrate both the use of `ipw` and `WeightIt`
+2. @ipw provide an simulated example via the package `ipw`.
+3. [Roadmap Step 6B - Estimation with IPW (Lecture 9c - Impact of Positivity Violations on Estimator Performance)](https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view), from @petersen2014, offers a fair starting point for in-class material. Moreover, they provide a [full lab exercise](https://drive.google.com/file/d/1uirofzK0MUZ_JVWHbXpINvTmdVnxpxnd/view) on IPW.
+
 ## G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)
 
 - Focus on ATE, average treatment effect.
 - Introduction to G-estimation: parametric and non-parametric.
 
-## Week 6: Inverse probability weights (STEPS 4 and 5 in the roadmap)
+### Lecture 11 {#sec-lecture-11}
 
-- Introduction to inverse probability weights (IPWs): parametric and non-parametric.
+
+### Lecture 12 {#sec-lecture-12}
+
 
 ## Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)
 
