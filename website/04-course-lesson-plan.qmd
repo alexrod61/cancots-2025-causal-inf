@@ -239,9 +239,11 @@ The above goals can be mapped to the following materials:
 
 ## Inverse Probability Weights (stages 4 and 5 in the roadmap)
 
-**Week 5** introduces inverse probability weighting (IPW) as the first method in the course to estimate causal effects from observational data. Building on the identifiability assumptions covered in week 4, we now turn to statistical estimation of causal parameters using **weights** derived from the treatment assignment mechanism. Students will be guided through both the conceptual rationale and mathematical foundations of IPW. Specifically, we will explore how IPW constructs a **pseudo-population in which treatment is independent of confounders**, thereby recovering the causal estimand from observed data. We emphasize the critical conditions under which this estimator is valid, especially the **no unmeasured confounding** and **positivity** assumptions.
+**Week 5** introduces inverse probability weighting (IPW) as the first method in the course for estimating causal effects from observational data. Building on the identifiability assumptions discussed in week 4, we will now focus on the statistical estimation of causal parameters using **weights** derived from the treatment assignment mechanism. Students will be guided through both the conceptual rationale and the mathematical foundations of IPW. Specifically, we will explore how IPW constructs a **pseudo-population in which treatment is independent of confounders**, allowing us to recover the causal estimand from observed data. We will emphasize the critical conditions under which this estimator is valid, particularly the **no unmeasured confounding** and **positivity** assumptions.
 
-The week is organized into two sessions: the first develops theoretical insights on the IPW framework, and the second focuses on practical implementation using `R`. Students are expected to learn how to estimate weights, assess their quality, and implement diagnostic tools to detect violations of key assumptions such as positivity. We will use real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical roadmap to concrete **software tools**, such as the `ipw` [@ipw] and `WeightIt` [@weightit] `R` packages.
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/children-teacher-rectangular-figures-7464615/).](img/group.png){width="600"}
+
+The week is divided into two sessions. The first session focuses on developing theoretical insights into the IPW framework, while the second session emphasizes practical implementation using `R`. Students will learn how to estimate weights, assess their quality, and use diagnostic tools to detect violations of key assumptions, such as positivity. We will work with both real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical framework to concrete software tools, such as the `ipw` [@ipw] and `WeightIt` [@weightit] `R` packages.
 
 ### Lecture 9 {#sec-lecture-9}
 
@@ -263,7 +265,7 @@ By the end of this lecture, students should be able to:
 
 1. Utilize IPW to estimate average treatment effects using regression models in `R` (**apply** level).
 2. Create a simulated dataset with known treatment effects and counterfactuals to evaluate the performance of IPW under controlled conditions (**create** level).
-3. Assess the quality of estimated IP weights by visualizing their distribution, identifying extreme weights, and interpreting ATE sensitivity to such weights.
+3. Assess the quality of estimated IP weights by visualizing their distribution, identifying extreme weights, and interpreting ATE sensitivity to such weights (**evaluate** level).
 
 The above goals can be mapped to the following materials:
 
@@ -273,13 +275,49 @@ The above goals can be mapped to the following materials:
 
 ## G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)
 
-- Focus on ATE, average treatment effect.
-- Introduction to G-estimation: parametric and non-parametric.
+**Week 6** introduces students to G-estimation methods for identifying and estimating causal parameters. This builds directly on the counterfactual framework and the potential outcomes approach developed in previous weeks. G-estimation enables us to estimate causal effects in the presence of **time-varying confounders**. Students will learn the intuition behind G-estimation and its conceptual connection to **structural nested models (SNMs)**.
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-etherpad-group-work-3683373/).](img/list.png){width="600"}
+
+This week’s lectures will integrate statistical theory, identification strategies, and applied estimation using `R`. First, students will learn about the formulation of G-estimation and how it differs from IPW. Next, students will simulate longitudinal data, implement G-estimation in `R`, and assess the performance of these models in accurately estimating causal parameters. The week will conclude with a discussion on model diagnostics for G-estimation.
 
 ### Lecture 11 {#sec-lecture-11}
 
+By the end of this lecture, students should be able to:
+
+1. Define the assumptions required for G-estimation (**remember** level).
+2. Explain the differences between G-estimation and IPW (**understand** level).
+3. Derive the estimating equations used in G-estimation (**apply** level). 
+4. Assess when G-estimation is preferable to IPW in terms of finite sample efficiency and bias (**evaluate** level).
+
+::: {.callout-tip}
+## A smooth introduction to G-estimation
+
+@sterne2002 provide a smooth introduction to G-estimation in sections 1 and 2, while the remaining content focuses on its application in `Stata`. These two initial sections can be used as pre-reading material.
+:::
+
+The above goals can be mapped to the following materials:
+
+1. [Chapter 14 (G-estimation of structural nested models)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024.
+2. @daniel2013 provide a fair biostatistical tutorial that describes both methods, highlighting their relationships and differences. Additionally, they guide the reader on how to choose between them.
+3. [Chapter 14 (G-estimation of structural nested models)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024.
+4. As in the case of learning goal (2), @daniel2013 is a fair starting point.
+
 
 ### Lecture 12 {#sec-lecture-12}
+
+By the end of this lecture, students should be able to:
+
+1. Implement G-estimation using different `R` packages (**apply** level).
+2. Simulate longitudinal data under a known data-generating process with time-varying confounding (**apply** level).
+3. Execute model diagnostics on G-estimation modelling (**apply** level). 
+
+The above goals can be mapped to the following materials:
+
+1. @loh2023 provide a tutorial on G-estimation using simulated data via the `lavaan` package. In contrast, @DTRreg offered a tutorial using the `DTRreg` package, employing both totally simulated data and simulated data inspired by real data.
+2. For this learning goal, we can use the work by @loh2023 and @DTRreg Moreover, @wallace2017 provide an additional simulated example via `DTRreg`.
+3. @rich2010 provide a fair overview on residual diagnostic plots for G-estimation via simulated and real data.
+
 
 
 ## Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)
@@ -300,16 +338,57 @@ The above goals can be mapped to the following materials:
 
 Team presentations.
 
-## Week 12: Analysis of worked examples while contrasting them with the causal roadmap
+# Analysis of a Publicly Available Dataset via the Causal Roadmap
 
-- This is a team-based work (using the previous appraisal teams).
-- General overview of the final project (first lecture).
-- Introduction to the datasets (first lecture).
-- Perform a case study, using a dataset not available to students to pick from (it will be the same dataset for all teams), using the causal roadmap (second lecture).
+In the last two weeks of this course (i.e., **weeks 12** and **13**), students will take the lead in executing a team-based project that encompasses every stage of the causal roadmap. This means the instructor will primarily support the students throughout the process, rather than delivering traditional lectures. Note this analysis will serve as a **final capstone project**, summarizing all the content covered in the course from weeks 1 to 9. The project aims to incorporate every stage of the roadmap introduced during the term, which consists of the following eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. The student teams will remain the same as those formed during **weeks 10** and **11** for the **previous appraisal exercise of a causal analysis**.
 
-## Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)
+![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-school-enrollment-3702056/).](img/books-2.png){fig-align="center" width=60%}
 
-- We will use the last two lectures for in-class group work on the final project (i.e., whose deliverable is a written report).
-- Note that there is no final exam in this course.
+## Learning Goals
 
-"*Estimating Causal Effects from Epidemiological Data*" from @hernan2006.
+The learning goals outlined below ensure that this final project demonstrates students' mastery of the complete causal inference process. Additionally, it evaluates **their ability to justify and communicate modelling assumptions**, as well as **their capacity to collaborate effectively in designing, executing, and defending a real-world causal analysis**.
+
+### Remember Level
+
+- Recall the eight stages of the causal roadmap 
+- Define the role of the above eight stages when conducting a causal analysis.
+
+### Understand Level
+
+- Summarize the background of the provided dataset and describe how it supports causal inference.
+- Interpret the assumptions (e.g., exchangeability, positivity, etc.) underlying the chosen estimation approach for the causal analysis.
+
+### Apply Level
+
+- Apply the causal roadmap to formulate a clearly defined causal research question based on the provided dataset.
+- Construct a comprehensive DAG that represents the assumed causal structure and justifies the variables to condition on.
+- Utilize estimation procedures via `R` (e.g., IPW, G-estimation, or causal mediation analysis), which should be consistent with the outlined causal model.
+
+### Analyze Level
+
+- Examine the links between underlying assumptions, model choices, and causal conclusions to assess coherence and validity.
+
+### Evaluate Level
+
+- Assess the quality of model diagnostics used to evaluate the robustness of causal estimates.
+- Criticize the strengths and limitations of the team’s analytic approach and provide a concise assessment of the causal claim.
+
+### Create Level
+
+- Develop a comprehensive and coherent written report that includes the causal question, methodology, assumptions, and findings in an accessible way to both technical and non-technical audiences.
+- Compile the roadmap stages into a reproducible causal workflow, including code, visualizations, and documentation, to support transparency and reproduciblity.
+- Design an executive summary or policy brief from the report tailored to a relevant stakeholder or decision-maker.
+
+## Weekly Breakdown
+
+At the beginning of **week 12** (specifically, the first in-class session), teams will be introduced to a publicly available dataset, accompanied by a detailed background presentation from the instructor. This presentation will include **relevant contextual, scientific, and structural information necessary** to support a wide range of causal inquiries. Teams will be tasked with formulating their own causal research questions—rather than being provided with predefined inquiries—and must justify their formulations based on the data and background information provided. This approach allows teams to leverage the first stage of the roadmap effectively.
+
+Starting with the second session of **week 12**, teams will conduct their causal analyses using the dataset in conjunction with the eight-stage causal roadmap. They will be expected to iteratively apply concepts such as graphical modeling with DAGs, SCMs, counterfactual definition, identifiability assessment, and appropriate estimation methods, along with interpretation and storytelling. Note that we will use the **same dataset** for all teams, allowing instructors to evaluate different methodological approaches and assumptions reflected in each team’s application of the roadmap.
+
+The last two sessions of the course (i.e., **week 13**) will be structured as **open lab-style working sessions**, where teams can receive feedback from the instructor. This feedback will provide an opportunity for teams to refine their analyses and coordinate roles and responsibilities. The **final deliverable** for this causal analysis will be a comprehensive team report that documents each step of the roadmap, the rationale behind the team’s decisions, diagnostic evaluations, limitations, and their final estimated causal effects.
+
+::: {.callout-important}
+## A note on the lack of final exam in this course
+
+It is important to note that the above final deliverable will replace a traditional final exam. Additionally, we want to emphasize that this capstone project is a team-based effort that highlights collaborative causal analysis, as is commonly practiced in both academic and applied research settings.
+:::

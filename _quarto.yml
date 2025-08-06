@@ -35,6 +35,9 @@ website:
       - href: website/02-course-outline.qmd
       - href: website/03-course-roadmap.qmd
       - href: website/04-course-lesson-plan.qmd
+
+preview:
+      port: 4014
   
 bibliography: references.bib
 

@@ -247,8 +247,19 @@ window.Quarto = {
   <li><a href="#week-9-storytelling-step-8-in-the-roadmap" id="toc-week-9-storytelling-step-8-in-the-roadmap" class="nav-link" data-scroll-target="#week-9-storytelling-step-8-in-the-roadmap"><span class="header-section-number">1.9</span> Week 9: Storytelling (STEP 8 in the roadmap)</a></li>
   <li><a href="#week-10-appraisal-of-causal-analysis-using-the-roadmap" id="toc-week-10-appraisal-of-causal-analysis-using-the-roadmap" class="nav-link" data-scroll-target="#week-10-appraisal-of-causal-analysis-using-the-roadmap"><span class="header-section-number">1.10</span> Week 10: Appraisal of causal analysis using the roadmap</a></li>
   <li><a href="#week-11-presentation-of-appraisals" id="toc-week-11-presentation-of-appraisals" class="nav-link" data-scroll-target="#week-11-presentation-of-appraisals"><span class="header-section-number">1.11</span> Week 11: Presentation of appraisals</a></li>
-  <li><a href="#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" id="toc-week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" class="nav-link" data-scroll-target="#week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap"><span class="header-section-number">1.12</span> Week 12: Analysis of worked examples while contrasting them with the causal roadmap</a></li>
-  <li><a href="#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" id="toc-week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" class="nav-link" data-scroll-target="#week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii"><span class="header-section-number">1.13</span> Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)</a></li>
+  </ul></li>
+  <li><a href="#analysis-of-a-publicly-available-dataset-via-the-causal-roadmap" id="toc-analysis-of-a-publicly-available-dataset-via-the-causal-roadmap" class="nav-link" data-scroll-target="#analysis-of-a-publicly-available-dataset-via-the-causal-roadmap"><span class="header-section-number">2</span> Analysis of a Publicly Available Dataset via the Causal Roadmap</a>
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals"><span class="header-section-number">2.1</span> Learning Goals</a>
+  <ul class="collapse">
+  <li><a href="#remember-level" id="toc-remember-level" class="nav-link" data-scroll-target="#remember-level"><span class="header-section-number">2.1.1</span> Remember Level</a></li>
+  <li><a href="#understand-level" id="toc-understand-level" class="nav-link" data-scroll-target="#understand-level"><span class="header-section-number">2.1.2</span> Understand Level</a></li>
+  <li><a href="#apply-level" id="toc-apply-level" class="nav-link" data-scroll-target="#apply-level"><span class="header-section-number">2.1.3</span> Apply Level</a></li>
+  <li><a href="#analyze-level" id="toc-analyze-level" class="nav-link" data-scroll-target="#analyze-level"><span class="header-section-number">2.1.4</span> Analyze Level</a></li>
+  <li><a href="#evaluate-level" id="toc-evaluate-level" class="nav-link" data-scroll-target="#evaluate-level"><span class="header-section-number">2.1.5</span> Evaluate Level</a></li>
+  <li><a href="#create-level" id="toc-create-level" class="nav-link" data-scroll-target="#create-level"><span class="header-section-number">2.1.6</span> Create Level</a></li>
+  </ul></li>
+  <li><a href="#weekly-breakdown" id="toc-weekly-breakdown" class="nav-link" data-scroll-target="#weekly-breakdown"><span class="header-section-number">2.2</span> Weekly Breakdown</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -568,8 +579,14 @@ A smooth introduction to identifiability
 </section>
 <section id="inverse-probability-weights-stages-4-and-5-in-the-roadmap" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="inverse-probability-weights-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.5</span> Inverse Probability Weights (stages 4 and 5 in the roadmap)</h2>
-<p><strong>Week 5</strong> introduces inverse probability weighting (IPW) as the first method in the course to estimate causal effects from observational data. Building on the identifiability assumptions covered in week 4, we now turn to statistical estimation of causal parameters using <strong>weights</strong> derived from the treatment assignment mechanism. Students will be guided through both the conceptual rationale and mathematical foundations of IPW. Specifically, we will explore how IPW constructs a <strong>pseudo-population in which treatment is independent of confounders</strong>, thereby recovering the causal estimand from observed data. We emphasize the critical conditions under which this estimator is valid, especially the <strong>no unmeasured confounding</strong> and <strong>positivity</strong> assumptions.</p>
-<p>The week is organized into two sessions: the first develops theoretical insights on the IPW framework, and the second focuses on practical implementation using <code>R</code>. Students are expected to learn how to estimate weights, assess their quality, and implement diagnostic tools to detect violations of key assumptions such as positivity. We will use real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical roadmap to concrete <strong>software tools</strong>, such as the <code>ipw</code> <span class="citation" data-cites="ipw">(<a href="#ref-ipw" role="doc-biblioref">van der Wal and Geskus 2011</a>)</span> and <code>WeightIt</code> <span class="citation" data-cites="weightit">(<a href="#ref-weightit" role="doc-biblioref">Greifer 2025</a>)</span> <code>R</code> packages.</p>
+<p><strong>Week 5</strong> introduces inverse probability weighting (IPW) as the first method in the course for estimating causal effects from observational data. Building on the identifiability assumptions discussed in week 4, we will now focus on the statistical estimation of causal parameters using <strong>weights</strong> derived from the treatment assignment mechanism. Students will be guided through both the conceptual rationale and the mathematical foundations of IPW. Specifically, we will explore how IPW constructs a <strong>pseudo-population in which treatment is independent of confounders</strong>, allowing us to recover the causal estimand from observed data. We will emphasize the critical conditions under which this estimator is valid, particularly the <strong>no unmeasured confounding</strong> and <strong>positivity</strong> assumptions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/group.png" class="img-fluid figure-img" width="600"></p>
+<figcaption>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/"><em>Manfred Stege</em></a> via <a href="https://pixabay.com/vectors/children-teacher-rectangular-figures-7464615/"><em>Pixabay</em></a>.</figcaption>
+</figure>
+</div>
+<p>The week is divided into two sessions. The first session focuses on developing theoretical insights into the IPW framework, while the second session emphasizes practical implementation using <code>R</code>. Students will learn how to estimate weights, assess their quality, and use diagnostic tools to detect violations of key assumptions, such as positivity. We will work with both real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical framework to concrete software tools, such as the <code>ipw</code> <span class="citation" data-cites="ipw">(<a href="#ref-ipw" role="doc-biblioref">van der Wal and Geskus 2011</a>)</span> and <code>WeightIt</code> <span class="citation" data-cites="weightit">(<a href="#ref-weightit" role="doc-biblioref">Greifer 2025</a>)</span> <code>R</code> packages.</p>
 <section id="sec-lecture-9" class="level3" data-number="1.5.1">
 <h3 data-number="1.5.1" class="anchored" data-anchor-id="sec-lecture-9"><span class="header-section-number">1.5.1</span> Lecture 9</h3>
 <p>By the end of this lecture, students should be able to:</p>
@@ -591,7 +608,7 @@ A smooth introduction to identifiability
 <ol type="1">
 <li>Utilize IPW to estimate average treatment effects using regression models in <code>R</code> (<strong>apply</strong> level).</li>
 <li>Create a simulated dataset with known treatment effects and counterfactuals to evaluate the performance of IPW under controlled conditions (<strong>create</strong> level).</li>
-<li>Assess the quality of estimated IP weights by visualizing their distribution, identifying extreme weights, and interpreting ATE sensitivity to such weights.</li>
+<li>Assess the quality of estimated IP weights by visualizing their distribution, identifying extreme weights, and interpreting ATE sensitivity to such weights (<strong>evaluate</strong> level).</li>
 </ol>
 <p>The above goals can be mapped to the following materials:</p>
 <ol type="1">
@@ -603,15 +620,58 @@ A smooth introduction to identifiability
 </section>
 <section id="g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="g-estimation-for-causal-parameters-stages-4-and-5-in-the-roadmap"><span class="header-section-number">1.6</span> G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)</h2>
-<ul>
-<li>Focus on ATE, average treatment effect.</li>
-<li>Introduction to G-estimation: parametric and non-parametric.</li>
-</ul>
+<p><strong>Week 6</strong> introduces students to G-estimation methods for identifying and estimating causal parameters. This builds directly on the counterfactual framework and the potential outcomes approach developed in previous weeks. G-estimation enables us to estimate causal effects in the presence of <strong>time-varying confounders</strong>. Students will learn the intuition behind G-estimation and its conceptual connection to <strong>structural nested models (SNMs)</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/list.png" class="img-fluid figure-img" width="600"></p>
+<figcaption>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/"><em>Manfred Stege</em></a> via <a href="https://pixabay.com/vectors/pixel-etherpad-group-work-3683373/"><em>Pixabay</em></a>.</figcaption>
+</figure>
+</div>
+<p>This week’s lectures will integrate statistical theory, identification strategies, and applied estimation using <code>R</code>. First, students will learn about the formulation of G-estimation and how it differs from IPW. Next, students will simulate longitudinal data, implement G-estimation in <code>R</code>, and assess the performance of these models in accurately estimating causal parameters. The week will conclude with a discussion on model diagnostics for G-estimation.</p>
 <section id="sec-lecture-11" class="level3" data-number="1.6.1">
 <h3 data-number="1.6.1" class="anchored" data-anchor-id="sec-lecture-11"><span class="header-section-number">1.6.1</span> Lecture 11</h3>
+<p>By the end of this lecture, students should be able to:</p>
+<ol type="1">
+<li>Define the assumptions required for G-estimation (<strong>remember</strong> level).</li>
+<li>Explain the differences between G-estimation and IPW (<strong>understand</strong> level).</li>
+<li>Derive the estimating equations used in G-estimation (<strong>apply</strong> level).</li>
+<li>Assess when G-estimation is preferable to IPW in terms of finite sample efficiency and bias (<strong>evaluate</strong> level).</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A smooth introduction to G-estimation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="citation" data-cites="sterne2002">Sterne and Tilling (<a href="#ref-sterne2002" role="doc-biblioref">2002</a>)</span> provide a smooth introduction to G-estimation in sections 1 and 2, while the remaining content focuses on its application in <code>Stata</code>. These two initial sections can be used as pre-reading material.</p>
+</div>
+</div>
+<p>The above goals can be mapped to the following materials:</p>
+<ol type="1">
+<li><a href="https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf">Chapter 14 (G-estimation of structural nested models)</a> from <span class="citation" data-cites="hernan2024">Hernán (<a href="#ref-hernan2024" role="doc-biblioref">2024</a>)</span>.</li>
+<li><span class="citation" data-cites="daniel2013">Daniel et al. (<a href="#ref-daniel2013" role="doc-biblioref">2013</a>)</span> provide a fair biostatistical tutorial that describes both methods, highlighting their relationships and differences. Additionally, they guide the reader on how to choose between them.</li>
+<li><a href="https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf">Chapter 14 (G-estimation of structural nested models)</a> from <span class="citation" data-cites="hernan2024">Hernán (<a href="#ref-hernan2024" role="doc-biblioref">2024</a>)</span>.</li>
+<li>As in the case of learning goal (2), <span class="citation" data-cites="daniel2013">Daniel et al. (<a href="#ref-daniel2013" role="doc-biblioref">2013</a>)</span> is a fair starting point.</li>
+</ol>
 </section>
 <section id="sec-lecture-12" class="level3" data-number="1.6.2">
 <h3 data-number="1.6.2" class="anchored" data-anchor-id="sec-lecture-12"><span class="header-section-number">1.6.2</span> Lecture 12</h3>
+<p>By the end of this lecture, students should be able to:</p>
+<ol type="1">
+<li>Implement G-estimation using different <code>R</code> packages (<strong>apply</strong> level).</li>
+<li>Simulate longitudinal data under a known data-generating process with time-varying confounding (<strong>apply</strong> level).</li>
+<li>Execute model diagnostics on G-estimation modelling (<strong>apply</strong> level).</li>
+</ol>
+<p>The above goals can be mapped to the following materials:</p>
+<ol type="1">
+<li><span class="citation" data-cites="loh2023">Loh and Ren (<a href="#ref-loh2023" role="doc-biblioref">2023</a>)</span> provide a tutorial on G-estimation using simulated data via the <code>lavaan</code> package. In contrast, <span class="citation" data-cites="DTRreg">M. Wallace et al. (<a href="#ref-DTRreg" role="doc-biblioref">2025</a>)</span> offered a tutorial using the <code>DTRreg</code> package, employing both totally simulated data and simulated data inspired by real data.</li>
+<li>For this learning goal, we can use the work by <span class="citation" data-cites="loh2023">Loh and Ren (<a href="#ref-loh2023" role="doc-biblioref">2023</a>)</span> and <span class="citation" data-cites="DTRreg">M. Wallace et al. (<a href="#ref-DTRreg" role="doc-biblioref">2025</a>)</span> Moreover, <span class="citation" data-cites="wallace2017">M. P. Wallace, Moodie, and Stephens (<a href="#ref-wallace2017" role="doc-biblioref">2017</a>)</span> provide an additional simulated example via <code>DTRreg</code>.</li>
+<li><span class="citation" data-cites="rich2010">Rich et al. (<a href="#ref-rich2010" role="doc-biblioref">2010</a>)</span> provide a fair overview on residual diagnostic plots for G-estimation via simulated and real data.</li>
+</ol>
 </section>
 </section>
 <section id="week-7-causal-mediation-analysis-steps-4-and-5-in-the-roadmap" class="level2" data-number="1.7">
@@ -638,22 +698,81 @@ A smooth introduction to identifiability
 <h2 data-number="1.11" class="anchored" data-anchor-id="week-11-presentation-of-appraisals"><span class="header-section-number">1.11</span> Week 11: Presentation of appraisals</h2>
 <p>Team presentations.</p>
 </section>
-<section id="week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap" class="level2" data-number="1.12">
-<h2 data-number="1.12" class="anchored" data-anchor-id="week-12-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap"><span class="header-section-number">1.12</span> Week 12: Analysis of worked examples while contrasting them with the causal roadmap</h2>
+</section>
+<section id="analysis-of-a-publicly-available-dataset-via-the-causal-roadmap" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Analysis of a Publicly Available Dataset via the Causal Roadmap</h1>
+<p>In the last two weeks of this course (i.e., <strong>weeks 12</strong> and <strong>13</strong>), students will take the lead in executing a team-based project that encompasses every stage of the causal roadmap. This means the instructor will primarily support the students throughout the process, rather than delivering traditional lectures. Note this analysis will serve as a <strong>final capstone project</strong>, summarizing all the content covered in the course from weeks 1 to 9. The project aims to incorporate every stage of the roadmap introduced during the term, which consists of the following eight stages: (1) <em>research question</em>, (2) <em>causal model representing knowledge</em>, (3) <em>counterfactuals and causal parameter definition</em>, (4) <em>statistical model definition</em>, (5) <em>model fitting</em>, (6) <em>result interpretation</em>, (7) <em>data analysis report</em>. The student teams will remain the same as those formed during <strong>weeks 10</strong> and <strong>11</strong> for the <strong>previous appraisal exercise of a causal analysis</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/books-2.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/"><em>manfredsteger</em></a> via <a href="https://pixabay.com/vectors/pixel-cells-pixel-school-enrollment-3702056/"><em>Pixabay</em></a>.</figcaption>
+</figure>
+</div>
+<section id="learning-goals" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="learning-goals"><span class="header-section-number">2.1</span> Learning Goals</h2>
+<p>The learning goals outlined below ensure that this final project demonstrates students’ mastery of the complete causal inference process. Additionally, it evaluates <strong>their ability to justify and communicate modelling assumptions</strong>, as well as <strong>their capacity to collaborate effectively in designing, executing, and defending a real-world causal analysis</strong>.</p>
+<section id="remember-level" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="remember-level"><span class="header-section-number">2.1.1</span> Remember Level</h3>
 <ul>
-<li>This is a team-based work (using the previous appraisal teams).</li>
-<li>General overview of the final project (first lecture).</li>
-<li>Introduction to the datasets (first lecture).</li>
-<li>Perform a case study, using a dataset not available to students to pick from (it will be the same dataset for all teams), using the causal roadmap (second lecture).</li>
+<li>Recall the eight stages of the causal roadmap</li>
+<li>Define the role of the above eight stages when conducting a causal analysis.</li>
 </ul>
 </section>
-<section id="week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii" class="level2" data-number="1.13">
-<h2 data-number="1.13" class="anchored" data-anchor-id="week-13-analysis-of-worked-examples-while-contrasting-them-with-the-causal-roadmap-ii"><span class="header-section-number">1.13</span> Week 13: Analysis of worked examples while contrasting them with the causal roadmap (II)</h2>
+<section id="understand-level" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="understand-level"><span class="header-section-number">2.1.2</span> Understand Level</h3>
 <ul>
-<li>We will use the last two lectures for in-class group work on the final project (i.e., whose deliverable is a written report).</li>
-<li>Note that there is no final exam in this course.</li>
+<li>Summarize the background of the provided dataset and describe how it supports causal inference.</li>
+<li>Interpret the assumptions (e.g., exchangeability, positivity, etc.) underlying the chosen estimation approach for the causal analysis.</li>
 </ul>
-<p>“<em>Estimating Causal Effects from Epidemiological Data</em>” from <span class="citation" data-cites="hernan2006">Hernán and Robins (<a href="#ref-hernan2006" role="doc-biblioref">2006</a>)</span>.</p>
+</section>
+<section id="apply-level" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="apply-level"><span class="header-section-number">2.1.3</span> Apply Level</h3>
+<ul>
+<li>Apply the causal roadmap to formulate a clearly defined causal research question based on the provided dataset.</li>
+<li>Construct a comprehensive DAG that represents the assumed causal structure and justifies the variables to condition on.</li>
+<li>Utilize estimation procedures via <code>R</code> (e.g., IPW, G-estimation, or causal mediation analysis), which should be consistent with the outlined causal model.</li>
+</ul>
+</section>
+<section id="analyze-level" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="analyze-level"><span class="header-section-number">2.1.4</span> Analyze Level</h3>
+<ul>
+<li>Examine the links between underlying assumptions, model choices, and causal conclusions to assess coherence and validity.</li>
+</ul>
+</section>
+<section id="evaluate-level" class="level3" data-number="2.1.5">
+<h3 data-number="2.1.5" class="anchored" data-anchor-id="evaluate-level"><span class="header-section-number">2.1.5</span> Evaluate Level</h3>
+<ul>
+<li>Assess the quality of model diagnostics used to evaluate the robustness of causal estimates.</li>
+<li>Criticize the strengths and limitations of the team’s analytic approach and provide a concise assessment of the causal claim.</li>
+</ul>
+</section>
+<section id="create-level" class="level3" data-number="2.1.6">
+<h3 data-number="2.1.6" class="anchored" data-anchor-id="create-level"><span class="header-section-number">2.1.6</span> Create Level</h3>
+<ul>
+<li>Develop a comprehensive and coherent written report that includes the causal question, methodology, assumptions, and findings in an accessible way to both technical and non-technical audiences.</li>
+<li>Compile the roadmap stages into a reproducible causal workflow, including code, visualizations, and documentation, to support transparency and reproduciblity.</li>
+<li>Design an executive summary or policy brief from the report tailored to a relevant stakeholder or decision-maker.</li>
+</ul>
+</section>
+</section>
+<section id="weekly-breakdown" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="weekly-breakdown"><span class="header-section-number">2.2</span> Weekly Breakdown</h2>
+<p>At the beginning of <strong>week 12</strong> (specifically, the first in-class session), teams will be introduced to a publicly available dataset, accompanied by a detailed background presentation from the instructor. This presentation will include <strong>relevant contextual, scientific, and structural information necessary</strong> to support a wide range of causal inquiries. Teams will be tasked with formulating their own causal research questions—rather than being provided with predefined inquiries—and must justify their formulations based on the data and background information provided. This approach allows teams to leverage the first stage of the roadmap effectively.</p>
+<p>Starting with the second session of <strong>week 12</strong>, teams will conduct their causal analyses using the dataset in conjunction with the eight-stage causal roadmap. They will be expected to iteratively apply concepts such as graphical modeling with DAGs, SCMs, counterfactual definition, identifiability assessment, and appropriate estimation methods, along with interpretation and storytelling. Note that we will use the <strong>same dataset</strong> for all teams, allowing instructors to evaluate different methodological approaches and assumptions reflected in each team’s application of the roadmap.</p>
+<p>The last two sessions of the course (i.e., <strong>week 13</strong>) will be structured as <strong>open lab-style working sessions</strong>, where teams can receive feedback from the instructor. This feedback will provide an opportunity for teams to refine their analyses and coordinate roles and responsibilities. The <strong>final deliverable</strong> for this causal analysis will be a comprehensive team report that documents each step of the roadmap, the rationale behind the team’s decisions, diagnostic evaluations, limitations, and their final estimated causal effects.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A note on the lack of final exam in this course
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is important to note that the above final deliverable will replace a traditional final exam. Additionally, we want to emphasize that this capstone project is a team-based effort that highlights collaborative causal analysis, as is commonly practiced in both academic and applied research settings.</p>
+</div>
+</div>
 
 
 
@@ -685,6 +804,9 @@ Cummiskey, Kevin, Bryan Adams, James Pleuss, Dusty Turner, Nicholas Clark, and K
 <div id="ref-cunningham2021" class="csl-entry" role="listitem">
 Cunningham, Scott. 2021. <em>Causal Inference: The Mixtape</em>. Yale University Press. <a href="https://mixtape.scunning.com/">https://mixtape.scunning.com/</a>.
 </div>
+<div id="ref-daniel2013" class="csl-entry" role="listitem">
+Daniel, Rhian M., Simon N. Cousens, Bianca L. De Stavola, Michael G. Kenward, and Jonathan A. C. Sterne. 2013. <span>“Methods for Dealing with Time-Dependent Confounding.”</span> <em>Statistics in Medicine</em> 32 (9): 1584–1618. <a href="https://doi.org/10.1002/sim.5686">https://doi.org/10.1002/sim.5686</a>.
+</div>
 <div id="ref-ding2024" class="csl-entry" role="listitem">
 Ding, P. 2024. <em>A First Course in Causal Inference</em>. Chapman; Hall/CRC. <a href="https://doi.org/10.1201/9781003484080">https://doi.org/10.1201/9781003484080</a>.
 </div>
@@ -697,14 +819,14 @@ Heiss, Andrew. 2020. <span>“Generating Inverse Probability Weights for Both Bi
 <div id="ref-hernan2024" class="csl-entry" role="listitem">
 Hernán, Miguel A. 2024. <em>Causal Inference: What If</em>. Edited by James M. Robins. Boca Raton.
 </div>
-<div id="ref-hernan2006" class="csl-entry" role="listitem">
-Hernán, Miguel A., and James M. Robins. 2006. <span>“Estimating Causal Effects from Epidemiological Data.”</span> <em>Journal of Epidemiology and Community Health</em> 60 (7): 578–86. <a href="https://doi.org/10.1136/jech.2004.029496">https://doi.org/10.1136/jech.2004.029496</a>.
-</div>
 <div id="ref-huntington2021" class="csl-entry" role="listitem">
 Huntington-Klein, N. 2021. <em>The Effect: An Introduction to Research Design and Causality</em>. CRC Press. <a href="https://theeffectbook.net/index.html">https://theeffectbook.net/index.html</a>.
 </div>
 <div id="ref-kamath2023" class="csl-entry" role="listitem">
 Kamath, U., K. Graham, and M. Naylor. 2023. <em>Applied Causal Inference</em>. Amazon Digital Services LLC - Kdp. <a href="https://appliedcausalinference.github.io/aci_book/">https://appliedcausalinference.github.io/aci_book/</a>.
+</div>
+<div id="ref-loh2023" class="csl-entry" role="listitem">
+Loh, Wen Wei, and Dongning Ren. 2023. <span>“A Tutorial on Causal Inference in Longitudinal Data with Time-Varying Confounding Using g-Estimation.”</span> <em>Advances in Methods and Practices in Psychological Science</em> 6 (3). <a href="https://doi.org/10.1177/25152459231174029">https://doi.org/10.1177/25152459231174029</a>.
 </div>
 <div id="ref-lubbke2020" class="csl-entry" role="listitem">
 Lübke, Karsten, Matthias Gehrke, Jörg Horst, and Gero Szepannek and. 2020. <span>“Why We Should Teach Causal Inference: Examples in Linear Regression with Simulated Data.”</span> <em>Journal of Statistics Education</em> 28 (2): 133–39. <a href="https://doi.org/10.1080/10691898.2020.1752859">https://doi.org/10.1080/10691898.2020.1752859</a>.
@@ -721,14 +843,26 @@ Poppe, Louise, Johan Steen, Wen Wei Loh, Geert Crombez, Fien De Block, Noortje J
 <div id="ref-r2024" class="csl-entry" role="listitem">
 R Core Team. 2024. <span>“R: A Language and Environment for Statistical Computing.”</span> Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
 </div>
+<div id="ref-rich2010" class="csl-entry" role="listitem">
+Rich, Ben, Erica E. M. Moodie, David A. Stephens, and Robert W. Platt. 2010. <span>“Model Checking with Residuals for g-Estimation of Optimal Dynamic Treatment Regimes.”</span> <em>The International Journal of Biostatistics</em> 6 (2). <a href="https://doi.org/10.2202/1557-4679.1210">https://doi.org/10.2202/1557-4679.1210</a>.
+</div>
 <div id="ref-song2016" class="csl-entry" role="listitem">
 Song, Mingyang, Teresa T. Fung, Frank B. Hu, Walter C. Willett, Valter D. Longo, Andrew T. Chan, and Edward L. Giovannucci. 2016. <span>“Association of Animal and Plant Protein Intake with All-Cause and Cause-Specific Mortality.”</span> <em>JAMA Internal Medicine</em> 176 (10): 1453.
+</div>
+<div id="ref-sterne2002" class="csl-entry" role="listitem">
+Sterne, Jonathan A. C., and Kate Tilling. 2002. <span>“G-Estimation of Causal Effects, Allowing for Time-Varying Confounding.”</span> <em>The Stata Journal</em> 2 (2): 164–82. <a href="https://doi.org/10.1177/1536867X0200200205">https://doi.org/10.1177/1536867X0200200205</a>.
 </div>
 <div id="ref-ipw" class="csl-entry" role="listitem">
 van der Wal, Willem M., and Ronald B. Geskus. 2011. <span>“<span class="nocase">ipw</span>: An <span>R</span> Package for Inverse Probability Weighting.”</span> <em>Journal of Statistical Software</em> 43 (13): 1–23. <a href="https://doi.org/10.18637/jss.v043.i13">https://doi.org/10.18637/jss.v043.i13</a>.
 </div>
 <div id="ref-python" class="csl-entry" role="listitem">
 Van Rossum, Guido, and Fred L. Drake. 2009. <em>Python 3 Reference Manual</em>. Scotts Valley, CA: CreateSpace.
+</div>
+<div id="ref-wallace2017" class="csl-entry" role="listitem">
+Wallace, Michael P., Erica E. M. Moodie, and David A. Stephens. 2017. <span>“An r Package for g-Estimation of Structural Nested Mean Models.”</span> <em>Epidemiology</em> 28 (2): e18–20. <a href="https://doi.org/10.1097/EDE.0000000000000586">https://doi.org/10.1097/EDE.0000000000000586</a>.
+</div>
+<div id="ref-DTRreg" class="csl-entry" role="listitem">
+Wallace, Michael, Erica E M Moodie, David A Stephens, Gabrielle Simoneau, Shannon T. Holloway, and Juliana Schulz. 2025. <em>DTRreg: DTR Estimation and Inference via g-Estimation, Dynamic WOLS, q-Learning, and Dynamic Weighted Survival Modeling (DWSurv)</em>. <a href="https://CRAN.R-project.org/package=DTRreg">https://CRAN.R-project.org/package=DTRreg</a>.
 </div>
 <div id="ref-wang2020" class="csl-entry" role="listitem">
 Wang, Yafeng, Wentao Huang, Adrienne O’Neil, Yutao Lan, Dagfinn Aune, Wei Wang, Chuanhua Yu, and Xiong Chen. 2020. <span>“Association Between Sleep Duration and Mortality Risk Among Adults with Type 2 Diabetes: A Prospective Cohort Study.”</span> <em>Diabetologia</em> 63 (11): 2292–2304.

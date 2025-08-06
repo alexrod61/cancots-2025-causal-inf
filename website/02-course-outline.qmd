@@ -21,7 +21,7 @@ We used Bloom’s taxonomy (cognitive skills are within brackets):
 
 # Pre-requisite and Co-requisite Courses
 
-This fourth-year course requires a **strong foundation** in statistics, probability, and data modelling, built through earlier undergraduate coursework. Therefore, students should already be familiar with introductory statistical inference, regression modelling, and probability theory. Additionally, having a parallel understanding of **experimental design** is beneficial for interpreting and evaluating causal claims, especially in randomized contexts. The prerequisite and co-requisite courses ensure that students have the conceptual and technical fluency necessary to understand and apply causal inference frameworks effectively.
+This fourth-year course requires a **strong foundation** in statistics, probability, and data modelling, built through earlier undergraduate coursework. Therefore, students should already be familiar with introductory statistical inference, regression modelling, and probability theory. Additionally, having a parallel understanding of **experimental design** is beneficial for interpreting and evaluating causal claims. The prerequisite and co-requisite courses ensure that students have the conceptual and technical fluency necessary to understand and apply causal inference frameworks effectively.
 
 ![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-network-3704044/).](img/network){width="400"}
 
