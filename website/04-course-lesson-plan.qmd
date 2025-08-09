@@ -2,7 +2,7 @@
 title: "Course Lesson Plan"
 ---
 
-![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-to-learn-3674104/).](img/sessions.png){fig-align="center" width=80%}
+![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-to-learn-3674104/).](img/sessions.png){fig-align="center" width=70%}
 
 This section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is **limited** in scope due to the following reasons:
 
@@ -29,7 +29,7 @@ The final four weeks of the course will not be used to introduce students to add
 - **Weeks 10 and 11** will be dedicated to a team-based **appraisal presentation** of an already published causal study, utilizing the roadmap covered throughout the course. There will not be a written report; only an oral presentation is required. 
 - **Weeks 12 and 13** will focus on a team-based final project where students will conduct **their final causal study** using a provided dataset and following the causal roadmap. Instead of a final oral presentation, a written report will be submitted to replace the in-class final exam.
 
-Therefore, for the above week, there will not be mapped scholarly materials.
+Therefore, for the above weeks, there will not be mapped scholarly materials.
 :::
 
 # Lecture Breakdown
@@ -40,7 +40,7 @@ Below is a weekly breakdown of the learning goals per lecture. Additionally, we 
 
 During **week 1**, the instructor is expected to introduce students to a foundational mindset in causal inference, which will be linked to the [**course's inferential roadmap**](03-course-roadmap.qmd#sec-course-roadmap). The primary goal for this week is to help students develop the skill to distinguish between statistical inquiries involving association or causation in scientific research. Additionally, students will be introduced to the causal roadmap, which consists of eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. This roadmap will serve as the main pillar of the course's learning strategy.
 
-![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-emotion-bored-6230197/).](img/question.png){width=30%}
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-emotion-bored-6230197/).](img/question.png){width=25%}
 
 Furthermore, students will explore real-world examples to understand that causal inference is not merely an isolated statistical technique for modelling data (such as solely fitting ordinary-least squares or binary logistic regression to a dataset). Instead, it represents a comprehensive thought process about **counterfactual outcomes** (i.e., potential values of $Y$) and **potential treatment interventions** (i.e., potential values of $X$). By the end of this week, students should be able to comprehend the philosophical and practical differences between asking:
 
@@ -94,7 +94,7 @@ The above goals can be mapped to the following materials:
 
 ## Using Graphical Models to Depict Causality (stage 2 in the roadmap)
 
-During **Week 2**, students will have their first exposure to directed acyclic graphs (DAGs). According to the course roadmap, DAGs are graphical models that represent knowledge about causal inquiries, which we are expected to develop in collaboration with subject-matter experts. We will view DAGs as essential tools for visualizing and reasoning about causal relationships.
+During **week 2**, students will have their first exposure to directed acyclic graphs (DAGs). According to the course roadmap, DAGs are graphical models that represent knowledge about causal inquiries, which we are expected to develop in collaboration with subject-matter experts. We will view DAGs as essential tools for visualizing and reasoning about causal relationships.
 
 ![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-teaching-to-learn-wiki-3976301/).](img/board.png){width="450"}
 
@@ -176,7 +176,7 @@ By the end of this lecture, students should be able to:
 
 The above goals can be mapped to the following materials:
 
-1. [Chapters 3 (Observational studies) and 5 (Interaction)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024. These chapters offer a comprehensive theoretical content.
+1. [Chapters 3 (Observational studies) and 5x (Interaction)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024. These chapters offer a comprehensive theoretical content.
 2. There are two potential sources of material we can use to fulfill this goal:
 
   - The first one is less technical and it is [Chapter 10 - Treatment Effects](https://theeffectbook.net/ch-TreatmentEffects.html) from @huntington2021. If the instructor chooses to use more technical content during class time, this might be an ideal pre-lecture material.
@@ -195,7 +195,7 @@ A key focus this week is on the spectrum of assumptions in statistical modelling
 
 In the second half of the week, we define identifiability as the condition under which a causal parameter (such as the ATE) can be expressed as a function of the observed data distribution. Students will learn to utilize **d-separation** and the **back-door criterion** as tools to determine when identifiability holds, given the assumptions of no unmeasured confounding and positivity.
 
-We will evaluate how each type of statistical model (parametric, semi-parametric, and non-parametric) impacts identifiability. The week will conclude with a comparative discussion across disciplines—such as epidemiology, economics, and statistics—of the various terminologies and conceptual frameworks used to express identifiability conditions. For example, students will explore the relationship between the **stable Unit treatment value assumption (SUTVA)**, **ignorability** in econometrics, and **conditional exchangeability** in epidemiology. This reflection will help students understand how each domain approaches the identifiability problem through its unique perspective.
+We will evaluate how each type of statistical model (parametric, semi-parametric, and non-parametric) impacts identifiability. The week will conclude with a comparative discussion across disciplines—such as epidemiology, economics, and statistics—of the various terminologies and conceptual frameworks used to express identifiability conditions. For example, students will explore the relationship between the **stable unit treatment value assumption (SUTVA)**, **ignorability** in econometrics, and **conditional exchangeability** in epidemiology. This reflection will help students understand how each domain approaches the identifiability problem through its unique perspective.
 
 ### Lecture 7 {#sec-lecture-7}
 
@@ -329,24 +329,64 @@ The above goals can be mapped to the following materials:
 
 ## Week 9: Storytelling (STEP 8 in the roadmap)
 
-## Week 10: Appraisal of causal analysis using the roadmap
+# Appraisal of Published Causal Studies via the Causal Roadmap
 
-- Review an existing causal analysis (i.e., a published research paper) using the causal roadmap covered in class.
-- This is a team-based work.
+In **weeks 10** and **11**, students will participate in a team-based appraisal of an already **published causal analysis**, utilizing the course roadmap covered throughout the term. This appraisal project is a core component of the course, serving as a **bridge** between traditional lectures and the practical assessment of real-world causal research. By analyzing an existing causal study, students are expected to apply the eight stages of the roadmap to evaluate the validity, robustness, and transparency of the research. Additionally, they will gain exposure to various real-life research practices concerning design choices, modelling assumptions, and effective communication of results.
 
-## Week 11: Presentation of appraisals
-
-Team presentations.
-
-# Analysis of a Publicly Available Dataset via the Causal Roadmap
-
-In the last two weeks of this course (i.e., **weeks 12** and **13**), students will take the lead in executing a team-based project that encompasses every stage of the causal roadmap. This means the instructor will primarily support the students throughout the process, rather than delivering traditional lectures. Note this analysis will serve as a **final capstone project**, summarizing all the content covered in the course from weeks 1 to 9. The project aims to incorporate every stage of the roadmap introduced during the term, which consists of the following eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. The student teams will remain the same as those formed during **weeks 10** and **11** for the **previous appraisal exercise of a causal analysis**.
-
-![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-school-enrollment-3702056/).](img/books-2.png){fig-align="center" width=60%}
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-lecture-lecturer-3976299/).](img/meeting.png){width="450"}
 
 ## Learning Goals
 
-The learning goals outlined below ensure that this final project demonstrates students' mastery of the complete causal inference process. Additionally, it evaluates **their ability to justify and communicate modelling assumptions**, as well as **their capacity to collaborate effectively in designing, executing, and defending a real-world causal analysis**.
+The learning goals outlined below ensure that this appraisal project showcases **students' ability to effectively evaluate the strength of published causal research**. Additionally, we assess **their ability to justify and communicate their analyses to peers, as well as their teamwork skills**.
+
+### Remember Level
+
+- Recall the key stages and assumptions of the causal roadmap.
+
+### Understand Level
+
+- Summarize the main research question, design, and estimation approach of the assigned paper.
+- Explain the researches' reasoning behind the study’s design choices and statistical methods in relation to causal inference principles.
+
+### Apply Level
+
+- Apply the causal roadmap to systematically evaluate the study’s methodology.
+- Identify the core methodological elements of experimental, quasi-experimental, and observational study designs.
+- Make use of course concepts to identify potential sources of bias in the published work.
+
+### Analyze Level
+
+- Differentiate between well-supported causal claims and conclusions that overreach the evidence presented.
+- Compare the methodological approach of the assigned study to the principles learned in the course.
+
+### Evaluate Level
+
+- Criticize the adequacy of the study’s causal assumptions, identifying any unaddressed confounding, selection bias, or measurement error.
+- Judge the robustness of the study’s findings by considering alternative explanations and sensitivity to methodological choices.
+
+### Create Level
+
+- Develop a coherent, well-structured oral presentation that summarizes the critical appraisal.
+- Formulate constructive recommendations for how the study could have been improved in design, analysis, and/or interpretation.
+
+## Weekly Breakdown
+
+The first lecture of **week 10** will introduce the appraisal project. It will include a clear explanation of the objectives, expectations, and evaluation criteria. During this lecture, the instructor will assign each team a **different published research paper**. These papers will be selected to represent a variety of causal designs, including **experimental**, **quasi-experimental**, and **observational** studies. Each paper will be sufficiently documented to facilitate meaningful team-based analysis. The instructor will provide a detailed background for each paper to ensure that teams can conduct an informed analysis. Teams will be responsible for dissecting the methodological approach, assessing validity, and evaluating the study’s adherence to principles of causal inference.
+
+
+Following this introduction, teams will spend the rest of **week 10** working collaboratively on their assigned paper. This will involve mapping the study’s design, data, and analysis onto the course’s causal roadmap, identifying strengths and weaknesses, and critiquing methodological choices. Students will be expected to interrogate issues such as confounding, identifiability, and the data modelling assumptions. The emphasis will be on **deep engagement** with the chosen study rather than superficial summary.
+
+In **week 11**, teams will give in-class presentations on their appraisals. Each team will present its findings in a structured format, emphasizing the alignment (or misalignment) of the published work with the causal roadmap. The presentation should also address the implications for the **robustness** and **interpretability** of the reported causal claims. Presentations will include both technical critiques and clear communication of methodological insights, fostering peer-to-peer learning as students compare and contrast different approaches across various papers. Since the presentation is the **only deliverable** for this appraisal project, teams will be encouraged to focus on clarity, depth of reasoning, and the effective use of visual and statistical evidence to support their assessments.
+
+# Analysis of a Publicly Available Dataset via the Causal Roadmap
+
+In the last two weeks of this course (i.e., **weeks 12** and **13**), students will take the lead in executing a team-based project that encompasses every stage of the causal roadmap. This means the instructor will primarily support the students throughout the process, rather than delivering traditional lectures. Note this analysis will serve as a **final capstone project**, summarizing all the content covered in the course from weeks 1 to 9. The project aims to incorporate every stage of the roadmap introduced during the term, which consists of the following eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. The student teams will remain the same as those formed during **weeks 10** and **11** for the **previous appraisal of a causal analysis**.
+
+![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-school-enrollment-3702056/).](img/books-2.png){fig-align="center" width=45%}
+
+## Learning Goals
+
+The learning goals outlined below ensure that this final project demonstrates students' mastery of the complete causal inference process. Additionally, we evaluate **their ability to justify and communicate modelling assumptions**, as well as **their capacity to collaborate effectively in designing, executing, and defending a real-world causal analysis**.
 
 ### Remember Level
 

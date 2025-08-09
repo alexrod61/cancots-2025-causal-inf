@@ -34,10 +34,12 @@ The above causal inference was inspired on the one used in the course *Introduct
 
 # Website Overview {#sec-website-overview}
 
-- **[Introductory Slides:](website/01-intro-slides.qmd)** These slides were preliminary before shaping them into our final deliverable.
-- **[Course Outline:](website/02-course-outline.qmd)** A general course outline including course rationale, course description, general learning goals, intended student audience, course format, assessment criteria and grading.
-- **[Course Roadmap:](website/03-course-roadmap.qmd)** The roadmap including the above eight stages with brief explanations.
-- **[Limited Course Lesson Plan:](website/04-course-lesson-plan.qmd)** A limited, structured guide that outlines what will be taught during a specific class session or over a short unit.
+This overview illustrates the planning and design materials that shaped the development of this final deliverable. It starts with the initial conceptual framing to a structured roadmap and specific lesson plans:
+
+- **[Introductory Slides:](website/01-intro-slides.qmd)** A preliminary set of slides used at the beginning of CanCOTS, later refined into the final deliverable.
+- **[Course Outline:](website/02-course-outline.qmd)** A general overview detailing the course rationale, description, general learning goals, intended student audience, delivery format, and assessment criteria with grading breakdown.
+- **[Course Roadmap:](website/03-course-roadmap.qmd)** A visual and descriptive representation of the eight key stages that structure the course, each with a concise explanation of its role in the causal inference process.
+- **[Course Lesson Plan:](website/04-course-lesson-plan.qmd)** A targeted, structured guide specifying the instructional flow per week.
 
 # License {#sec-license}
 
