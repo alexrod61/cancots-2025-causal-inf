@@ -3,7 +3,7 @@ title: "Introductory Slides"
 title-block-style: none
 ---
 
-![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-lecture-lecture-hall-3976296/).](img/meeting-2.png){width="550"}
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-lecture-lecture-hall-3976296/).](img/presentation.png){width="550"}
 
 The following slide deck is from the initial roundtable discussion at CanCOTS for this working group. It introduced the primary team involved in the causal inference topic: [G. Alexi Rodríguez-Arelis](https://alexrod.netlify.app/), Assistant Professor of Teaching at UBC in the Department of Statistics, and [Philippe Boileau](https://pboileau.ca/), Assistant Professor of Biostatistics at McGill University. The discussion covered several key points:
 
