@@ -12,12 +12,18 @@ title: "Course Outline"
 
 # High-Level Course Goals
 
-We used Bloom’s taxonomy (cognitive skills are within brackets):
+![Image by [*Manfred Steger*](https://pixabay.com/users/manfredsteger-1848497/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3699345) via \[*Pixabay*\](https://pixabay.com/vectors/pixel-cells-pixel-digital-3704070/.](img/pinned-notes.png){width="500"}
 
-- Translate a causal research question in terms of the causal roadmap (COMPREHENSION).
-- Apply suitable statistical estimation procedures to perform causal inference (APPLICATION).
-- Analyze a causal research question using the causal roadmap (ANALYSIS).
-- Evaluate publicly available causal study conclusions based on the causal roadmap (EVALUATION).
+This undergraduate course is designed to have eight high-level learning goals. These goals align with the cognitive domain levels outlined by @bloom1956, as defined by @anderson2001. More details about these levels can be found in the [course lesson plan](04-course-lesson-plan.qmd).
+
+1. Identify and define causal questions across diverse contexts, while recognizing the distinction between association and causation (**remember** and **apply** levels, respectively).
+2. Translate research questions into the causal roadmap framework (**understand** level).
+3. Build directed acyclic graphs (DAGs) to represent knowledge about causal inquiries (**apply** level).
+4. Apply suitable causal inference designs (experimental, quasi-experimental, and observational) and estimation strategies (such as inverse probability weights, G-estimation or causal mediation analysis) to real-world data (**apply** level).
+5. Analyze real-world data through the causal roadmap, connecting assumptions, identifiability, estimation, and interpretation in a coherent workflow (**analyze**).
+6. Assess and criticize causal claims in published research by appraising assumptions, study design, methods, and interpretation (**evaluate** level).
+7. Communicate the results of a causal analysis to both technical and non-technical audiences through clear storytelling, effective visualization, and transparent discussion of uncertainty (**create** level).
+8. Execute a complete causal inference project (from question formulation to presentation) via the causal roadmap while integrating critical thinking, methodological rigor, and scholarly communication (**create** level).
 
 # Pre-requisite and Co-requisite Courses
 

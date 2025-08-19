@@ -6,7 +6,7 @@ title: "Course Lesson Plan"
 
 This section of the final deliverable presents a concise thirteen-week lesson plan for a fourth-year undergraduate course in causal inference. The lesson plan is **limited** in scope due to the following reasons:
 
-- The lesson plan encompasses **comprehensive learning goals** for each lecture throughout the entire term, with **specific action verbs** aligned with the revised **Bloom's taxonomy** [@bloom1956] as defined by @anderson001. This revised taxonomy organizes the six levels of the cognitive domain (related to learning) as follows:
+- The lesson plan encompasses **comprehensive learning goals** for each lecture throughout the entire term, with **specific action verbs** aligned with the revised **Bloom's taxonomy** [@bloom1956] as defined by @anderson2001. This revised taxonomy organizes the six levels of the cognitive domain (related to learning) as follows:
 
   1. **Remember:** Recall information from long-term memory, including statistical concepts learned in previous courses.
   2. **Understand:** Comprehend the causal inference concepts covered in the classroom.
@@ -303,7 +303,6 @@ The above goals can be mapped to the following materials:
 3. [Chapter 14 (G-estimation of structural nested models)](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6835bdb7dc9e482163d8712d/1748352541538/hernanrobins_WhatIf_27may25.pdf) from @hernan2024.
 4. As in the case of learning goal (2), @daniel2013 is a fair starting point.
 
-
 ### Lecture 12 {#sec-lecture-12}
 
 By the end of this lecture, students should be able to:
@@ -318,8 +317,6 @@ The above goals can be mapped to the following materials:
 2. For this learning goal, we can use the work by @loh2023 and @DTRreg Moreover, @wallace2017 provide an additional simulated example via `DTRreg`.
 3. @rich2010 provide a fair overview on residual diagnostic plots for G-estimation via simulated and real data.
 
-
-
 ## Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)
 
 - Introduction to causal mediation analysis.
@@ -327,7 +324,50 @@ The above goals can be mapped to the following materials:
 
 ## Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)
 
-## Week 9: Storytelling (STEP 8 in the roadmap)
+## Storytelling (stage 8 in the roadmap)
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-seminar-conference-3974170/).](img/table.png){width="500"}
+
+In **week 9**, we will focus on the storytelling stage of the course's roadmap. This involves translating the entire statistical research into **a compelling, transparent, and coherent narrative** for the relevant stakeholders. We dedicate a full week to this stage because it is essential to emphasize the technical training from the previous stages while also crafting this final narrative for effective communication with our target audience, which might pertain to technical peers or policy stakeholders. Students are expected to learn how to structure their causal analysis by starting with the study's motivation and research question, followed by the graphical and statistical models, and concluding with interpretable and well-contextualized findings. The primary goal for this week is **to teach students how to integrate the inferential process with effective communication skills**.
+
+Students will work with completed causal analyses, specifically the ones from **week 1** in **lecture 2**, which were used to distinguish between causal and association questions [@angrist1991; @card1995]. Since these real-life studies are comprehensive, students will be tasked with reframing them into **well-crafted narratives that balance transparency and audience engagement**. On the other hand, the instructor will teach best practices related to data storytelling, scientific writing, and proper DAG elaboration. While the instructor provides instruction and quick examples, students will engage in hands-on practice using one of the two causal analyses mentioned earlier. By the end of the week, students will have a clear understanding of the practical skills needed to narrate a causal analysis from start to finish. This will prepare them for the appraisal and dataset-based projects in the final weeks of the course.
+
+### Lecture 17 {#sec-lecture-17}
+
+By the end of this lecture, students should be able to:
+
+1. Identify the essential components of a causal inference narrative, including motivation, causal question, identification strategy, and interpretation of estimates (**apply** level).
+2. Distinguish between statistical reporting and causal storytelling, recognizing where transparency requires explicit methodological framing (**analyze** level).
+3. Assess the clarity and persuasiveness of a causal story using predefined rubrics and scholarly criteria (**evaluate** level).
+4. Criticize how uncertainty and limitations are communicated in causal narratives (**evaluate** level).
+5. Analyze published studies to determine how methodological rigour is conveyed alongside narrative flow (**analyze** level).
+
+### Lecture 18 {#sec-lecture-18}
+
+By the end of this lecture, students should be able to:
+
+1. Apply the course’s causal roadmap to reorganize an existing causal analysis into a structured story (**apply** level).
+2. Develop graphical and tabular summaries to support and enhance the causal narrative (**apply** level).
+3. Design an outline for a causal inference presentation that balances technical detail and accessibility (**create** level).
+4. Adapt a causal inference narrative for distinct audiences (e.g., academic journal, policy brief, public-facing report) while retaining methodological integrity (**create** level).
+
+### Overall Material Mapping
+
+For this week, we will not map scholarly materials by learning goal. Instead, we will divide them into two main sets. The first set of resources, which corresponds to [lecture 17](04-course-lesson-plan.qmd#sec-lecture-17), will be helpful for instructors in teaching best practices related to data storytelling, scientific writing, and proper DAG elaboration:
+
+- @rohrer2018 provides an adequate framework for explaining key terms related to causal inference, particularly in the context of observational studies. This includes concepts such as DAGs, confounders, colliders, and mediators within a psychology context. Furthermore, they include a helpful example regarding genetic confounding.
+- While this book does not focus specifically on causal inference storytelling, @alley2013 presents useful guidelines for oral presentations in science and engineering. The following chapters can be valuable for preparing teaching materials:
+
+  + **Chapter 2: Speech - The Words You Say.** This chapter offers practical advice on crafting a speech tailored to the intended audience.
+  + **Chapter 3: Structure - The Strategy You Choose.** This chapter discusses how to effectively structure a speech while balancing its scope and depth. It also provides tips on keeping the audience engaged and addressing any potential biases.
+  + **Chapter 4: Visual Aids - Your Supporting Cast.** This chapter provides guidelines for creating and delivering effective slides during an oral presentation.
+
+- Since causal analyses are often intended for decision-makers in public policy, it is crucial to teach how to communicate uncertainty regarding **causal parameter estimation**. @manski2019 documents various practices of uncertainty communication through different examples.
+
+As previously mentioned for [lecture 18](04-course-lesson-plan.qmd#sec-lecture-18), the following papers will be reused to practice storytelling: 
+
+- "*Does Compulsory School Attendance Affect Schooling and Earnings?*" from @angrist1991.
+- "*Using Geographic Variation in College Proximity to Estimate the Return to Schooling*" from @card1995.
 
 # Appraisal of Published Causal Studies via the Causal Roadmap
 
@@ -373,7 +413,6 @@ The learning goals outlined below ensure that this appraisal project showcases *
 
 The first lecture of **week 10** will introduce the appraisal project. It will include a clear explanation of the objectives, expectations, and evaluation criteria. During this lecture, the instructor will assign each team a **different published research paper**. These papers will be selected to represent a variety of causal designs, including **experimental**, **quasi-experimental**, and **observational** studies. Each paper will be sufficiently documented to facilitate meaningful team-based analysis. The instructor will provide a detailed background for each paper to ensure that teams can conduct an informed analysis. Teams will be responsible for dissecting the methodological approach, assessing validity, and evaluating the study’s adherence to principles of causal inference.
 
-
 Following this introduction, teams will spend the rest of **week 10** working collaboratively on their assigned paper. This will involve mapping the study’s design, data, and analysis onto the course’s causal roadmap, identifying strengths and weaknesses, and critiquing methodological choices. Students will be expected to interrogate issues such as confounding, identifiability, and the data modelling assumptions. The emphasis will be on **deep engagement** with the chosen study rather than superficial summary.
 
 In **week 11**, teams will give in-class presentations on their appraisals. Each team will present its findings in a structured format, emphasizing the alignment (or misalignment) of the published work with the causal roadmap. The presentation should also address the implications for the **robustness** and **interpretability** of the reported causal claims. Presentations will include both technical critiques and clear communication of methodological insights, fostering peer-to-peer learning as students compare and contrast different approaches across various papers. Since the presentation is the **only deliverable** for this appraisal project, teams will be encouraged to focus on clarity, depth of reasoning, and the effective use of visual and statistical evidence to support their assessments.
@@ -382,7 +421,7 @@ In **week 11**, teams will give in-class presentations on their appraisals. Each
 
 In the last two weeks of this course (i.e., **weeks 12** and **13**), students will take the lead in executing a team-based project that encompasses every stage of the causal roadmap. This means the instructor will primarily support the students throughout the process, rather than delivering traditional lectures. Note this analysis will serve as a **final capstone project**, summarizing all the content covered in the course from weeks 1 to 9. The project aims to incorporate every stage of the roadmap introduced during the term, which consists of the following eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. The student teams will remain the same as those formed during **weeks 10** and **11** for the **previous appraisal of a causal analysis**.
 
-![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-school-enrollment-3702056/).](img/books-2.png){fig-align="center" width=45%}
+![Image by [*manfredsteger*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-school-enrollment-3702056/).](img/books-2.png){fig-align="center" width=52%}
 
 ## Learning Goals
 
