@@ -29,7 +29,7 @@ This undergraduate course is designed to have eight high-level learning goals. T
 
 This fourth-year course requires a **strong foundation** in statistics, probability, and data modelling, built through earlier undergraduate coursework. Therefore, students should already be familiar with introductory statistical inference, regression modelling, and probability theory. Additionally, having a parallel understanding of **experimental design** is beneficial for interpreting and evaluating causal claims. The prerequisite and co-requisite courses ensure that students have the conceptual and technical fluency necessary to understand and apply causal inference frameworks effectively.
 
-![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-network-3704044/).](img/network){width="400"}
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/daycare-pixel-holding-hands-7464616/).](img/juggling.png){width="350"}
 
 ## Mandatory
 
@@ -43,8 +43,19 @@ This fourth-year course requires a **strong foundation** in statistics, probabil
 
 # Duration
 
-The course is planned to be taught over the course of thirteen weeks (2 sessions per week with 1.5 hours as duration).
+The course is planned to be taught over the course of thirteen weeks (2 lectures per week with 1.5 hours as duration).
 
 # Course Format {#sec-course-format}
 
+This course is designed to integrate theoretical concepts with practical application, giving students a thorough understanding of causal inference methods. The lectures cover foundational topics such as directed acyclic graphs, counterfactual reasoning, potential outcomes, identification strategies, and the assumptions that underlie causal estimands. Furthermore, more advanced subjects like inverse probability weighting, G-estimation methods, and causal mediation analysis are included. Some lecture sessions will provide students with hands-on experience using real datasets in `R` [@r2024]. Students will implement estimators, conduct sensitivity analyses, and visualize causal effects during these practical sessions.
+
 # Course Assessment Structure {#sec-course-assessment}
+
+The summative assessment structure of this course is composed of the following elements:
+
+- Biweekly **problem sets** to reinforce both conceptual understanding and methodological proficiency from weeks 1 to 8, totalling four assignments and **accounting for 30% of the course's final grade**.
+- The first group project consisting of an [**appraisal of a published causal study via the causal coadmap**](04-course-lesson-plan.qmd#sec-appraisal) **accounting for 30% of the course's final grade**.
+- The second group project consisting of an [**analysis of a publicly available dataset via the causal roadmap**](04-course-lesson-plan.qmd#sec-final-analysis) **accounting for 40% of the course's final grade**.
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-social-network-3704066/).](img/assessment.png){width="550"}
+

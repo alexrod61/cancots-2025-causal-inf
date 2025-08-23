@@ -147,7 +147,7 @@ This type of inquiry is essential for formulating and interpreting what we refer
 
 ![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-protocol-exchange-3947913/).](img/counterfactual.png){width="450"}
 
-By the end of the week, students are expected to learn how to use code-based simulations in `R` [@r2024] or `Python` [@python] to apply the logic associated with DAGs, SCMs, and counterfactuals through simple scenarios. They will simulate interventions, explore counterfactuals, and compute causal parameters to address research questions effectively. This process specifically involves examining how potential outcomes arise from different interventions, which allows us to connect our findings back to the DAG and ultimately enables us to produce valid causal claims. It is essential to emphasize to students that our simulated causal parameters must align with the **research question(s)** established in stage 1 of the roadmap.
+By the end of the week, students are expected to learn how to use code-based simulations in `R` to apply the logic associated with DAGs, SCMs, and counterfactuals through simple scenarios. They will simulate interventions, explore counterfactuals, and compute causal parameters to address research questions effectively. This process specifically involves examining how potential outcomes arise from different interventions, which allows us to connect our findings back to the DAG and ultimately enables us to produce valid causal claims. It is essential to emphasize to students that our simulated causal parameters must align with the **research question(s)** established in stage 1 of the roadmap.
 
 ### Lecture 5 {#sec-lecture-5}
 
@@ -243,7 +243,7 @@ The above goals can be mapped to the following materials:
 
 ![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/children-teacher-rectangular-figures-7464615/).](img/group.png){width="600"}
 
-The week is divided into two sessions. The first session focuses on developing theoretical insights into the IPW framework, while the second session emphasizes practical implementation using `R`. Students will learn how to estimate weights, assess their quality, and use diagnostic tools to detect violations of key assumptions, such as positivity. We will work with both real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical framework to concrete software tools, such as the `ipw` [@ipw] and `WeightIt` [@weightit] `R` packages.
+The week is divided into two sessions. The first session focuses on developing theoretical insights into the IPW framework, while the second session emphasizes practical implementation using `R`. Students will learn how to estimate weights, assess their quality, and use diagnostic tools to detect violations of key assumptions, such as positivity. We will work with both real and simulated datasets to visualize weight distributions, evaluate performance, and interpret the causal estimates obtained through IPW. This week also provides an opportunity to connect the theoretical framework to concrete software tools, such as the `{ipw}` [@ipw] and `{WeightIt}` [@weightit] `R` packages.
 
 ### Lecture 9 {#sec-lecture-9}
 
@@ -269,8 +269,8 @@ By the end of this lecture, students should be able to:
 
 The above goals can be mapped to the following materials:
 
-1. @ipw provide an overview of the `ipw` package with general theoretical background on IPW along with examples via real data. @heiss2020 provides an example via real data to illustrate both the use of `ipw` and `WeightIt`
-2. @ipw provide an simulated example via the package `ipw`.
+1. @ipw provide an overview of the `{ipw}` package with general theoretical background on IPW along with examples via real data. @heiss2020 provides an example via real data to illustrate both the use of `{ipw}` and `{WeightIt}`
+2. @ipw provide an simulated example via the package `{ipw}`.
 3. [Roadmap Step 6B - Estimation with IPW (Lecture 9c - Impact of Positivity Violations on Estimator Performance)](https://drive.google.com/file/d/1X1CMuTbRT77tDS9X1RtXSrKRy6Bf02NC/view), from @petersen2014, offers a fair starting point for in-class material. Moreover, they provide a [full lab exercise](https://drive.google.com/file/d/1uirofzK0MUZ_JVWHbXpINvTmdVnxpxnd/view) on IPW.
 
 ## G-estimation for Causal Parameters (stages 4 and 5 in the roadmap)
@@ -313,14 +313,62 @@ By the end of this lecture, students should be able to:
 
 The above goals can be mapped to the following materials:
 
-1. @loh2023 provide a tutorial on G-estimation using simulated data via the `lavaan` package. In contrast, @DTRreg offered a tutorial using the `DTRreg` package, employing both totally simulated data and simulated data inspired by real data.
-2. For this learning goal, we can use the work by @loh2023 and @DTRreg Moreover, @wallace2017 provide an additional simulated example via `DTRreg`.
+1. @loh2023 provide a tutorial on G-estimation using simulated data via the `{lavaan}` package. In contrast, @DTRreg offered a tutorial using the `{DTRreg}` package, employing both totally simulated data and simulated data inspired by real data.
+2. For this learning goal, we can use the work by @loh2023 and @DTRreg Moreover, @wallace2017 provide an additional simulated example via `{DTRreg}`.
 3. @rich2010 provide a fair overview on residual diagnostic plots for G-estimation via simulated and real data.
 
-## Week 7: Causal mediation analysis (STEPS 4 and 5 in the roadmap)
+## Causal Mediation Analysis (stages 4 and 5 in the roadmap)
 
-- Introduction to causal mediation analysis.
-- Parametric and non-parametric.
+Causal mediation analysis (CMA) allows researchers to go beyond merely estimating total causal effects and to examine the **underlying mechanisms** through which these effects occur. In **week 7**, students will learn how to decompose causal effects into **direct effects** (the part of the treatment effect not explained by a mediator) and **indirect effects** (the portion transmitted through a mediator). By studying mediation analysis within the course framework, students will gain insights into the challenges of making causal claims about **underlying mechanisms**. This week will also introduce counterfactual definitions of natural direct and indirect effects, as well as alternative frameworks like controlled direct effects. Additionally, students will explore how to implement these concepts in practice by linking theoretical assumptions to the modeling framework used in the `{mediation}` R package [@mediation].
+
+![Image by [*Manfred Stege*](https://pixabay.com/users/manfredsteger-1848497/) via [*Pixabay*](https://pixabay.com/vectors/pixel-cells-pixel-network-3704044/).](img/network){width="400"}
+
+The first lecture covers the conceptual foundations of CMA and formal counterfactual definitions of mediation effects. Students will build a solid theoretical understanding by studying concepts such as **average causal mediation effects (ACME)**, **average direct effects (ADE)**, and the assumptions required for their identification, particularly **sequential ignorability**. DAGs will illustrate how mediators function within causal systems and highlight common threats, such as unmeasured mediator–outcome confounding.
+
+The second lecture shifts focus to the practical estimation and application of mediation analysis using the `{mediation}` package. Students will learn how to fit mediator and outcome models, extract ACME and ADE estimates, and conduct sensitivity analyses to evaluate robustness against unmeasured confounding. The week will conclude with a short applied exercise where students design and execute their own mediation analysis, integrating theoretical reasoning with empirical estimation.
+
+::: {.callout-tip}
+## A smooth introduction to CMA
+
+**Chapter 1 (Introduction and Background)** from @hu2024 provides a brief and clear introduction to CMA in various disciplines of social sciences. It could be used as pre-reading material.
+:::
+
+### Lecture 13 {#sec-lecture-13}
+
+By the end of this lecture, students should be able to:
+
+1. Explain the concepts of direct, indirect, and total causal effects, and how they relate to mediation analysis (**understand** level).
+2. Describe the assumptions necessary for causal mediation, particularly sequential ignorability, and illustrate these using causal DAGs (**remember** level).
+3. Translate a causal mediation research question into testable models for mediator and outcome variables, specifying them in a way consistent with the assumptions of causal inference (**understand** level).
+4. Assess the plausibility of mediation assumptions in a given applied setting: experimental, quasi-experimental, or observational (**evaluate** level).
+5. Demonstrate, with simple examples, how mediator and outcome models can be specified within the `{mediation}` `R` package, linking software workflow to the theoretical framework (**understand** level).
+
+The above goals can be mapped to the following materials:
+
+1. **Chapter 2 (Mediation in the Causal Inference Framework)** from @hu2024, specifically **Section 2.2**.
+2. **Chapter 2 (Mediation in the Causal Inference Framework)** from @hu2024, specifically **Section 2.3**.
+3. "*The moderator-mediator variable distinction in social psychological research: conceptual, strategic, and statistical considerations*" by @baron1986.
+4. There are three potential sources of material we can use to fulfill this goal:
+
+  - "*Yes, but what's the mechanism? (don't expect an easy answer)*" from @bullock2010 for experimental studies.
+  - "*Identifiability and Exchangeability for Direct and Indirect Effects*" from @robins1992 for observational and experimental studies.
+  - "*Causal mediation analysis in economics: Objectives, assumptions, models*" from @celli2021 for quasi-experimental studies.
+
+5. Examples found in @tingley2023.
+
+### Lecture 14 {#sec-lecture-14}
+
+By the end of this lecture, students should be able to:
+
+1. Use the `{mediation}` `R` package to fit mediator and outcome models, estimate ACME, ADE, and total effects (**apply** level).
+2. Conduct sensitivity analysis with `medsens()` in the `{mediation}` package to examine robustness to unmeasured confounding of the mediator–outcome relation (**apply** level).
+3. Design and implement a mini mediation analysis on a provided dataset, integrating theoretical assumptions, estimation procedures, and interpretation of results (**create** level).
+
+The above goals can be mapped to the following materials:
+
+1. **Chapter 3 (Estimation of the Causal Mediation Analysis)** from @hu2024.
+2. **Chapter 5 (Sensitivity Analysis)** from @hu2024.
+3. *A Practical Guide to Causal Mediation Analysis: Illustration With a Comprehensive College Transition Program and Nonprogram Peer and Faculty Interactions* from @chi2022. This paper provides a step-by-step guide using the `{mediation}` package with an accessible college transition program dataset.
 
 ## Week 8: Interpretation and report (STEPS 6 and 7 in the roadmap)
 
@@ -369,7 +417,7 @@ As previously mentioned for [lecture 18](04-course-lesson-plan.qmd#sec-lecture-1
 - "*Does Compulsory School Attendance Affect Schooling and Earnings?*" from @angrist1991.
 - "*Using Geographic Variation in College Proximity to Estimate the Return to Schooling*" from @card1995.
 
-# Appraisal of Published Causal Studies via the Causal Roadmap
+# Appraisal of Published Causal Studies via the Causal Roadmap {#sec-appraisal}
 
 In **weeks 10** and **11**, students will participate in a team-based appraisal of an already **published causal analysis**, utilizing the course roadmap covered throughout the term. This appraisal project is a core component of the course, serving as a **bridge** between traditional lectures and the practical assessment of real-world causal research. By analyzing an existing causal study, students are expected to apply the eight stages of the roadmap to evaluate the validity, robustness, and transparency of the research. Additionally, they will gain exposure to various real-life research practices concerning design choices, modelling assumptions, and effective communication of results.
 
@@ -417,7 +465,7 @@ Following this introduction, teams will spend the rest of **week 10** working co
 
 In **week 11**, teams will give in-class presentations on their appraisals. Each team will present its findings in a structured format, emphasizing the alignment (or misalignment) of the published work with the causal roadmap. The presentation should also address the implications for the **robustness** and **interpretability** of the reported causal claims. Presentations will include both technical critiques and clear communication of methodological insights, fostering peer-to-peer learning as students compare and contrast different approaches across various papers. Since the presentation is the **only deliverable** for this appraisal project, teams will be encouraged to focus on clarity, depth of reasoning, and the effective use of visual and statistical evidence to support their assessments.
 
-# Analysis of a Publicly Available Dataset via the Causal Roadmap
+# Analysis of a Publicly Available Dataset via the Causal Roadmap {#sec-final-analysis}
 
 In the last two weeks of this course (i.e., **weeks 12** and **13**), students will take the lead in executing a team-based project that encompasses every stage of the causal roadmap. This means the instructor will primarily support the students throughout the process, rather than delivering traditional lectures. Note this analysis will serve as a **final capstone project**, summarizing all the content covered in the course from weeks 1 to 9. The project aims to incorporate every stage of the roadmap introduced during the term, which consists of the following eight stages: (1) *research question*, (2) *causal model representing knowledge*, (3) *counterfactuals and causal parameter definition*, (4) *statistical model definition*, (5) *model fitting*, (6) *result interpretation*, (7) *data analysis report*. The student teams will remain the same as those formed during **weeks 10** and **11** for the **previous appraisal of a causal analysis**.
 
@@ -441,7 +489,7 @@ The learning goals outlined below ensure that this final project demonstrates st
 
 - Apply the causal roadmap to formulate a clearly defined causal research question based on the provided dataset.
 - Construct a comprehensive DAG that represents the assumed causal structure and justifies the variables to condition on.
-- Utilize estimation procedures via `R` (e.g., IPW, G-estimation, or causal mediation analysis), which should be consistent with the outlined causal model.
+- Utilize estimation procedures via `R` (e.g., IPW, G-estimation, or CMA), which should be consistent with the outlined causal model.
 
 ### Analyze Level
 
